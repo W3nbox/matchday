@@ -27,6 +27,22 @@ function filterMatches(items, {page, category='all', search='', date='', favorit
     .sort((a,b) => Date.parse(a.start) - Date.parse(b.start));
 }
 const page = document.body.dataset.page;
+const navigationToggle = document.querySelector('#navigation-toggle');
+const navigationPanel = document.querySelector('#navigation-panel');
+function setNavigationOpen(open) {
+  document.body.dataset.navigationOpen = String(open);
+  navigationToggle.setAttribute('aria-expanded', String(open));
+  navigationToggle.setAttribute('aria-label', open ? '收起侧边导航' : '展开侧边导航');
+  navigationToggle.textContent = open ? '‹' : '☰';
+  navigationPanel.hidden = !open;
+}
+navigationToggle.addEventListener('click', () => setNavigationOpen(navigationPanel.hidden));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !navigationPanel.hidden) {
+    setNavigationOpen(false);
+    navigationToggle.focus();
+  }
+});
 const categories = document.querySelector('#categories');
 const container = document.querySelector('#matches');
 const search = document.querySelector('#search');
