@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-07T18:53:36.063Z",
+      "updatedAt": "2026-11-07T23:40:07.355Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
+      "lastAttemptAt": "2026-11-07T23:40:07.355Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-07T18:53:36.063Z",
+      "updatedAt": "2026-11-07T23:40:07.355Z",
       "matches": [
         {
           "id": "pandascore:1711019",
@@ -4510,20 +4510,6 @@
           "homeLogo": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png",
           "awayLogo": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png",
           "start": "2026-11-08T22:00:00.000Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "pandascore:1711020",
-          "sport": "lol",
-          "league": "Worlds",
-          "stage": "(Playoffs) Semifinal 2",
-          "home": "Invictus Gaming",
-          "away": "Gen.G",
-          "homeLogo": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png",
-          "awayLogo": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png",
-          "start": "2026-11-07T22:00:00.000Z",
           "status": "赛程预告",
           "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
           "timeZone": "UTC"
@@ -4545,7 +4531,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
+      "lastAttemptAt": "2026-11-07T23:40:07.355Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-07T05:45:58.096Z",
@@ -4557,7 +4543,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T18:53:36.063Z",
+      "updatedAt": "2026-11-07T23:40:07.355Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1789253@esport-ics",
@@ -4588,6 +4574,34 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1795383@esport-ics",
+          "sport": "cs2",
+          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group C",
+          "stage": "Decider match",
+          "home": "6yuBoJlbl",
+          "away": "9INE",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T14:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/6yubojlbl.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1786810@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Series #13 2026 - Group Stage",
+          "stage": "Round 3",
+          "home": "6yuBoJlbl",
+          "away": "MEGO",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T15:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/6yubojlbl.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1788754@esport-ics",
           "sport": "cs2",
           "league": "United21 - Season 58 2026 - Group A",
@@ -4613,6 +4627,20 @@
           "start": "2026-11-24T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/9z.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1795388@esport-ics",
+          "sport": "cs2",
+          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group D",
+          "stage": "Decider match",
+          "home": "ACE",
+          "away": "Ryvex",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T14:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/acend.ics",
           "timeZone": "UTC"
         },
         {
@@ -4686,6 +4714,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1784408@esport-ics",
+          "sport": "cs2",
+          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
+          "stage": "阶段待定",
+          "home": "BAKS",
+          "away": "Azuolas",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T18:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/azuolas.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1789487@esport-ics",
           "sport": "cs2",
           "league": "European Pro League - Season 10 2026 - Group A",
@@ -4725,6 +4767,34 @@
           "start": "2026-11-10T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/bad-beavers.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1786813@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Series #13 2026 - Group Stage",
+          "stage": "Round 3",
+          "home": "BAKS",
+          "away": "Leo",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T12:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/baks-esports.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1795373@esport-ics",
+          "sport": "cs2",
+          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group B",
+          "stage": "Decider match",
+          "home": "BAL",
+          "away": "TLR",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T14:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/balkan-outlaws.ics",
           "timeZone": "UTC"
         },
         {
@@ -4795,6 +4865,20 @@
           "start": "2026-11-19T18:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/banger-gang.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1784405@esport-ics",
+          "sport": "cs2",
+          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
+          "stage": "阶段待定",
+          "home": "BMB",
+          "away": "TS.A",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T09:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/basement-boys.ics",
           "timeZone": "UTC"
         },
         {
@@ -4994,20 +5078,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1786713@esport-ics",
-          "sport": "cs2",
-          "league": "CCT South America - Series 8 2026 - Group Stage",
-          "stage": "Round 3",
-          "home": "GRE",
-          "away": "BORRA",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T22:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/borracheiros.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1777591@esport-ics",
           "sport": "cs2",
           "league": "Elisa Open Suomi - Season 14 2026 - Group Stage",
@@ -5064,20 +5134,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1790239@esport-ics",
-          "sport": "cs2",
-          "league": "MČR - 2026 - Group B",
-          "stage": "Decider match",
-          "home": "BRUTE.SQ",
-          "away": "DE.P",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T19:30:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/brute-sq.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1788761@esport-ics",
           "sport": "cs2",
           "league": "United21 - Season 58 2026 - Group B",
@@ -5092,17 +5148,17 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1797356@esport-ics",
+          "id": "cs2:pandascore-match-1786814@esport-ics",
           "sport": "cs2",
-          "league": "CCT North America - Challengers season 1 2026 - Playoffs",
-          "stage": "Quarterfinals match 2",
-          "home": "CV",
-          "away": "ELU",
+          "league": "CCT Europe - Series #13 2026 - Group Stage",
+          "stage": "Round 3",
+          "home": "BTF",
+          "away": "NXS",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-07T20:30:00Z",
+          "start": "2026-11-09T15:00:00Z",
           "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/crimson-vortex.ics",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/butterfly.ics",
           "timeZone": "UTC"
         },
         {
@@ -5120,17 +5176,31 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1797358@esport-ics",
+          "id": "cs2:pandascore-match-1784406@esport-ics",
           "sport": "cs2",
-          "league": "CCT North America - Challengers season 1 2026 - Playoffs",
-          "stage": "Quarterfinals match 4",
-          "home": "Keep Talking",
-          "away": "DTN",
+          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
+          "stage": "阶段待定",
+          "home": "Noir Verse",
+          "away": "DRAMA",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-07T23:15:00Z",
+          "start": "2026-11-08T12:00:00Z",
           "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/detonate.ics",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/drama-esports.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1788092@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group D",
+          "stage": "Decider match",
+          "home": "Ryvex",
+          "away": "DRAMA",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T18:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/drama-esports.ics",
           "timeZone": "UTC"
         },
         {
@@ -5187,6 +5257,20 @@
           "start": "2026-11-09T20:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/ecstatic.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1797359@esport-ics",
+          "sport": "cs2",
+          "league": "CCT North America - Challengers season 1 2026 - Playoffs",
+          "stage": "Semifinals match 1",
+          "home": "ELU",
+          "away": "TBD",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T20:30:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/elusive.ics",
           "timeZone": "UTC"
         },
         {
@@ -5274,6 +5358,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1784407@esport-ics",
+          "sport": "cs2",
+          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
+          "stage": "阶段待定",
+          "home": "ex-ENCE",
+          "away": "ILLYR",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T15:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/ex-ence.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1788762@esport-ics",
           "sport": "cs2",
           "league": "United21 - Season 58 2026 - Group B",
@@ -5302,29 +5400,15 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1797355@esport-ics",
+          "id": "cs2:pandascore-match-1797360@esport-ics",
           "sport": "cs2",
           "league": "CCT North America - Challengers season 1 2026 - Playoffs",
-          "stage": "Quarterfinals match 1",
-          "home": "MARS",
-          "away": "feet67",
+          "stage": "Semifinals match 2",
+          "home": "Feistein",
+          "away": "TBD",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-07T23:15:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/feet67.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1797357@esport-ics",
-          "sport": "cs2",
-          "league": "CCT North America - Challengers season 1 2026 - Playoffs",
-          "stage": "Quarterfinals match 3",
-          "home": "VIL",
-          "away": "Feistein",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T20:30:00Z",
+          "start": "2026-11-08T20:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/feistein.ics",
           "timeZone": "UTC"
@@ -5400,6 +5484,34 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1786808@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Series #13 2026 - Group Stage",
+          "stage": "Round 3",
+          "home": "G2.A",
+          "away": "IC.A",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T09:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/g2-ares.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1795368@esport-ics",
+          "sport": "cs2",
+          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group A",
+          "stage": "Decider match",
+          "home": "G2.A",
+          "away": "PRIV",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T14:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/g2-ares.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1789501@esport-ics",
           "sport": "cs2",
           "league": "European Pro League - Season 10 2026 - Group D",
@@ -5442,6 +5554,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1786811@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Series #13 2026 - Group Stage",
+          "stage": "Round 3",
+          "home": "G1",
+          "away": "PF",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T18:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/genone.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1758417@esport-ics",
           "sport": "cs2",
           "league": "Gamers Club Liga Série A - October 2026 - Playoffs",
@@ -5450,7 +5576,7 @@
           "away": "GRE",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-08T19:00:00Z",
+          "start": "2026-11-09T18:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/gremio-esports.ics",
           "timeZone": "UTC"
@@ -5551,6 +5677,20 @@
           "start": "2026-11-09T19:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/huskies-esport.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1798728@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "Y23",
+          "away": "IMAPROBLEM",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-08T20:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/imaproblem.ics",
           "timeZone": "UTC"
         },
         {
@@ -5674,7 +5814,7 @@
           "away": "Rush",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-09T07:00:00Z",
+          "start": "2026-11-08T22:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/low-cortisol.ics",
           "timeZone": "UTC"
@@ -5712,8 +5852,8 @@
           "sport": "cs2",
           "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group C",
           "stage": "Decider match",
-          "home": "MSC",
-          "away": "TBD",
+          "home": "SAW.Y",
+          "away": "MSC",
           "homeLogo": null,
           "awayLogo": null,
           "start": "2026-11-08T15:00:00Z",
@@ -5773,6 +5913,20 @@
           "homeLogo": null,
           "awayLogo": null,
           "start": "2026-11-11T09:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/maybe.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1789507@esport-ics",
+          "sport": "cs2",
+          "league": "European Pro League - Season 10 2026 - Group D",
+          "stage": "Decider match",
+          "home": "maybe",
+          "away": "TBD",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-12T11:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/maybe.ics",
           "timeZone": "UTC"
@@ -5988,34 +6142,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1786712@esport-ics",
-          "sport": "cs2",
-          "league": "CCT South America - Series 8 2026 - Group Stage",
-          "stage": "Round 3",
-          "home": "QUIN",
-          "away": "your end",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T19:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/quintessencia.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1797312@esport-ics",
-          "sport": "cs2",
-          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
-          "stage": "阶段待定",
-          "home": "Rcave",
-          "away": "SHU",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T19:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/rcave.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1661640@esport-ics",
           "sport": "cs2",
           "league": "DACH CS Masters - Season 6 2026 - Regular Season",
@@ -6041,20 +6167,6 @@
           "start": "2026-11-23T15:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/rounds.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1788092@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group D",
-          "stage": "Decider match",
-          "home": "Ryvex",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/ryvex.ics",
           "timeZone": "UTC"
         },
         {
@@ -6157,7 +6269,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
+      "lastAttemptAt": "2026-11-07T23:40:07.355Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6168,7 +6280,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T18:53:36.063Z",
+      "updatedAt": "2026-11-07T23:40:07.355Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -6319,7 +6431,7 @@
           "away": "regnum4games",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-08T17:00:00Z",
+          "start": "2026-11-09T18:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/brest-esport.ics",
           "timeZone": "UTC"
@@ -6451,20 +6563,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1792347@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "阶段待定",
-          "home": "Enisorail",
-          "away": "GSH",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T17:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/enisorail.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792349@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
@@ -6488,6 +6586,20 @@
           "homeLogo": null,
           "awayLogo": null,
           "start": "2026-11-22T17:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/enisorail.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1792347@esport-ics",
+          "sport": "valorant",
+          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
+          "stage": "阶段待定",
+          "home": "Enisorail",
+          "away": "GSH",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-26T17:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/enisorail.ics",
           "timeZone": "UTC"
@@ -6774,7 +6886,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
+      "lastAttemptAt": "2026-11-07T23:40:07.355Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6784,11 +6896,11 @@
       "name": "SportsDataverse · MLB（CC BY 4.0）",
       "sport": "baseball",
       "sourceUrl": "https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/mlb_schedules",
-      "status": "ok",
+      "status": "error",
       "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [],
-      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
-      "error": null,
+      "lastAttemptAt": "2026-11-07T23:40:07.355Z",
+      "error": "http",
       "availability": "empty",
       "upstreamLastModified": "2026-10-29T12:35:19.000Z",
       "upstreamGeneratedAt": "2026-10-29T12:35:19.000Z",
