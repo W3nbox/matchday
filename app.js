@@ -2,7 +2,7 @@
 let matches = [];
 let snapshot = null;
 let loadState = 'loading';
-const sports = [['football','足球','⚽','sports'], ['lol','英雄联盟','L','esports']];
+const sports = [['football','足球','⚽','sports'], ['lol','英雄联盟','L','esports'], ['cs2','CS2','⌖','esports'], ['valorant','瓦洛兰特','V','esports']];
 function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
@@ -17,7 +17,7 @@ function safeLogo(value) {
 function validateSnapshot(data) {
   if (!data || !data.sources) throw Error('Invalid snapshot');
   const ids = new Set();
-  for (const sport of ['football','lol']) {
+  for (const sport of ['football','lol','cs2','valorant']) {
     const source = data.sources[sport];
     if (!source || typeof source.name !== 'string' || !['pending','ok','error'].includes(source.status)
       || !(source.updatedAt === null || typeof source.updatedAt === 'string' && Number.isFinite(Date.parse(source.updatedAt)))

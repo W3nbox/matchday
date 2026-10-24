@@ -46,3 +46,10 @@ node scripts/sync.cjs
 
 ## 队伍图标
 英超20支球队队徽来自 https://github.com/luukhopman/football-logos 的2026/27目录，按球队名人工核对映射并保存为本站PNG；来源清单见 data/football-logos.json。LOL使用 zlypher 公共快照 opponents.imageUrl，保留队伍与图标对应关系。队徽和商标权利归相关俱乐部及战队，未宣称开源代码许可等于商标授权。缺失或加载失败回退文字，TBD不显示虚构图标。
+
+## CS2 与瓦洛兰特
+两类赛程来自 https://github.com/snutij/esport_ics 公开团队日历，读取完整 ZIP 快照后只处理 ics/counter_strike 与 ics/valorant；不注册、不使用 Token、不访问 PandaScore API。
+使用 Python 标准库 zipfile 读取内存压缩包，不解压路径或执行仓库代码。一次网络请求取得两个项目；各项目解析与失败状态独立。按 UID 去重，多战队副本存在冲突时拒绝该项目新数据并保留旧快照。
+只接受明确 UTC DTSTART，不用 Today/Tomorrow 或本机时区推测。已过去或明确取消事件排除，没有日期上限。保留来源描述、阶段、双方、稳定ID和来源文件链接。日历没有图标、实时比分与状态，使用文字图标/赛程预告，不把估算结束时间当作真实结束时间。
+日历 DTSTAMP 在该项目中等于比赛时间，不能用作数据更新时间，因此页面仅显示本项目最近成功读取时间；上游未提供可靠生成时间。此来源依赖社区维护，不保证覆盖全部赛事。
+本地真实验证 CS2 122 场、瓦洛兰特43场。工作流新增 setup-python 和 python scripts/test_calendars.py；Node 逻辑和原有网页检查继续运行。

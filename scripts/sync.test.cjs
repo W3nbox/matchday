@@ -41,12 +41,12 @@ test('public snapshot validates league IDs, stages, stable IDs and timezone',()=
 });
 test('no credentials, independent failures, valid empty and structural failure preserve data',async()=>{
  const old=structuredClone(initial);old.sources.lol.matches=lol(calendar([lm]),url);old.sources.lol.updatedAt=now.toISOString();
- const response=data=>({ok:true,json:async()=>data});
+ const response=data=>({ok:true,json:async()=>data,arrayBuffer:async()=>require('node:fs').readFileSync(require('node:path').join(__dirname,'fixtures/calendars.zip'))});
  const fetcher=async(u,options)=>{
-  assert.deepEqual(options.headers,{});assert.ok(options.signal);assert.ok(!String(u).includes('token='));
+  if(options.headers)assert.deepEqual(options.headers,{});assert.ok(options.signal);assert.ok(!String(u).includes('token='));
   return response(String(u).includes('openfootball/')?dataset([fm]):calendar([lm]));
  };
- const success=await update(old,fetcher,now);assert.equal(success.failures,0);assert.equal(success.snapshot.sources.lol.matches.length,1);assert.equal(success.snapshot.sources.lol.upstreamGeneratedAt,now.toISOString());
+ const success=await update(old,fetcher,now);assert.equal(success.failures,0);assert.equal(success.snapshot.sources.lol.matches.length,1);assert.equal(success.snapshot.sources.cs2.matches.length,1);assert.equal(success.snapshot.sources.valorant.matches.length,1);assert.equal(success.snapshot.sources.lol.upstreamGeneratedAt,now.toISOString());
  const failed=await update(old,async u=>{if(String(u).includes('zlypher'))throw Error('network');return response(dataset([fm]));},now);
  assert.equal(failed.failures,1);assert.deepEqual(failed.snapshot.sources.lol.matches,old.sources.lol.matches);assert.equal(failed.snapshot.sources.lol.updatedAt,old.sources.lol.updatedAt);assert.equal(failed.snapshot.sources.football.status,'ok');
  const empty=await update(old,async u=>response(String(u).includes('zlypher')?calendar([]):dataset([])),now);
