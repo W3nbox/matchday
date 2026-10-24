@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-07T16:10:29.524Z",
+      "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T16:10:29.524Z",
+      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-07T16:10:29.524Z",
+      "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [
         {
           "id": "pandascore:1711019",
@@ -4545,7 +4545,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-07T16:10:29.524Z",
+      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-07T05:45:58.096Z",
@@ -4557,7 +4557,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T16:10:29.524Z",
+      "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1789253@esport-ics",
@@ -4613,20 +4613,6 @@
           "start": "2026-11-24T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/9z.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1795386@esport-ics",
-          "sport": "cs2",
-          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group D",
-          "stage": "Winners match",
-          "home": "ACE",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/acend.ics",
           "timeZone": "UTC"
         },
         {
@@ -4739,20 +4725,6 @@
           "start": "2026-11-10T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/bad-beavers.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1795371@esport-ics",
-          "sport": "cs2",
-          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group B",
-          "stage": "Winners match",
-          "home": "BAL",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/balkan-outlaws.ics",
           "timeZone": "UTC"
         },
         {
@@ -5162,20 +5134,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1788091@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group D",
-          "stage": "Winners match",
-          "home": "DRAMA",
-          "away": "PHTM.Ac",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/drama-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1688015@esport-ics",
           "sport": "cs2",
           "league": "Dust2.dk Ligaen - Season 33 2026 - Regular Season",
@@ -5397,20 +5355,6 @@
           "start": "2026-11-15T16:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/fire-flux-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1786807@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Series #13 2026 - Group Stage",
-          "stage": "Round 2",
-          "home": "NXS",
-          "away": "FORZE.R",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/forze-reload.ics",
           "timeZone": "UTC"
         },
         {
@@ -5848,20 +5792,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1790209@esport-ics",
-          "sport": "cs2",
-          "league": "MČR - 2026 - Group A",
-          "stage": "Decider match",
-          "home": "Monkeys",
-          "away": "SINNERS Legacy",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T17:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/monkeys.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1789486@esport-ics",
           "sport": "cs2",
           "league": "European Pro League - Season 10 2026 - Group A",
@@ -6114,20 +6044,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1795387@esport-ics",
-          "sport": "cs2",
-          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group D",
-          "stage": "Elimination match",
-          "home": "Ryvex",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/ryvex.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1788092@esport-ics",
           "sport": "cs2",
           "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group D",
@@ -6226,20 +6142,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1795372@esport-ics",
-          "sport": "cs2",
-          "league": "ESL Challenger League - Europe Cup #11 season 52 2026 - Group B",
-          "stage": "Elimination match",
-          "home": "TLR",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T18:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/the-last-resort.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1790240@esport-ics",
           "sport": "cs2",
           "league": "MČR - 2026 - Playoffs",
@@ -6255,7 +6157,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T16:10:29.524Z",
+      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6266,7 +6168,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T16:10:29.524Z",
+      "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -6872,7 +6774,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T16:10:29.524Z",
+      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6883,9 +6785,9 @@
       "sport": "baseball",
       "sourceUrl": "https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/mlb_schedules",
       "status": "ok",
-      "updatedAt": "2026-11-07T16:10:29.524Z",
+      "updatedAt": "2026-11-07T18:53:36.063Z",
       "matches": [],
-      "lastAttemptAt": "2026-11-07T16:10:29.524Z",
+      "lastAttemptAt": "2026-11-07T18:53:36.063Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-10-29T12:35:19.000Z",
