@@ -1,44 +1,41 @@
 # MATCHDAY / 赛点
 
-原生 HTML / CSS / JavaScript 体育与电竞赛程网站，无后端或数据库。
+原生 HTML/CSS/JavaScript 四页赛程网站。GitHub 私有仓库保存代码；Cloudflare Pages 提供公开地址 https://matchday-b43.pages.dev 。
 
-## 当前部署
-- GitHub：W3nbox/matchday（私有仓库）
-- Cloudflare Pages：https://matchday-b43.pages.dev
-- main 保留已上线初版；experiment/football-lol-sync 是尚未启用的真实赛程实验。
+## 当前来源
+- 英超：openfootball/football.json 的当季 en.1.json。CC0 社区数据，无需密钥。同步时根据 7 月赛季分界计算目录，不固定年份。404 或结构变化时保留旧快照。
+- LOL：PandaScore upcoming 接口，逐条依据 league 字段仅收录 LPL 和 World Championship（Worlds）；不依据参赛队伍归属筛选。包含来源返回的赛事阶段。未配置 Token，尚未做真实请求验证。
+- 本地已用普通 HTTP 成功读取 2026/27 英超整季 380 场及生成同步快照；这不等于 GitHub Actions 已成功运行。
 
-## 赛程实验
-足球先覆盖英超，来源 football-data.org；LOL 使用 PandaScore。按数据源公布的未来七天窗口查询，不保证覆盖所有联赛；休赛期可能没有赛程。未公布日期的赛事可能不被上游窗口接口返回。
-没有填充虚构真实赛程。data/schedule.json 的初始状态为 pending；密钥配置完成且实际同步成功后才有真实数据。
-页面读取静态 JSON，不接触 API 密钥。收藏使用数据源稳定编号；已退出查询窗口的比赛仍保留收藏编号，但不再展示。
+## 数据限制
+openfootball 的 JSON 自动生成不保证上游数据实时更新。README 指明上游仍依赖社区维护；不要把每日生成等同实时改期通知。英国本地时间使用 Europe/London 处理夏令时，JSON 已有时间才转换，缺失显示待定，不自行补默认开球时间。
+英超没有来源 ID 的记录，使用赛季+主客队计算稳定编号，不包含日期/时间或轮次，改期不影响收藏。球队名称被上游改名仍可能改变此后备编号。
+内部时间带时区，页面与日期查询使用 Asia/Shanghai。没有确定时间的比赛不能可靠归入北京时间日期，日期筛选不会返回这些记录。
+每次保存未来七天的未结束比赛及无日期待定项；已离开窗口的比赛不展示，但浏览器仍保留收藏编号。
+页面中的“最近成功检查”是本项目成功读取数据的时间，不代表上游已确认改期或实时比分。
+
+## 同步与凭据
+GitHub Actions 每两小时运行一次，也支持 workflow_dispatch 手动运行。每个来源独立成功/失败；失败保留该来源比赛和最后成功更新时间，写入失败类别，工作流报告失败。成功返回空列表与结构错误、未配置、网络错误区分。
+PandaScore 的唯一所需 Secret 为 PANDASCORE_TOKEN。保存在仓库 Settings → Secrets and variables → Actions，不放进源码、前端或 URL 查询参数。
+Token 通过 Authorization Bearer 请求头传递。没有 Token 时足球仍能更新，LOL 显示尚未接通，不替换演示或伪造赛程。
+工作流用自带 GITHUB_TOKEN 更新 JSON，github-actions[bot] 提交清楚标明数据更新；Cloudflare 通过 GitHub 集成自动部署。没有强制推送或重写历史。
+私有仓库 Actions 有账号分钟额度；Pages 免费构建每月500次，本计划每月约360—372次，另加开发部署。定时触发可能延迟。
 
 ## 运行与检查
-通过本地 HTTP 服务打开，不能双击 file:// 页面加载 JSON。
+页面需要 HTTP 服务，file:// 无法可靠 fetch 同源 JSON。
 
 ```sh
 python -m http.server 5500 --bind 127.0.0.1
 node --check app.js
 node check.cjs
 node --test scripts/sync.test.cjs
+node scripts/sync.cjs
 ```
 
-## 启用同步（待账号及密钥）
-注册来源：
-- https://www.football-data.org/client/register
-- https://www.pandascore.co/
+## 来源文档
+- https://github.com/openfootball/football.json （README、CC0 及更新说明）
+- https://github.com/openfootball/england （英超原始 Football.TXT）
+- https://developers.pandascore.co/docs/plan-reference
+- https://developers.pandascore.co/reference/get_lol_matches_upcoming
 
-确认免费方案的数据展示、缓存和署名条款后，将密钥保存在仓库 Settings → Secrets and variables → Actions → Repository secrets：
-- FOOTBALL_DATA_TOKEN
-- PANDASCORE_TOKEN
-
-不要把密钥放进网页、仓库文件、命令参数或截图。
-代码推送并合入 main 后，在 Actions 选择 Sync football and LoL schedules，手动运行一次。成功后检查 data/schedule.json 的两个来源状态、比赛时间及 Cloudflare 部署。密钥尚未配置时不要宣称实时数据已接通。
-定时任务每两小时在 UTC 偶数小时的第17分钟触发，可能有延迟。一个月最多约372次计划部署，另计开发部署；私有仓库 Actions 受账号分钟额度约束。
-工作流用 GitHub 自带 GITHUB_TOKEN 写入数据并推送；如仓库策略禁止写入或 main 禁止机器人直接推送，会明确失败，不强制覆盖。Cloudflare 的 GitHub 集成负责部署这些推送。
-单个数据源失败保留它的上次比赛列表和成功更新时间；另一个数据源仍可更新。失败状态也写入文件并标记工作流失败。
-
-## 初版及课程要求
-四页：index.html、sports.html、esports.html、favorites.html。
-设计参考 Sport-Scout 的项目/日期/联赛组织，及 esport_ics 的静态分发思路；未复制代码与图片。
-课程知识说明放在交付讲解与项目文档，不放在网站页面。
-HTML 语义与键盘访问、CSS Grid/Flexbox/响应式、JS DOM/事件/状态、HTTP/DNS、Git 和静态部署均结合实际代码讲解。
+蓝黑配色、四页导航、可伸缩空侧栏和键盘交互保留。课程知识说明只在交付文档或讲解，不添加到网站页面。

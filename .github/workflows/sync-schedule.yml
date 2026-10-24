@@ -23,7 +23,6 @@ jobs:
         continue-on-error: true
         run: node scripts/sync.cjs
         env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
           PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
       - name: Commit snapshot and sync status
         run: |

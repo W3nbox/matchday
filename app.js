@@ -6,6 +6,9 @@ const sports = [['football','足球','⚽','sports'], ['lol','英雄联盟','L',
 function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
+function safeSource(value) {
+  try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com','api.pandascore.co','www.pandascore.co'].includes(url.hostname);} catch {return false;}
+}
 function validateSnapshot(data) {
   if (!data || !data.sources) throw Error('Invalid snapshot');
   const ids = new Set();
@@ -15,9 +18,9 @@ function validateSnapshot(data) {
       || !(source.updatedAt === null || typeof source.updatedAt === 'string' && Number.isFinite(Date.parse(source.updatedAt)))
       || !Array.isArray(source.matches)) throw Error('Invalid source');
     for (const m of source.matches) {
-      if (m.sport !== sport || ![m.id,m.league,m.home,m.away,m.status].every(v => typeof v === 'string' && v.trim())
+      if (m.sport !== sport || ![m.id,m.league,m.home,m.away,m.status,m.stage].every(v => typeof v === 'string' && v.trim())
         || !(m.start === null || typeof m.start === 'string' && /(?:Z|[+-]\d\d:\d\d)$/.test(m.start) && Number.isFinite(Date.parse(m.start)))
-        || ids.has(m.id)) throw Error('Invalid match');
+        || !safeSource(m.sourceUrl) || ids.has(m.id)) throw Error('Invalid match');
       ids.add(m.id);
     }
   }
@@ -101,13 +104,14 @@ function render() {
   }
   const groups = new Map();
   for (const match of filtered) {
-    let group = groups.get(match.league);
+    const groupName = `${match.league} · ${match.stage}`;
+    let group = groups.get(groupName);
     if (!group) {
       group = element('section','league');
-      const heading = element('h3','',match.league);
+      const heading = element('h3','',groupName);
       heading.append(element('span','','北京时间'));
       group.append(heading);
-      groups.set(match.league,group);
+      groups.set(groupName,group);
       container.append(group);
     }
     const row = element('article','match');
@@ -185,11 +189,17 @@ async function loadSchedule() {
     matches = Object.values(next.sources).flatMap(s => s.matches);
     loadState = 'ready';
     const relevant = Object.entries(next.sources).filter(([sport]) => page !== 'sports' && page !== 'esports' || sports.find(s => s[0] === sport)[3] === page);
-    status.textContent = relevant.map(([,s]) => {
-      const updated = s.updatedAt ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)) : '尚未成功同步';
-      const stale = s.updatedAt && Date.now() - Date.parse(s.updatedAt) > 6 * 3600000;
-      return `${s.name}：${updated}${s.status === 'error' ? ' · 同步失败，旧数据可能过期' : stale ? ' · 数据可能过期' : ''}`;
-    }).join('；');
+    status.replaceChildren();
+    for (const [,s] of relevant) {
+      const line=element('p');
+      const source=element(safeSource(s.sourceUrl)?'a':'span','',s.name);
+      if (safeSource(s.sourceUrl)) {source.href=s.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';}
+      const checked=s.updatedAt?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)):'尚未成功同步';
+      const stale=s.updatedAt && Date.now()-Date.parse(s.updatedAt)>6*3600000;
+      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 查询窗口内暂无赛程':'';
+      line.append(source,element('span','',`：最近成功检查 ${checked}${state}`));
+      status.append(line);
+    }
   } catch {
     loadState = snapshot ? 'ready' : 'error';
     status.textContent = snapshot ? '刷新失败，继续显示本页面上次加载的数据。' : '无法读取赛程。请检查网络后点击「重新加载」。';
