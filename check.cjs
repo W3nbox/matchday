@@ -115,3 +115,7 @@ assert.match(nodes['#result-count'].textContent,/赛程加载失败/);
 console.log('Passed: async loading, refresh fallback, initial load failure, Beijing date boundary and undated matches.');
 }
 checkBrowser().catch(error=>{console.error(error);process.exitCode=1;});
+
+assert.equal(vm.runInContext("safeLogo('assets/team-logos/big.svg')",browser),true);
+assert.equal(vm.runInContext("safeLogo('assets/team-logos/hook.webp')",browser),true);
+assert.equal(vm.runInContext("safeLogo('assets/team-logos/../evil.svg')",browser),false);

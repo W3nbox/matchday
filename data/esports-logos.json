@@ -1,0 +1,148 @@
+[
+  {
+    "sport": "cs2",
+    "name": "G2",
+    "file": "assets/team-logos/g2.png",
+    "page": "https://g2esports.com",
+    "url": "https://cdn.shopify.com/s/files/1/0548/8554/8183/files/g2-logo-clear.png?v=1675157476",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "FaZe",
+    "file": "assets/team-logos/faze.png",
+    "page": "https://fazeclan.com",
+    "url": "https://cdn.shopify.com/s/files/1/0667/9547/1031/files/Faze_Logo_-_2025_Version.png?v=1770082447",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "VIT",
+    "file": "assets/team-logos/vitality.png",
+    "page": "https://vitality.gg",
+    "url": "https://cdn.shopify.com/s/files/1/0049/2293/3366/files/Vitality-logo-white-rgb.png?height=128&v=1740757972",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "BIG",
+    "file": "assets/team-logos/big.svg",
+    "page": "https://bigclan.gg",
+    "url": "https://cdn.shopify.com/s/files/1/0939/6033/9721/files/big-logo.svg?v=1767095382",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "MOUZ",
+    "file": "assets/team-logos/mouz.svg",
+    "page": "https://mouz.gg",
+    "url": "https://mousesports.com/wp-content/uploads/2021/10/logo-favicon.svg",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "NIP",
+    "file": "assets/team-logos/nip.png",
+    "page": "https://nip.gl",
+    "url": "https://cdn.shopify.com/s/files/1/1516/5886/files/NIP-Symbol-RGB_black_32x32.png?v=1613771259",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "M80",
+    "file": "assets/team-logos/m80.png",
+    "page": "https://m80.gg",
+    "url": "https://cdn.m80.gg/images/icons/og/favicon-96x96.png",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "EF",
+    "file": "assets/team-logos/eternal-fire.png",
+    "page": "https://eternalfire.gg",
+    "url": "https://eternalfire.gg/wp-content/uploads/2024/01/efdragon.png",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "GL",
+    "file": "assets/team-logos/gamerlegion.svg",
+    "page": "https://gamerlegion.gg",
+    "url": "https://cdn.shopify.com/s/files/1/0778/0348/7557/files/Core_Logo_White_Black.svg?v=1697103240",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "FUT",
+    "file": "assets/team-logos/fut.png",
+    "page": "https://futesports.gg",
+    "url": "https://futesports.gg/images/logo/FUT.png",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "CGN",
+    "file": "assets/team-logos/cgn.png",
+    "page": "https://www.cgn.gg/assets",
+    "url": "https://www.cgn.gg/Logo/2022CGN-Bildlogo-Whitepng.png",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "HK",
+    "file": "assets/team-logos/hook.webp",
+    "page": "https://hook-esport.fr",
+    "url": "https://hook-esport.fr/assets/v2/emblem.webp",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "REH Gaming",
+    "file": "assets/team-logos/reh-gaming.webp",
+    "page": "https://hook-esport.fr",
+    "url": "https://hook-esport.fr/media/cms/0e546d452736c2d1b0e8a46f569ee08a93c065da0f62f9f2d3599001dba38033.webp",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "FRG",
+    "file": "assets/team-logos/frg.webp",
+    "page": "https://hook-esport.fr",
+    "url": "https://hook-esport.fr/media/cms/2812cf50ab51cb7b08e5a11e9502b3e1836fc4d3569ea47c9159baeb63d97073.webp",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "Frankfurt Bahnhofsviertel",
+    "file": "assets/team-logos/frankfurt-bahnhofsviertel.webp",
+    "page": "https://hook-esport.fr",
+    "url": "https://hook-esport.fr/media/cms/966b3736c2f7af9b48e76b88bf0dbff2edbe0e2d51c716fd7bb7704e5d701d1b.webp",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "valorant",
+    "name": "Team International",
+    "file": "assets/team-logos/team-international.webp",
+    "page": "https://hook-esport.fr",
+    "url": "https://hook-esport.fr/media/cms/bf13bb831ef8ca64832d94b198d609a208c77ce4e0b733afd6fb539156a61319.webp",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "sport": "cs2",
+    "name": "TL",
+    "file": "assets/team-logos/liquid.svg",
+    "page": "https://teamliquid.com",
+    "url": "https://teamliquid.com",
+    "checkedAt": "2026-11-07",
+    "embedded": true
+  },
+  {
+    "sport": "cs2",
+    "name": "100T",
+    "file": "assets/team-logos/hundred.svg",
+    "page": "https://100thieves.com",
+    "url": "https://100thieves.com",
+    "checkedAt": "2026-11-07",
+    "embedded": true
+  }
+]

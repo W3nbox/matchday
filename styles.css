@@ -489,3 +489,5 @@ body[data-navigation-open=true] .navigation-rail{width:240px;}
 .team-logo.is-loaded{opacity:1}
 .team-logo[hidden],.badge-fallback[hidden]{display:none}
 @media(max-width:700px){.badge{width:26px;height:26px}.team-row{gap:8px}.team-name{font-size:12px}}
+
+.team-logo[src="assets/team-logos/nip.png"],.team-logo[src="assets/team-logos/faze.png"],.team-logo[src="assets/team-logos/big.svg"]{background:#eef3fa;border-radius:3px;padding:2px}

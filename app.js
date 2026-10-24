@@ -11,7 +11,7 @@ function safeSource(value) {
 }
 function safeLogo(value) {
   if(typeof value!=='string') return false;
-  if(/^assets\/team-logos\/[a-z0-9-]+\.png$/.test(value)) return true;
+  if(/^assets\/team-logos\/[a-z0-9-]+\.(?:png|svg|webp)$/.test(value)) return true;
   try {const url=new URL(value);return url.protocol==='https:' && url.hostname==='cdn-api.pandascore.co' && url.pathname.startsWith('/images/team/');}catch{return false;}
 }
 function validateSnapshot(data) {

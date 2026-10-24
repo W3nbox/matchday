@@ -1,5 +1,8 @@
 const {createHash} = require('node:crypto');
 const footballLogos = require('../data/football-logos.json');
+const esportsLogos = require('../data/esports-logos.json');
+// Exact game/name pairs avoid confusing academies or unrelated teams with the same initials.
+function teamLogo(sport,name) {return esportsLogos.find(e=>e.sport===sport && e.name===name)?.file||null;}
 class SourceError extends Error {constructor(code,message){super(message);this.code=code;}}
 function zonedTime(local, zone) {
   const parts = /^(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)(?::(\d\d))?$/.exec(local);
@@ -54,4 +57,4 @@ function lol(payload, sourceUrl) {
   }
   return records;
 }
-module.exports={SourceError,zonedTime,instant,football,lol};
+module.exports={SourceError,zonedTime,instant,football,lol,teamLogo};

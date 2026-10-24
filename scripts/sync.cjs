@@ -1,7 +1,7 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const {execFileSync} = require('node:child_process');
-const {SourceError,football,lol} = require('./parse.cjs');
+const {SourceError,football,lol,teamLogo} = require('./parse.cjs');
 function seasonAt(now) {
   const year=now.getUTCFullYear()-(now.getUTCMonth()<6?1:0);
   return `${year}-${String(year+1).slice(-2)}`;
@@ -48,7 +48,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
         })();
         const calendars=await calendarPromise;
         if(calendars[sport]?.error || !Array.isArray(calendars[sport]?.matches)) throw new SourceError('structure','Calendar parsing failed');
-        items=calendars[sport].matches;
+        items=calendars[sport].matches.map(m=>({...m,homeLogo:teamLogo(sport,m.home),awayLogo:teamLogo(sport,m.away)}));
       }
       if(new Set(items.map(m=>m.id)).size!==items.length) throw new SourceError('structure','Duplicate match ID');
       const selected=upcoming(items,now);
