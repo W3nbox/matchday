@@ -10,11 +10,12 @@ async function request(url, headers, fetcher) {
   if(!response.ok) throw new SourceError('http',`HTTP ${response.status}`);
   return {data:await response.json(),lastModified:response.headers?.get('last-modified')||null};
 }
-function upcoming(items, now, end) {
-  return items.filter(m=>!['已结束','取消'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() && Date.parse(m.start)<end.getTime() : !m.sourceDate || m.sourceDate>=now.toISOString().slice(0,10) && m.sourceDate<end.toISOString().slice(0,10)));
+function upcoming(items, now) {
+  const londonToday=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
+  return items.filter(m=>!['已结束','取消'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() : !m.sourceDate || m.sourceDate>=londonToday));
 }
 async function update(previous, fetcher=fetch, now=new Date()) {
-  const result=structuredClone(previous),end=new Date(now.getTime()+30*86400000);
+  const result=structuredClone(previous);
   let failures=0;
   for(const sport of ['football','lol']) {
     const old=result.sources[sport];
@@ -35,7 +36,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
 
       }
       if(new Set(items.map(m=>m.id)).size!==items.length) throw new SourceError('structure','Duplicate match ID');
-      const selected=upcoming(items,now,end);
+      const selected=upcoming(items,now);
       const finished=items.length>0 && items.every(m=>m.status==='已结束');
       result.sources[sport]={...old,name:sourceName,sport,sourceUrl,status:'ok',availability:finished?'offseason':selected.length?'scheduled':'empty',updatedAt:now.toISOString(),lastAttemptAt:now.toISOString(),upstreamLastModified:lastModified,upstreamGeneratedAt:sport==='lol'?lastModified:null,error:null,matches:selected};
     } catch(error) {

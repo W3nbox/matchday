@@ -54,8 +54,8 @@ test('no credentials, independent failures, valid empty and structural failure p
  const structure=await update(old,async()=>response({wrong:[]}),now);assert.equal(structure.snapshot.sources.lol.error,'structure');assert.deepEqual(structure.snapshot.sources.lol.matches,old.sources.lol.matches);
 });
 
-test('30-day window includes the next round and excludes later dates',()=>{
- const items=football(dataset([{...fm,date:'2026-11-21'},{...fm,team1:'Other',date:'2026-12-08'}]),url);
- const selected=upcoming(items,now,new Date(now.getTime()+30*86400000));
- assert.equal(selected.length,1);assert.equal(selected[0].sourceDate,'2026-11-21');
+test('all future fixtures retained, past/finished/cancelled excluded and TBD retained',()=>{
+ const items=football(dataset([{...fm,date:'2026-11-21'},{...fm,team1:'Other',date:'2027-05-30'},{...fm,team1:'Past',date:'2026-11-01'},{...fm,team1:'Unknown',date:undefined,time:undefined},{...fm,team1:'Finished',date:'2026-11-21',score:{ft:[1,0]}}]),url);
+ const selected=upcoming([...items,{...items[0],id:'cancelled',status:'取消'}],now);
+ assert.deepEqual(selected.map(m=>m.home),['Arsenal','Other','Unknown']);
 });
