@@ -1,0 +1,6 @@
+{
+  "sources": {
+    "football": {"name": "football-data.org · 英超", "status": "pending", "updatedAt": null, "matches": []},
+    "lol": {"name": "PandaScore · LOL", "status": "pending", "updatedAt": null, "matches": []}
+  }
+}

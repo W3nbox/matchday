@@ -1,30 +1,37 @@
 'use strict';
-// shortcut: 仅使用虚构赛程，确定合法数据源后替换本地数据。
-const matches = [
-  {id:'f1',sport:'football',league:'城市足球邀请赛',home:'北岸竞技',away:'南城联队',start:'2026-11-07T19:30:00+08:00'},
-  {id:'f2',sport:'football',league:'城市足球邀请赛',home:'海港之星',away:'山城青年',start:'2026-11-07T21:00:00+08:00'},
-  {id:'b1',sport:'basketball',league:'周末篮球挑战赛',home:'东城飞鹰',away:'西岸雷霆',start:'2026-11-08T09:00:00+08:00'},
-  {id:'b2',sport:'basketball',league:'周末篮球挑战赛',home:'极光篮球队',away:'烈焰篮球队',start:'2026-11-09T10:30:00+08:00'},
-  {id:'l1',sport:'lol',league:'英雄联盟 · 星河邀请赛',home:'NOVA 星辰',away:'ECHO 回响',start:'2026-11-07T18:00:00+08:00'},
-  {id:'l2',sport:'lol',league:'英雄联盟 · 星河邀请赛',home:'MIST 迷雾',away:'DAWN 黎明',start:'2026-11-08T19:00:00+08:00'},
-  {id:'c1',sport:'cs2',league:'CS2 · 巅峰挑战赛',home:'VECTOR 向量',away:'PULSE 脉冲',start:'2026-11-08T20:00:00+08:00'},
-  {id:'v1',sport:'valorant',league:'VALORANT · 新锐杯',home:'ORBIT 轨道',away:'SPARK 火花',start:'2026-11-09T17:00:00+08:00'},
-  {id:'d1',sport:'dota2',league:'DOTA 2 · 远征邀请赛',home:'TIDAL 潮汐',away:'SUMMIT 山巅',start:'2026-11-10T18:30:00+08:00'}
-];
-const sports = [
-  ['football','足球','⚽','sports'], ['basketball','篮球','◉','sports'],
-  ['lol','英雄联盟','L','esports'], ['cs2','CS2','⌖','esports'],
-  ['valorant','VALORANT','V','esports'], ['dota2','DOTA 2','D','esports']
-];
+let matches = [];
+let snapshot = null;
+let loadState = 'loading';
+const sports = [['football','足球','⚽','sports'], ['lol','英雄联盟','L','esports']];
+function beijingDate(value) {
+  return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
+}
+function validateSnapshot(data) {
+  if (!data || !data.sources) throw Error('Invalid snapshot');
+  const ids = new Set();
+  for (const sport of ['football','lol']) {
+    const source = data.sources[sport];
+    if (!source || typeof source.name !== 'string' || !['pending','ok','error'].includes(source.status)
+      || !(source.updatedAt === null || typeof source.updatedAt === 'string' && Number.isFinite(Date.parse(source.updatedAt)))
+      || !Array.isArray(source.matches)) throw Error('Invalid source');
+    for (const m of source.matches) {
+      if (m.sport !== sport || ![m.id,m.league,m.home,m.away,m.status].every(v => typeof v === 'string' && v.trim())
+        || !(m.start === null || typeof m.start === 'string' && /(?:Z|[+-]\d\d:\d\d)$/.test(m.start) && Number.isFinite(Date.parse(m.start)))
+        || ids.has(m.id)) throw Error('Invalid match');
+      ids.add(m.id);
+    }
+  }
+  return data;
+}
 function filterMatches(items, {page, category='all', search='', date='', favorites=[]}) {
   const allowed = sports.filter(s => page !== 'sports' && page !== 'esports' || s[3] === page).map(s => s[0]);
   const query = search.trim().toLocaleLowerCase();
   return items.filter(m => allowed.includes(m.sport)
     && (page !== 'favorites' || favorites.includes(m.id))
     && (category === 'all' || m.sport === category)
-    && (!date || m.start.slice(0,10) === date)
+    && (!date || m.start && beijingDate(m.start) === date)
     && `${m.home} ${m.away} ${m.league}`.toLocaleLowerCase().includes(query))
-    .sort((a,b) => Date.parse(a.start) - Date.parse(b.start));
+    .sort((a,b) => (a.start ? Date.parse(a.start) : Infinity) - (b.start ? Date.parse(b.start) : Infinity));
 }
 const page = document.body.dataset.page;
 const navigationToggle = document.querySelector('#navigation-toggle');
@@ -52,7 +59,7 @@ const storageKey = 'matchday.favorites.v1';
 let favorites = [];
 try {
   const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
-  if (Array.isArray(stored)) favorites = stored.filter(id => matches.some(m => m.id === id));
+  if (Array.isArray(stored)) favorites = stored.filter(id => typeof id === 'string');
 } catch {
   feedback.textContent = '无法读取本地收藏。你仍可浏览赛事并在本次会话中关注。';
 }
@@ -82,10 +89,11 @@ for (const [id, name, icon] of categoryItems) {
 function render() {
   const filtered = filterMatches(matches, {page, category, search:search.value, date:date.value, favorites});
   container.replaceChildren();
-  document.querySelector('#result-count').textContent = `找到 ${filtered.length} 场演示比赛 · 演示日期：2026.11.07—11.10`;
+  document.querySelector('#result-count').textContent = loadState === 'loading' ? '正在加载赛程…' : loadState === 'error' ? '赛程加载失败，请稍后重试。' : `找到 ${filtered.length} 场比赛`;
+  if (loadState !== 'ready') return;
   if (!filtered.length) {
     const empty = element('div','empty');
-    empty.append(element('p','',page === 'favorites' ? '还没有符合条件的关注赛事，或当前筛选没有结果。' : '没有符合条件的演示比赛，试试其他项目或日期。'));
+    empty.append(element('p','',page === 'favorites' ? '还没有符合条件的关注赛事，或当前筛选没有结果。' : '没有符合条件的赛程；尚未同步的数据源不代表没有比赛。'));
     const link = element('a','','浏览全部赛事 →');
     link.href = 'index.html';
     empty.append(link);
@@ -97,7 +105,7 @@ function render() {
     if (!group) {
       group = element('section','league');
       const heading = element('h3','',match.league);
-      heading.append(element('span','','演示 · 未开赛'));
+      heading.append(element('span','','北京时间'));
       group.append(heading);
       groups.set(match.league,group);
       container.append(group);
@@ -112,9 +120,12 @@ function render() {
     const names = element('div','team-names');
     names.append(element('span','',match.home), element('span','versus','VS'), element('span','',match.away));
     teams.append(homeBadge,awayBadge,names);
-    const time = element('time','',new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(match.start)));
-    time.dateTime = match.start;
-    time.append(element('small','',new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',weekday:'short'}).format(new Date(match.start))));
+    const time = element(match.start ? 'time' : 'div','match-time', match.start && match.status !== '时间待定' ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(match.start)) : '待定');
+    if (match.start) {
+      time.dateTime = match.start;
+      time.append(element('small','',new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',weekday:'short'}).format(new Date(match.start))));
+    }
+    time.append(element('small','',match.status));
     const star = element('button','star');
     star.type = 'button';
     const updateStar = () => {
@@ -155,8 +166,35 @@ window.addEventListener('storage', event => {
   if (event.key !== storageKey && event.key !== null) return;
   try {
     const stored = JSON.parse(event.newValue || '[]');
-    favorites = Array.isArray(stored) ? stored.filter(id => matches.some(m => m.id === id)) : [];
+    favorites = Array.isArray(stored) ? stored.filter(id => typeof id === 'string') : [];
     render();
   } catch { feedback.textContent = '其他页面的收藏数据无法读取，请刷新后重试。'; }
 });
 render();
+
+async function loadSchedule() {
+  loadState = 'loading';
+  render();
+  const status = document.querySelector('#sync-status');
+  status.textContent = '正在读取赛程数据…';
+  try {
+    const response = await fetch('data/schedule.json', {cache:'no-cache', signal:AbortSignal.timeout(15000)});
+    if (!response.ok) throw Error('Request failed');
+    const next = validateSnapshot(await response.json());
+    snapshot = next;
+    matches = Object.values(next.sources).flatMap(s => s.matches);
+    loadState = 'ready';
+    const relevant = Object.entries(next.sources).filter(([sport]) => page !== 'sports' && page !== 'esports' || sports.find(s => s[0] === sport)[3] === page);
+    status.textContent = relevant.map(([,s]) => {
+      const updated = s.updatedAt ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)) : '尚未成功同步';
+      const stale = s.updatedAt && Date.now() - Date.parse(s.updatedAt) > 6 * 3600000;
+      return `${s.name}：${updated}${s.status === 'error' ? ' · 同步失败，旧数据可能过期' : stale ? ' · 数据可能过期' : ''}`;
+    }).join('；');
+  } catch {
+    loadState = snapshot ? 'ready' : 'error';
+    status.textContent = snapshot ? '刷新失败，继续显示本页面上次加载的数据。' : '无法读取赛程。请检查网络后点击「重新加载」。';
+  }
+  render();
+}
+document.querySelector('#reload-schedule').addEventListener('click', loadSchedule);
+loadSchedule();

@@ -5,19 +5,23 @@ const path = require('node:path');
 const root = __dirname;
 const source = fs.readFileSync(path.join(root,'app.js'),'utf8');
 const definitions = source.slice(0,source.indexOf('const page = document'));
-const context = vm.createContext({});
-vm.runInContext(definitions,context);
+const fixture = {sources:{
+  football:{name:'football-data.org',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'football-data:1',sport:'football',league:'Premier League',home:'Arsenal',away:'Chelsea',start:'2026-11-07T20:00:00Z',status:'未开赛'}]},
+  lol:{name:'PandaScore',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'pandascore:2',sport:'lol',league:'Worlds',home:'NOVA',away:'ECHO',start:'2026-11-07T12:00:00Z',status:'未开赛'},{id:'pandascore:3',sport:'lol',league:'Worlds',home:'待定',away:'ECHO',start:null,status:'时间待定'}]}
+}};
+const context = vm.createContext({fixture,Intl});
+vm.runInContext(definitions + '; matches = Object.values(validateSnapshot(fixture).sources).flatMap(s=>s.matches);',context);
 function run(expression) { return vm.runInContext(expression,context); }
-assert.equal(run("filterMatches(matches,{page:'sports'}).length"),4);
-assert.equal(run("filterMatches(matches,{page:'esports'}).length"),5);
+assert.equal(run("filterMatches(matches,{page:'sports'}).length"),1);
+assert.equal(run("filterMatches(matches,{page:'esports'}).length"),2);
 assert.equal(run("filterMatches(matches,{page:'sports',category:'lol'}).length"),0);
 assert.equal(run("filterMatches(matches,{page:'index',search:' nova '}).length"),1);
-assert.equal(run("filterMatches(matches,{page:'index',date:'2026-11-08'}).length"),3);
-assert.equal(run("filterMatches(matches,{page:'favorites',favorites:['f1','c1']}).length"),2);
+assert.equal(run("filterMatches(matches,{page:'index',date:'2026-11-08'}).length"),1);
+assert.equal(run("filterMatches(matches,{page:'index',date:'2026-11-07'}).length"),1);
+assert.equal(run("filterMatches(matches,{page:'favorites',favorites:['football-data:1']}).length"),1);
 assert.equal(run("filterMatches(matches,{page:'favorites'}).length"),0);
-assert.equal(run("filterMatches(matches,{page:'index',search:'不存在'}).length"),0);
-assert.equal(run("new Set(matches.map(m=>m.id)).size === matches.length"),true);
-assert.equal(run("matches.every(m=>Number.isFinite(Date.parse(m.start)))"),true);
+assert.equal(run("filterMatches(matches,{page:'index'})[2].start"),null);
+assert.throws(()=>run("validateSnapshot({sources:{}})"));
 for (const file of ['index.html','sports.html','esports.html','favorites.html']) {
   const html = fs.readFileSync(path.join(root,file),'utf8');
   assert.equal((html.match(/<h1>/g)||[]).length,1);
@@ -42,18 +46,22 @@ class Element {
   querySelector(tag) { for(const child of this.children) { if(child.tag===tag) return child; const found=child.querySelector(tag); if(found) return found; } return null; }
   focus() { this.focused=true; }
 }
-const nodes = Object.fromEntries(['categories','matches','search','date','feedback','result-count','filters','navigation-toggle','navigation-panel'].map(id=>['#'+id,new Element()]));
+const nodes = Object.fromEntries(['categories','matches','search','date','feedback','result-count','filters','navigation-toggle','navigation-panel','sync-status','reload-schedule'].map(id=>['#'+id,new Element()]));
 nodes['#navigation-panel'].hidden = true;
 const documentEvents = {};
 const body = {dataset:{page:'index'}};
 const saved = new Map();
-const browser = vm.createContext({Intl,Date,Map,Set,document:{body,addEventListener:(key,handler)=>documentEvents[key]=handler,querySelector:s=>nodes[s],createElement:tag=>new Element(tag)},localStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value)},window:{addEventListener(){}}});
+let failFetch = false;
+const browser = vm.createContext({Intl,Date,Map,Set,AbortSignal,fetch:async()=>{if(failFetch) throw Error('network'); return {ok:true,json:async()=>fixture};},document:{body,addEventListener:(key,handler)=>documentEvents[key]=handler,querySelector:s=>nodes[s],createElement:tag=>new Element(tag)},localStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value)},window:{addEventListener(){}}});
+async function checkBrowser() {
 vm.runInContext(source,browser);
-assert.equal(nodes['#matches'].children.length,6);
+assert.match(nodes['#result-count'].textContent,/正在加载/);
+await new Promise(resolve=>setImmediate(resolve));
+assert.equal(nodes['#matches'].children.length,2);
 let star=nodes['#matches'].querySelector('button');
 star.events.click();
 assert.equal(star.attrs['aria-pressed'],'true');
-assert.deepEqual(JSON.parse(saved.get('matchday.favorites.v1')),['l1']);
+assert.deepEqual(JSON.parse(saved.get('matchday.favorites.v1')),['pandascore:2']);
 star.events.click();
 assert.deepEqual(JSON.parse(saved.get('matchday.favorites.v1')),[]);
 nodes['#search'].value='NOVA'; nodes['#search'].events.input();
@@ -61,7 +69,7 @@ assert.match(nodes['#result-count'].textContent,/1 场/);
 nodes['#search'].value='不存在'; nodes['#search'].events.input();
 assert.equal(nodes['#matches'].children[0].className,'empty');
 nodes['#filters'].events.reset();
-assert.match(nodes['#result-count'].textContent,/9 场/);
+assert.match(nodes['#result-count'].textContent,/3 场/);
 console.log('Passed: DOM rendering, favorite toggles and persistence, search events, empty state and reset.');
 
 const toggle = nodes['#navigation-toggle'];
@@ -85,3 +93,14 @@ toggle.events.click();
 assert.equal(panel.hidden,true);
 assert.equal(toggle.attrs['aria-expanded'],'false');
 console.log('Passed: empty side navigation, button open/close, aria state, Escape close and returned focus.');
+
+failFetch = true;
+await vm.runInContext('loadSchedule()',browser);
+assert.match(nodes['#sync-status'].textContent,/刷新失败/);
+assert.match(nodes['#result-count'].textContent,/3 场/);
+vm.runInContext('snapshot=null',browser);
+await vm.runInContext('loadSchedule()',browser);
+assert.match(nodes['#result-count'].textContent,/赛程加载失败/);
+console.log('Passed: async loading, refresh fallback, initial load failure, Beijing date boundary and undated matches.');
+}
+checkBrowser().catch(error=>{console.error(error);process.exitCode=1;});

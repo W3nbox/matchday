@@ -269,13 +269,13 @@ input{
   font-size:9px;
   letter-spacing:1px;
   font-weight:400}
-.match time{
+.match .match-time{
   text-align:right;
   line-height:1.5;
   font-weight:700;
   font-size:17px;
   font-variant-numeric:tabular-nums}
-.match time small{
+.match .match-time small{
   display:block;
   color:var(--muted);
   font-weight:400;
@@ -416,7 +416,7 @@ button:hover,.header nav a:hover{
   width:28px;
   height:33px;
   font-size:9px}
-.match time{
+.match .match-time{
   font-size:16px}
 .star{
   width:35px;
@@ -477,3 +477,5 @@ body[data-navigation-open=true] .navigation-rail{width:240px;}
   .page-links{flex-wrap:wrap;gap:12px;}
   .match .badge{display:none;}
 }
+
+.notice p{margin:6px 0}.notice{align-items:center}.notice>div{flex:1}.notice .reset{margin:10px 0}.match-time small{display:block}
