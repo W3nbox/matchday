@@ -1,6 +1,7 @@
 const {createHash} = require('node:crypto');
 const footballLogos = require('../data/football-logos.json');
 const esportsLogos = require('../data/esports-logos.json');
+const baseballLogos = require('../data/baseball-logos.json');
 // Exact game/name pairs avoid confusing academies or unrelated teams with the same initials.
 function teamLogo(sport,name) {return esportsLogos.find(e=>e.sport===sport && e.name===name)?.file||null;}
 class SourceError extends Error {constructor(code,message){super(message);this.code=code;}}
@@ -57,4 +58,30 @@ function lol(payload, sourceUrl) {
   }
   return records;
 }
-module.exports={SourceError,zonedTime,instant,football,lol,teamLogo};
+function baseball(rows, sourceUrl) {
+  const required=['game_pk','game_date','game_datetime','season','game_type','detailed_state','abstract_state','home_team_id','home_team_name','away_team_id','away_team_name'];
+  if(!Array.isArray(rows) || rows.some(r=>required.some(k=>typeof r[k]!=='string'))) throw new SourceError('structure','Invalid MLB CSV');
+  const stages={S:'春训赛',E:'表演赛',R:'常规赛',F:'外卡赛',D:'分区系列赛',L:'联盟冠军赛',W:'世界大赛'};
+  const items=rows.flatMap(r=>{
+    // MLB team IDs exclude college opponents, international clubs and All-Star teams.
+    const pending=side=>!r[side+'_team_id'] && ['', 'TBD'].includes(r[side+'_team_name'].trim());
+    if((!baseballLogos[r.home_team_id] && !pending('home')) || (!baseballLogos[r.away_team_id] && !pending('away'))) return [];
+    if(!/^\d+$/.test(r.game_pk) || !/^20\d{2}$/.test(r.season) || !/^\d{4}-\d\d-\d\d$/.test(r.game_date) || !Number.isFinite(Date.parse(r.game_date)) || new Date(r.game_date).toISOString().slice(0,10)!==r.game_date || !['Preview','Live','Final'].includes(r.abstract_state) || !stages[r.game_type]) throw new SourceError('structure','Invalid MLB match');
+    const finished=r.abstract_state==='Final' && !/Postponed|Suspended/i.test(r.detailed_state);
+    const cancelled=r.detailed_state==='Cancelled';
+    const postponed=/Postponed|Suspended/i.test(r.detailed_state);
+    // This CSV omits the original TBD flag. Preview times stay unknown unless explicitly confirmed.
+    const confirmed=r.start_time_tbd==='false' || ['Live','Final'].includes(r.abstract_state);
+    const start=confirmed && !postponed && r.game_datetime ? instant(r.game_datetime) : null;
+    return [{id:'mlb:'+r.game_pk,sport:'baseball',league:'MLB',stage:r.season+'赛季 · '+stages[r.game_type],season:r.season,home:r.home_team_name.trim()||'TBD',away:r.away_team_name.trim()||'TBD',homeLogo:baseballLogos[r.home_team_id]?.file||null,awayLogo:baseballLogos[r.away_team_id]?.file||null,start,sourceDate:r.game_date,status:cancelled?'取消':finished?'已结束':postponed?'延期':start?'未开赛':'时间待定',sourceUrl,timeZone:'UTC'}];
+  });
+  const unique=new Map();
+  for(const m of items) {
+    const prior=unique.get(m.id);
+    if(prior && (prior.home!==m.home || prior.away!==m.away || prior.season!==m.season || prior.sourceDate===m.sourceDate && JSON.stringify(prior)!==JSON.stringify(m))) throw new SourceError('structure','Conflicting MLB match copies');
+    // A postponed game can appear on its original and rescheduled date with the same ID.
+    if(!prior || m.sourceDate>prior.sourceDate) unique.set(m.id,m);
+  }
+  return [...unique.values()];
+}
+module.exports={SourceError,zonedTime,instant,football,lol,teamLogo,baseball};

@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {football,lol,update,seasonAt,upcoming}=require('./sync.cjs');
+const {football,lol,update:updateSources,seasonAt,upcoming}=require('./sync.cjs');
 const {zonedTime}=require('./parse.cjs');
 const now=new Date('2026-11-07T00:00:00Z');
 const url='https://example.com/schedule';
@@ -8,6 +8,11 @@ const fm={round:'Matchday 12',date:'2026-11-08',time:'20:00',team1:'Arsenal',tea
 const dataset=matches=>({name:'English Premier League 2026/27',matches});
 const lm={id:2,uid:'2@zlypher.github.io',leagueId:297,leagueName:'Worlds',summary:'Semifinals: A vs B',start:'2026-11-08T12:00:00Z',status:null,opponents:[{name:'A'},{name:'B'}]};
 const calendar=records=>({version:1,generatedAt:now.toISOString(),matches:Object.fromEntries(records.map(m=>[String(m.id),m]))});
+const mlbAsset='https://github.com/sportsdataverse/sportsdataverse-data/releases/download/mlb_schedules/mlb_schedule_2027.csv.gz';
+const bm={game_pk:'9001',game_date:'2027-04-03',game_datetime:'2027-04-03T23:05:00Z',season:'2027',game_type:'R',detailed_state:'Scheduled',abstract_state:'Preview',home_team_id:'147',home_team_name:'New York Yankees',away_team_id:'111',away_team_name:'Boston Red Sox'};
+const mlbCsv=()=>Object.keys(bm).join(',')+'\n'+Object.values(bm).join(',')+'\n';
+const baseballResponse=u=>String(u).includes('api.github.com/repos/sportsdataverse/')?{ok:true,json:async()=>({assets:[{name:'mlb_schedule_2027.csv.gz',browser_download_url:mlbAsset,updated_at:now.toISOString()}]})}:String(u)===mlbAsset?{ok:true,arrayBuffer:async()=>require('node:zlib').gzipSync(mlbCsv())}:null;
+const update=(previous,fetcher,at)=>updateSources(previous,async(u,o)=>baseballResponse(u)||fetcher(u,o),at);
 const initial={sources:{football:{name:'openfootball',sport:'football',status:'pending',updatedAt:null,matches:[]},lol:{name:'zlypher/lol-events',sport:'lol',status:'pending',updatedAt:null,matches:[]}}};
 test('London summer/winter, midnight and impossible DST times',()=>{
  assert.equal(zonedTime('2026-08-21 20:00','Europe/London'),'2026-08-21T19:00:00.000Z');
@@ -84,4 +89,31 @@ test('official esports crests use exact sport and name, valid local assets and d
  }
  assert.ok(teamLogo('cs2','G2'));assert.ok(teamLogo('valorant','CGN'));
  assert.equal(teamLogo('cs2','G2.A'),null);assert.equal(teamLogo('valorant','G2'),null);assert.equal(teamLogo('cs2','TBD'),null);
+});
+
+test('MLB stages, UTC boundary, exact logos, postponement identity and unknown time',()=>{
+ const {baseball}=require('./parse.cjs');
+ const a=baseball([{...bm,start_time_tbd:'false'}],url)[0];
+ assert.equal(a.start,'2027-04-03T23:05:00.000Z');assert.equal(a.homeLogo,'assets/team-logos/mlb-147.png');
+ assert.equal(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai'}).format(new Date(a.start)),'2027-04-04');
+ assert.equal(baseball([bm],url)[0].start,null);
+ assert.equal(baseball([{...bm,game_date:'2027-04-04',game_datetime:'2027-04-04T23:05:00Z'}],url)[0].id,a.id);
+ const tbd=baseball([{...bm,away_team_id:'',away_team_name:'TBD',game_type:'W'}],url)[0];assert.equal(tbd.away,'TBD');assert.equal(tbd.awayLogo,null);
+ assert.deepEqual(baseball([],url),[]);assert.deepEqual(baseball([{...bm,away_team_id:'999999'}],url),[]);
+ const moved=baseball([{...bm,detailed_state:'Postponed',abstract_state:'Final'},{...bm,game_date:'2027-04-04',start_time_tbd:'false'}],url);
+ assert.equal(moved.length,1);assert.equal(moved[0].sourceDate,'2027-04-04');assert.equal(moved[0].status,'未开赛');
+ assert.throws(()=>baseball([{...bm,start_time_tbd:'false',game_datetime:'2027-04-03 23:05'}],url));
+ assert.throws(()=>baseball([bm,{...bm,home_team_name:'Other'}],url));
+ for(const [type,stage] of Object.entries({S:'春训赛',R:'常规赛',W:'世界大赛'}))assert.ok(baseball([{...bm,game_type:type}],url)[0].stage.includes(stage));
+ const logos=require('../data/baseball-logos.json');assert.equal(Object.keys(logos).length,30);
+ for(const e of Object.values(logos))assert.equal(require('node:fs').readFileSync(require('node:path').join(__dirname,'..',e.file)).subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+});
+
+test('MLB failed fetch preserves data; valid empty is successful and all published future seasons load',async()=>{
+ const old=structuredClone(initial);old.sources.baseball={name:'MLB',status:'ok',updatedAt:now.toISOString(),matches:require('./parse.cjs').baseball([bm],url)};
+ const mock=async(u,o)=>{if(String(u).includes('api.github.com/repos/sportsdataverse/'))throw Error('offline');return baseballResponse(u)||{ok:true,json:async()=>String(u).includes('openfootball/')?dataset([]):calendar([]),arrayBuffer:async()=>require('node:fs').readFileSync(require('node:path').join(__dirname,'fixtures/calendars.zip'))};};
+ const failure=await updateSources(old,mock,now);assert.equal(failure.snapshot.sources.baseball.status,'error');assert.deepEqual(failure.snapshot.sources.baseball.matches,old.sources.baseball.matches);
+ const emptyCsv=Object.keys(bm).join(',')+'\n';const visited=[];
+ const fetcher=async(u,o)=>{visited.push(String(u));if(String(u).includes('api.github.com/repos/sportsdataverse/'))return {ok:true,json:async()=>({assets:[2027,2029].map(y=>({name:'mlb_schedule_'+y+'.csv.gz',browser_download_url:mlbAsset.replace('2027',y),updated_at:now.toISOString()}))})};if(String(u).includes('/mlb_schedules/'))return {ok:true,arrayBuffer:async()=>require('node:zlib').gzipSync(emptyCsv)};return mock(u,o);};
+ const result=await updateSources(old,fetcher,now);assert.equal(result.snapshot.sources.baseball.status,'ok');assert.deepEqual(result.snapshot.sources.baseball.matches,[]);assert.equal(result.snapshot.sources.baseball.availability,'empty');assert.ok(visited.some(u=>u.includes('2029.csv.gz')));
 });

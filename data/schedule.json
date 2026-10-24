@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:55:19.831Z",
+      "updatedAt": "2026-11-07T16:09:10.700Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,15 +4489,16 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T15:55:19.831Z",
+      "lastAttemptAt": "2026-11-07T16:09:10.700Z",
       "upstreamLastModified": null,
       "error": null,
-      "upstreamGeneratedAt": null
+      "upstreamGeneratedAt": null,
+      "coverageNote": null
     },
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:55:19.831Z",
+      "updatedAt": "2026-11-07T16:09:10.700Z",
       "matches": [
         {
           "id": "pandascore:1711019",
@@ -4544,18 +4545,19 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-07T15:55:19.831Z",
+      "lastAttemptAt": "2026-11-07T16:09:10.700Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-07T05:45:58.096Z",
-      "upstreamGeneratedAt": "2026-11-07T05:45:58.096Z"
+      "upstreamGeneratedAt": "2026-11-07T05:45:58.096Z",
+      "coverageNote": null
     },
     "cs2": {
       "name": "esport_ics · CS2",
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:55:19.831Z",
+      "updatedAt": "2026-11-07T16:09:10.700Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1789253@esport-ics",
@@ -5846,20 +5848,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1786711@esport-ics",
-          "sport": "cs2",
-          "league": "CCT South America - Series 8 2026 - Group Stage",
-          "stage": "Round 3",
-          "home": "underw0rld",
-          "away": "MIBR.F",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-07T16:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/mibr-fe.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1790209@esport-ics",
           "sport": "cs2",
           "league": "MČR - 2026 - Group A",
@@ -6267,17 +6255,18 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T15:55:19.831Z",
+      "lastAttemptAt": "2026-11-07T16:09:10.700Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
-      "error": null
+      "error": null,
+      "coverageNote": null
     },
     "valorant": {
       "name": "esport_ics · VALORANT",
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:55:19.831Z",
+      "updatedAt": "2026-11-07T16:09:10.700Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -6883,10 +6872,25 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T15:55:19.831Z",
+      "lastAttemptAt": "2026-11-07T16:09:10.700Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
-      "error": null
+      "error": null,
+      "coverageNote": null
+    },
+    "baseball": {
+      "name": "SportsDataverse · MLB（CC BY 4.0）",
+      "sport": "baseball",
+      "sourceUrl": "https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/mlb_schedules",
+      "status": "ok",
+      "updatedAt": "2026-11-07T16:09:10.700Z",
+      "matches": [],
+      "lastAttemptAt": "2026-11-07T16:09:10.700Z",
+      "error": null,
+      "availability": "empty",
+      "upstreamLastModified": "2026-10-29T12:35:19.000Z",
+      "upstreamGeneratedAt": "2026-10-29T12:35:19.000Z",
+      "coverageNote": "上游赛程已发布至 2026 赛季；仅展示来源中的未来比赛。"
     }
   }
 }

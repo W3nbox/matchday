@@ -1,0 +1,152 @@
+{
+  "109": {
+    "name": "Arizona Diamondbacks",
+    "file": "assets/team-logos/mlb-109.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/diamondbacks.png"
+  },
+  "144": {
+    "name": "Atlanta Braves",
+    "file": "assets/team-logos/mlb-144.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/braves.png"
+  },
+  "110": {
+    "name": "Baltimore Orioles",
+    "file": "assets/team-logos/mlb-110.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/orioles.png"
+  },
+  "111": {
+    "name": "Boston Red Sox",
+    "file": "assets/team-logos/mlb-111.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/redsox.png"
+  },
+  "112": {
+    "name": "Chicago Cubs",
+    "file": "assets/team-logos/mlb-112.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/cubs.png"
+  },
+  "145": {
+    "name": "Chicago White Sox",
+    "file": "assets/team-logos/mlb-145.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/whitesox.png"
+  },
+  "113": {
+    "name": "Cincinnati Reds",
+    "file": "assets/team-logos/mlb-113.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/reds.png"
+  },
+  "114": {
+    "name": "Cleveland Guardians",
+    "file": "assets/team-logos/mlb-114.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/guardians.png"
+  },
+  "115": {
+    "name": "Colorado Rockies",
+    "file": "assets/team-logos/mlb-115.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/rockies.png"
+  },
+  "116": {
+    "name": "Detroit Tigers",
+    "file": "assets/team-logos/mlb-116.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/tigers.png"
+  },
+  "117": {
+    "name": "Houston Astros",
+    "file": "assets/team-logos/mlb-117.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/astros.png"
+  },
+  "118": {
+    "name": "Kansas City Royals",
+    "file": "assets/team-logos/mlb-118.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/royals.png"
+  },
+  "108": {
+    "name": "Los Angeles Angels",
+    "file": "assets/team-logos/mlb-108.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/angels.png"
+  },
+  "119": {
+    "name": "Los Angeles Dodgers",
+    "file": "assets/team-logos/mlb-119.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/dodgers.png"
+  },
+  "146": {
+    "name": "Miami Marlins",
+    "file": "assets/team-logos/mlb-146.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/marlins.png"
+  },
+  "158": {
+    "name": "Milwaukee Brewers",
+    "file": "assets/team-logos/mlb-158.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/brewers.png"
+  },
+  "142": {
+    "name": "Minnesota Twins",
+    "file": "assets/team-logos/mlb-142.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/twins.png"
+  },
+  "121": {
+    "name": "New York Mets",
+    "file": "assets/team-logos/mlb-121.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/mets.png"
+  },
+  "147": {
+    "name": "New York Yankees",
+    "file": "assets/team-logos/mlb-147.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/yankees.png"
+  },
+  "133": {
+    "name": "Athletics",
+    "file": "assets/team-logos/mlb-133.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/athletics.png"
+  },
+  "143": {
+    "name": "Philadelphia Phillies",
+    "file": "assets/team-logos/mlb-143.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/phillies.png"
+  },
+  "134": {
+    "name": "Pittsburgh Pirates",
+    "file": "assets/team-logos/mlb-134.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/pirates.png"
+  },
+  "135": {
+    "name": "San Diego Padres",
+    "file": "assets/team-logos/mlb-135.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/padres.png"
+  },
+  "137": {
+    "name": "San Francisco Giants",
+    "file": "assets/team-logos/mlb-137.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/giants.png"
+  },
+  "136": {
+    "name": "Seattle Mariners",
+    "file": "assets/team-logos/mlb-136.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/mariners.png"
+  },
+  "138": {
+    "name": "St. Louis Cardinals",
+    "file": "assets/team-logos/mlb-138.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/cardinals.png"
+  },
+  "139": {
+    "name": "Tampa Bay Rays",
+    "file": "assets/team-logos/mlb-139.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/rays.png"
+  },
+  "140": {
+    "name": "Texas Rangers",
+    "file": "assets/team-logos/mlb-140.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/rangers.png"
+  },
+  "141": {
+    "name": "Toronto Blue Jays",
+    "file": "assets/team-logos/mlb-141.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/bluejays.png"
+  },
+  "120": {
+    "name": "Washington Nationals",
+    "file": "assets/team-logos/mlb-120.png",
+    "sourceUrl": "https://raw.githubusercontent.com/alexmarple/mlb-images/master/logos/nationals.png"
+  }
+}
