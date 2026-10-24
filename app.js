@@ -2,7 +2,7 @@
 let matches = [];
 let snapshot = null;
 let loadState = 'loading';
-const sports = [['football','足球','⚽','sports'], ['lol','英雄联盟','L','esports'], ['cs2','CS2','⌖','esports'], ['valorant','瓦洛兰特','V','esports']];
+const sports = [['football','足球','⚽','sports'], ['baseball','棒球 · MLB','⚾','sports'], ['lol','英雄联盟','L','esports'], ['cs2','CS2','⌖','esports'], ['valorant','瓦洛兰特','V','esports']];
 function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
@@ -17,7 +17,7 @@ function safeLogo(value) {
 function validateSnapshot(data) {
   if (!data || !data.sources) throw Error('Invalid snapshot');
   const ids = new Set();
-  for (const sport of ['football','lol','cs2','valorant']) {
+  for (const sport of ['football','lol','cs2','valorant','baseball']) {
     const source = data.sources[sport];
     if (!source || typeof source.name !== 'string' || !['pending','ok','error'].includes(source.status)
       || !(source.updatedAt === null || typeof source.updatedAt === 'string' && Number.isFinite(Date.parse(source.updatedAt)))
@@ -215,8 +215,8 @@ async function loadSchedule() {
       const stale=s.updatedAt && Date.now()-Date.parse(s.updatedAt)>6*3600000;
       const upstreamStale=s.upstreamGeneratedAt && Date.now()-Date.parse(s.upstreamGeneratedAt)>36*3600000;
       const generated=s.upstreamGeneratedAt?' · 上游生成 '+new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.upstreamGeneratedAt)):'';
-      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale||upstreamStale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 查询窗口内暂无赛程':'';
-      line.append(source,element('span','',`：最近成功检查 ${checked}${generated}${state}`));
+      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale||upstreamStale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 当前来源暂无未来赛程':'';
+      line.append(source,element('span','',`：最近成功检查 ${checked}${generated}${state}${s.coverageNote?' · '+s.coverageNote:''}`));
       status.append(line);
     }
   } catch {
