@@ -71,6 +71,13 @@ nodes['#search'].value='不存在'; nodes['#search'].events.input();
 assert.equal(nodes['#matches'].children[0].className,'empty');
 nodes['#filters'].events.reset();
 assert.match(nodes['#result-count'].textContent,/3 场/);
+const crest=vm.runInContext("teamBadge('Arsenal FC','assets/team-logos/arsenal.png')",browser);
+const img=crest.querySelector('img');assert.ok(img);assert.equal(img.alt,'');
+img.events.load();assert.equal(img.hidden,false);assert.equal(crest.children[0].hidden,true);
+img.events.error();assert.equal(img.hidden,true);assert.equal(crest.children[0].hidden,false);
+assert.equal(vm.runInContext("teamBadge('TBD','javascript:alert(1)').children.length",browser),1);
+assert.equal(vm.runInContext("safeLogo('https://untrusted.example/logo.png')",browser),false);
+console.log('Passed: crest loading, failed-image fallback and URL validation.');
 console.log('Passed: DOM rendering, favorite toggles and persistence, search events, empty state and reset.');
 
 const toggle = nodes['#navigation-toggle'];

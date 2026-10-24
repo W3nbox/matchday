@@ -59,3 +59,12 @@ test('all future fixtures retained, past/finished/cancelled excluded and TBD ret
  const selected=upcoming([...items,{...items[0],id:'cancelled',status:'取消'}],now);
  assert.deepEqual(selected.map(m=>m.home),['Arsenal','Other','Unknown']);
 });
+
+test('real logo mappings and LoL source images follow their teams',()=>{
+ const fs=require('node:fs'),path=require('node:path');
+ const logos=require('../data/football-logos.json');assert.equal(Object.keys(logos).length,20);
+ for(const file of Object.values(logos))assert.equal(fs.readFileSync(path.join(__dirname,'..',file)).subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+ const m=football(dataset([{...fm,team1:'Arsenal FC',team2:'Chelsea FC'}]),url)[0];assert.ok(m.homeLogo);assert.ok(m.awayLogo);
+ const e={...lm,opponents:[{name:'A',imageUrl:'https://cdn-api.pandascore.co/images/team/image/1/a.png'},{name:'B',imageUrl:'https://cdn-api.pandascore.co/images/team/image/2/b.png'}]};
+ const item=lol(calendar([e]),url)[0];assert.equal(item.homeLogo,e.opponents[0].imageUrl);assert.equal(item.awayLogo,e.opponents[1].imageUrl);
+});

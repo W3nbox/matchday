@@ -43,3 +43,6 @@ node scripts/sync.cjs
 - https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json
 
 蓝黑配色、四页导航、可伸缩空侧栏和键盘交互保留。课程知识说明只在交付文档或讲解，不添加到网站页面。
+
+## 队伍图标
+英超20支球队队徽来自 https://github.com/luukhopman/football-logos 的2026/27目录，按球队名人工核对映射并保存为本站PNG；来源清单见 data/football-logos.json。LOL使用 zlypher 公共快照 opponents.imageUrl，保留队伍与图标对应关系。队徽和商标权利归相关俱乐部及战队，未宣称开源代码许可等于商标授权。缺失或加载失败回退文字，TBD不显示虚构图标。

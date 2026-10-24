@@ -1,4 +1,5 @@
 const {createHash} = require('node:crypto');
+const footballLogos = require('../data/football-logos.json');
 class SourceError extends Error {constructor(code,message){super(message);this.code=code;}}
 function zonedTime(local, zone) {
   const parts = /^(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)(?::(\d\d))?$/.exec(local);
@@ -26,7 +27,7 @@ function football(payload, sourceUrl) {
     if (m.time != null && !/^([01]\d|2[0-3]):[0-5]\d$/.test(m.time)) throw new SourceError('structure','Invalid kickoff');
     const start = m.date && m.time ? zonedTime(`${m.date} ${m.time}`,'Europe/London') : null;
     const hash = createHash('sha256').update(`${season}|${m.team1}|${m.team2}`).digest('hex').slice(0,24);
-    return {id:`openfootball:${m.id ?? hash}`,sport:'football',league:'Premier League',stage:m.round,season,home:m.team1,away:m.team2,start,sourceDate:m.date||null,status:Array.isArray(m.score?.ft)?'已结束':start?'未开赛':'时间待定',sourceUrl,timeZone:'Europe/London'};
+    return {id:`openfootball:${m.id ?? hash}`,sport:'football',league:'Premier League',stage:m.round,season,home:m.team1,away:m.team2,homeLogo:footballLogos[m.team1]||null,awayLogo:footballLogos[m.team2]||null,start,sourceDate:m.date||null,status:Array.isArray(m.score?.ft)?'已结束':start?'未开赛':'时间待定',sourceUrl,timeZone:'Europe/London'};
   });
   if (new Set(records.map(m=>m.id)).size!==records.length) throw new SourceError('structure','Duplicate football match');
   return records;
@@ -49,7 +50,7 @@ function lol(payload, sourceUrl) {
     const home=m.opponents?.[0]?.name || description[2] || 'TBD';
     const away=m.opponents?.[1]?.name || description[3] || 'TBD';
     // Retain the underlying PandaScore match ID so existing saved matches survive the source change.
-    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:description[1]||'阶段待定',home,away,start,status:m.status==='CANCELLED'?'取消':start?'赛程预告':'时间待定',sourceUrl,timeZone:'UTC'});
+    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:description[1]||'阶段待定',home,away,homeLogo:m.opponents?.[0]?.imageUrl||null,awayLogo:m.opponents?.[1]?.imageUrl||null,start,status:m.status==='CANCELLED'?'取消':start?'赛程预告':'时间待定',sourceUrl,timeZone:'UTC'});
   }
   return records;
 }

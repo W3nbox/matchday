@@ -9,6 +9,11 @@ function beijingDate(value) {
 function safeSource(value) {
   try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com'].includes(url.hostname);} catch {return false;}
 }
+function safeLogo(value) {
+  if(typeof value!=='string') return false;
+  if(/^assets\/team-logos\/[a-z0-9-]+\.png$/.test(value)) return true;
+  try {const url=new URL(value);return url.protocol==='https:' && url.hostname==='cdn-api.pandascore.co' && url.pathname.startsWith('/images/team/');}catch{return false;}
+}
 function validateSnapshot(data) {
   if (!data || !data.sources) throw Error('Invalid snapshot');
   const ids = new Set();
@@ -73,6 +78,20 @@ function element(tag, className, text) {
   if (text !== undefined) node.textContent = text;
   return node;
 }
+function teamBadge(name, logo) {
+  const badge=element('span','badge');
+  badge.setAttribute('aria-hidden','true');
+  const fallback=element('span','badge-fallback',name==='TBD'?'?':name.slice(0,2).toUpperCase());
+  badge.append(fallback);
+  if(safeLogo(logo)) {
+    const img=element('img','team-logo');
+    img.alt='';img.width=32;img.height=32;img.loading='lazy';img.decoding='async';
+    img.addEventListener('load',()=>{img.hidden=false;img.className='team-logo is-loaded';fallback.hidden=true;});
+    img.addEventListener('error',()=>{img.hidden=true;fallback.hidden=false;});
+    img.src=logo;badge.append(img);
+  }
+  return badge;
+}
 const categoryItems = [['all','全部项目','↗'], ...sports.filter(s => page !== 'sports' && page !== 'esports' || s[3] === page)];
 for (const [id, name, icon] of categoryItems) {
   const button = element('button','category');
@@ -117,13 +136,11 @@ function render() {
     const row = element('article','match');
     row.setAttribute('aria-label', `${match.home} 对阵 ${match.away}`);
     const teams = element('div','teams');
-    const homeBadge = element('span','badge',match.home.slice(0,2).toUpperCase());
-    const awayBadge = element('span','badge away',match.away.slice(0,2).toUpperCase());
-    homeBadge.setAttribute('aria-hidden','true');
-    awayBadge.setAttribute('aria-hidden','true');
-    const names = element('div','team-names');
-    names.append(element('span','',match.home), element('span','versus','VS'), element('span','',match.away));
-    teams.append(homeBadge,awayBadge,names);
+    for(const [name,logo] of [[match.home,match.homeLogo],[match.away,match.awayLogo]]) {
+      const row=element('div','team-row');
+      row.append(teamBadge(name,logo),element('span','team-name',name));
+      teams.append(row);
+    }
     const time = element(match.start ? 'time' : 'div','match-time', match.start && match.status !== '时间待定' ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(match.start)) : '待定');
     if (match.start) {
       time.dateTime = match.start;
