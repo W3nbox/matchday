@@ -14,7 +14,7 @@ function upcoming(items, now, end) {
   return items.filter(m=>!['已结束','取消'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() && Date.parse(m.start)<end.getTime() : !m.sourceDate || m.sourceDate>=now.toISOString().slice(0,10) && m.sourceDate<end.toISOString().slice(0,10)));
 }
 async function update(previous, fetcher=fetch, now=new Date()) {
-  const result=structuredClone(previous),end=new Date(now.getTime()+7*86400000);
+  const result=structuredClone(previous),end=new Date(now.getTime()+30*86400000);
   let failures=0;
   for(const sport of ['football','lol']) {
     const old=result.sources[sport];

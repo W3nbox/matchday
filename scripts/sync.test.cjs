@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {football,lol,update,seasonAt}=require('./sync.cjs');
+const {football,lol,update,seasonAt,upcoming}=require('./sync.cjs');
 const {zonedTime}=require('./parse.cjs');
 const now=new Date('2026-11-07T00:00:00Z');
 const url='https://example.com/schedule';
@@ -52,4 +52,10 @@ test('no credentials, independent failures, valid empty and structural failure p
  const empty=await update(old,async u=>response(String(u).includes('zlypher')?calendar([]):dataset([])),now);
  assert.equal(empty.failures,0);assert.deepEqual(empty.snapshot.sources.lol.matches,[]);assert.equal(empty.snapshot.sources.lol.availability,'empty');
  const structure=await update(old,async()=>response({wrong:[]}),now);assert.equal(structure.snapshot.sources.lol.error,'structure');assert.deepEqual(structure.snapshot.sources.lol.matches,old.sources.lol.matches);
+});
+
+test('30-day window includes the next round and excludes later dates',()=>{
+ const items=football(dataset([{...fm,date:'2026-11-21'},{...fm,team1:'Other',date:'2026-12-08'}]),url);
+ const selected=upcoming(items,now,new Date(now.getTime()+30*86400000));
+ assert.equal(selected.length,1);assert.equal(selected[0].sourceDate,'2026-11-21');
 });
