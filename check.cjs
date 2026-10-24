@@ -9,7 +9,7 @@ const fixture = {sources:{
   football:{name:'football-data.org',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'football-data:1',sport:'football',league:'Premier League',home:'Arsenal',away:'Chelsea',start:'2026-11-07T20:00:00Z',status:'未开赛'}]},
   lol:{name:'PandaScore',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'pandascore:2',sport:'lol',league:'Worlds',home:'NOVA',away:'ECHO',start:'2026-11-07T12:00:00Z',status:'未开赛'},{id:'pandascore:3',sport:'lol',league:'Worlds',home:'待定',away:'ECHO',start:null,status:'时间待定'}]}
 }};
-for(const [sport,source] of Object.entries(fixture.sources)) {source.sourceUrl=sport==='football'?'https://github.com/openfootball/football.json':'https://www.pandascore.co/';for(const match of source.matches){match.stage='Stage 1';match.sourceUrl=source.sourceUrl;}}
+for(const [sport,source] of Object.entries(fixture.sources)) {source.sourceUrl=sport==='football'?'https://github.com/openfootball/football.json':'https://github.com/zlypher/lol-events';for(const match of source.matches){match.stage='Stage 1';match.sourceUrl=source.sourceUrl;}}
 const context = vm.createContext({fixture,Intl,URL});
 vm.runInContext(definitions + '; matches = Object.values(validateSnapshot(fixture).sources).flatMap(s=>s.matches);',context);
 function run(expression) { return vm.runInContext(expression,context); }

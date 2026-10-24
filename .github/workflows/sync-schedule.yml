@@ -22,8 +22,6 @@ jobs:
         id: fetch
         continue-on-error: true
         run: node scripts/sync.cjs
-        env:
-          PANDASCORE_TOKEN: ${{ secrets.PANDASCORE_TOKEN }}
       - name: Commit snapshot and sync status
         run: |
           if ! git diff --quiet -- data/schedule.json; then

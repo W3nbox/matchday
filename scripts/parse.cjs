@@ -32,18 +32,24 @@ function football(payload, sourceUrl) {
   return records;
 }
 function lol(payload, sourceUrl) {
-  if (!Array.isArray(payload)) throw new SourceError('structure','Invalid LoL response');
+  if(payload?.version!==1 || !payload.matches || typeof payload.matches!=='object' || Array.isArray(payload.matches)) throw new SourceError('structure','Invalid public LoL snapshot');
+  if(typeof payload.generatedAt!=='string') throw new SourceError('structure','Missing upstream generation time');
+  instant(payload.generatedAt);
   const records=[];
-  for(const m of payload) {
-    if (!m.league || typeof m.league.name!=='string') throw new SourceError('structure','Missing competition label');
-    let league;
-    if(m.league.name === 'LPL') league='LPL';
-    else if(m.league.name === 'World Championship' && m.league.slug === 'league-of-legends-world-championship') league='Worlds';
-    else continue;
-    if(!Number.isInteger(m.id) || !Number.isInteger(m.league.id) || (m.league_id!=null && m.league_id!==m.league.id) || (m.videogame?.slug && m.videogame.slug!=='league-of-legends')) throw new SourceError('structure','Invalid LoL match identity');
-    const status = {not_started:'未开赛',running:'进行中',finished:'已结束',postponed:'延期',canceled:'取消'}[m.status];
-    if(!status) throw new SourceError('structure','Unknown LoL match status');
-    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:m.tournament?.name||'阶段待定',season:m.serie?.full_name||'',home:m.opponents?.[0]?.opponent?.name||'TBD',away:m.opponents?.[1]?.opponent?.name||'TBD',start:instant(m.scheduled_at),status:m.scheduled_at?status:'时间待定',sourceUrl,timeZone:'UTC'});
+  for(const [key,m] of Object.entries(payload.matches)) {
+    if(!m || typeof m!=='object') throw new SourceError('structure','Invalid calendar record');
+    const league=({294:'LPL',297:'Worlds'})[m.leagueId];
+    if(!league) continue;
+    if(!Number.isInteger(m.id) || String(m.id)!==key || m.uid!==`${m.id}@zlypher.github.io` || typeof m.summary!=='string') throw new SourceError('structure','Invalid public match identity');
+    if(m.leagueName && !({LPL:['LPL'],Worlds:['Worlds','World Championship']})[league].includes(m.leagueName)) throw new SourceError('structure','League ID and name disagree');
+    const description=/^(?:(.+): )?(.+?) vs (.+)$/.exec(m.summary);
+    if(!description) throw new SourceError('structure','Unsupported match summary');
+    if(m.status!=null && !['CONFIRMED','TENTATIVE','CANCELLED'].includes(m.status)) throw new SourceError('structure','Unknown calendar status');
+    const start=instant(m.start);
+    const home=m.opponents?.[0]?.name || description[2] || 'TBD';
+    const away=m.opponents?.[1]?.name || description[3] || 'TBD';
+    // Retain the underlying PandaScore match ID so existing saved matches survive the source change.
+    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:description[1]||'阶段待定',home,away,start,status:m.status==='CANCELLED'?'取消':start?'赛程预告':'时间待定',sourceUrl,timeZone:'UTC'});
   }
   return records;
 }

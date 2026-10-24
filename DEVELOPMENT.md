@@ -66,3 +66,9 @@ GitHub 仓库 Settings → Pages → Deploy from a branch → main / (root)，�
 英超伦敦时间以官方赛程文章明确 UK time 的样例与社区数据交叉核对（如8月21日20:00）；冬季和夏令时边界另有测试。不会从缺失时间推测默认值。
 新增检查：严格赛事过滤（排除MSI/First Stand/LCK/LEC/LCP，队名无关）、阶段、TBD、带时区时间、伦敦DST、改期稳定编号、空列表与网络/结构失败回退、分页及密钥不入URL。前端继续检查北京跨日、收藏、导航和加载失败。
 本轮普通本地HTTP预览独立请求仍超时，未完成浏览器视觉检查；DOM检查通过。该限制不作为实时数据验证证据。
+
+## 2026-11-07：LOL 改用 zlypher/lol-events 公开 JSON
+按用户选择替换需要 Token 的直接 API。使用同仓库 data/matches.json（含generatedAt、逐场leagueId、summary与部分opponents），比只有摘要的分联赛日历JSON更适合验证赛事归属。普通请求实际返回200。
+仅收录leagueId 294/297并核对存在的leagueName。保留 pandascore:比赛ID 作为收藏标识，代表底层来源ID，非凭据或直接API调用。阶段缺失不推测。status=null 不当作实时状态，显示赛程预告；取消状态排除。end 可能是日历估算结束时间，不用于判定比赛已结束。
+删除所有工作流Secret依赖和直接认证请求；英超同步保留。新增公开schema、取消、摘要解析、逐条赛事校验、改期稳定ID、正常空列表、单来源失败回退检查。既有界面DOM检查通过。
+实际本地同步：英超窗口为空、LOL取得两场Worlds半决赛；Worlds决赛不在当时严格未来七天窗口内。LPL当前无未来数据。上游generatedAt为2026-11-07T05:45:58.096Z，不把检查时间冒充数据更新时间。未做本轮真实浏览器视觉复核。

@@ -7,7 +7,7 @@ function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
 function safeSource(value) {
-  try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com','api.pandascore.co','www.pandascore.co'].includes(url.hostname);} catch {return false;}
+  try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com'].includes(url.hostname);} catch {return false;}
 }
 function validateSnapshot(data) {
   if (!data || !data.sources) throw Error('Invalid snapshot');
@@ -196,8 +196,10 @@ async function loadSchedule() {
       if (safeSource(s.sourceUrl)) {source.href=s.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';}
       const checked=s.updatedAt?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)):'尚未成功同步';
       const stale=s.updatedAt && Date.now()-Date.parse(s.updatedAt)>6*3600000;
-      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 查询窗口内暂无赛程':'';
-      line.append(source,element('span','',`：最近成功检查 ${checked}${state}`));
+      const upstreamStale=s.upstreamGeneratedAt && Date.now()-Date.parse(s.upstreamGeneratedAt)>36*3600000;
+      const generated=s.upstreamGeneratedAt?' · 上游生成 '+new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.upstreamGeneratedAt)):'';
+      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale||upstreamStale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 查询窗口内暂无赛程':'';
+      line.append(source,element('span','',`：最近成功检查 ${checked}${generated}${state}`));
       status.append(line);
     }
   } catch {

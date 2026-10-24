@@ -6,8 +6,9 @@ const now=new Date('2026-11-07T00:00:00Z');
 const url='https://example.com/schedule';
 const fm={round:'Matchday 12',date:'2026-11-08',time:'20:00',team1:'Arsenal',team2:'Chelsea'};
 const dataset=matches=>({name:'English Premier League 2026/27',matches});
-const lm={id:2,league:{id:297,name:'World Championship',slug:'league-of-legends-world-championship'},status:'not_started',tournament:{name:'Semifinals'},opponents:[{opponent:{name:'A'}},{opponent:{name:'B'}}],scheduled_at:'2026-11-08T12:00:00Z'};
-const initial={sources:{football:{name:'openfootball',sport:'football',status:'pending',updatedAt:null,matches:[]},lol:{name:'PandaScore',sport:'lol',status:'pending',updatedAt:null,matches:[]}}};
+const lm={id:2,uid:'2@zlypher.github.io',leagueId:297,leagueName:'Worlds',summary:'Semifinals: A vs B',start:'2026-11-08T12:00:00Z',status:null,opponents:[{name:'A'},{name:'B'}]};
+const calendar=records=>({version:1,generatedAt:now.toISOString(),matches:Object.fromEntries(records.map(m=>[String(m.id),m]))});
+const initial={sources:{football:{name:'openfootball',sport:'football',status:'pending',updatedAt:null,matches:[]},lol:{name:'zlypher/lol-events',sport:'lol',status:'pending',updatedAt:null,matches:[]}}};
 test('London summer/winter, midnight and impossible DST times',()=>{
  assert.equal(zonedTime('2026-08-21 20:00','Europe/London'),'2026-08-21T19:00:00.000Z');
  assert.equal(zonedTime('2026-11-08 20:00','Europe/London'),'2026-11-08T20:00:00.000Z');
@@ -25,39 +26,30 @@ test('football rescheduling keeps identity; unknown time is not guessed',()=>{
  assert.throws(()=>football(dataset([{...fm,date:'2026-02-30'}]),url));
  assert.throws(()=>football({name:'Championship',matches:[]},url));
 });
-test('strict league membership excludes other tournaments even with LPL teams',()=>{
- const other=['MSI','First Stand','LCK','LEC','LCP'].map((name,i)=>({...lm,id:20+i,league:{id:10+i,name,slug:name},opponents:[{opponent:{name:'BLG'}}]}));
- const records=lol([lm,{...lm,id:3,league:{id:294,name:'LPL',slug:'league-of-legends-lpl'}},...other],url);
- assert.deepEqual(records.map(m=>m.league),['Worlds','LPL']);
- assert.equal(records[0].stage,'Semifinals');
- assert.equal(lol([{...lm,opponents:[],scheduled_at:null}],url)[0].home,'TBD');
- assert.equal(lol([{...lm,scheduled_at:null}],url)[0].start,null);
- assert.equal(lol([{...lm,scheduled_at:'2026-11-09T10:00:00Z'}],url)[0].id,records[0].id);
- assert.throws(()=>lol([{...lm,scheduled_at:'2026-11-09 10:00'}],url));
+test('public snapshot validates league IDs, stages, stable IDs and timezone',()=>{
+ const other=['MSI','First Stand','LCK','LEC','LCP'].map((name,i)=>({...lm,id:20+i,uid:`${20+i}@zlypher.github.io`,leagueId:100+i,leagueName:name,summary:'BLG vs T1'}));
+ const records=lol(calendar([lm,{...lm,id:3,uid:'3@zlypher.github.io',leagueId:294,leagueName:'LPL'},...other]),url);
+ assert.deepEqual(records.map(m=>m.league),['Worlds','LPL']);assert.equal(records[0].stage,'Semifinals');
+ const tbd=lol(calendar([{...lm,opponents:[],summary:'TBD vs TBD',start:null}]),url)[0];
+ assert.equal(tbd.home,'TBD');assert.equal(tbd.start,null);assert.equal(tbd.stage,'阶段待定');
+ assert.equal(lol(calendar([{...lm,start:'2026-11-09T10:00:00Z'}]),url)[0].id,'pandascore:2');
+ assert.equal(lol(calendar([{...lm,status:'CANCELLED'}]),url)[0].status,'取消');
+ assert.throws(()=>lol(calendar([{...lm,leagueName:'MSI'}]),url));
+ assert.throws(()=>lol(calendar([{...lm,start:'2026-11-08 12:00'}]),url));
+ assert.throws(()=>lol({wrong:[]},url));
+ assert.deepEqual(lol(calendar([]),url),[]);
 });
-test('pagination, source isolation, valid empty and failure preserves old data',async()=>{
- const old=structuredClone(initial);old.sources.lol.matches=lol([lm],url);old.sources.lol.updatedAt=now.toISOString();
- const result=await update(old,{},async()=>({ok:true,json:async()=>dataset([fm])}),now);
- assert.equal(result.failures,1);
- assert.deepEqual(result.snapshot.sources.lol.matches,old.sources.lol.matches);
- assert.equal(result.snapshot.sources.lol.updatedAt,old.sources.lol.updatedAt);
- assert.equal(result.snapshot.sources.football.status,'ok');
- const empty=await update(old,{PANDASCORE_TOKEN:'test'},async(u,options)=>{
-  assert.ok(options.signal);
-  if(String(u).includes('raw.githubusercontent'))return {ok:true,json:async()=>dataset([])};
-  assert.equal(options.headers.Authorization,'Bearer test');
-  assert.ok(!String(u).includes('token='));
-  return {ok:true,json:async()=>[]};
- },now);
- assert.equal(empty.failures,0);assert.deepEqual(empty.snapshot.sources.lol.matches,[]);assert.equal(empty.snapshot.sources.football.availability,'empty');
- let pages=0;
- const paged=await update(initial,{PANDASCORE_TOKEN:'test'},async(u)=>{
-  if(String(u).includes('raw.githubusercontent'))return {ok:true,json:async()=>dataset([])};
-  pages++;return {ok:true,json:async()=>pages===1?Array.from({length:100},(_,i)=>({...lm,id:100+i})):[]};
- },now);
- assert.equal(pages,2);assert.equal(paged.snapshot.sources.lol.matches.length,100);
- const failed=await update(old,{PANDASCORE_TOKEN:'test'},async()=>{throw Error('network');},now);
- assert.equal(failed.failures,2);assert.deepEqual(failed.snapshot.sources.lol.matches,old.sources.lol.matches);
- const changed=await update(old,{},async()=>({ok:true,json:async()=>({wrong:[]})}),now);
- assert.equal(changed.snapshot.sources.football.error,'structure');
+test('no credentials, independent failures, valid empty and structural failure preserve data',async()=>{
+ const old=structuredClone(initial);old.sources.lol.matches=lol(calendar([lm]),url);old.sources.lol.updatedAt=now.toISOString();
+ const response=data=>({ok:true,json:async()=>data});
+ const fetcher=async(u,options)=>{
+  assert.deepEqual(options.headers,{});assert.ok(options.signal);assert.ok(!String(u).includes('token='));
+  return response(String(u).includes('openfootball/')?dataset([fm]):calendar([lm]));
+ };
+ const success=await update(old,fetcher,now);assert.equal(success.failures,0);assert.equal(success.snapshot.sources.lol.matches.length,1);assert.equal(success.snapshot.sources.lol.upstreamGeneratedAt,now.toISOString());
+ const failed=await update(old,async u=>{if(String(u).includes('zlypher'))throw Error('network');return response(dataset([fm]));},now);
+ assert.equal(failed.failures,1);assert.deepEqual(failed.snapshot.sources.lol.matches,old.sources.lol.matches);assert.equal(failed.snapshot.sources.lol.updatedAt,old.sources.lol.updatedAt);assert.equal(failed.snapshot.sources.football.status,'ok');
+ const empty=await update(old,async u=>response(String(u).includes('zlypher')?calendar([]):dataset([])),now);
+ assert.equal(empty.failures,0);assert.deepEqual(empty.snapshot.sources.lol.matches,[]);assert.equal(empty.snapshot.sources.lol.availability,'empty');
+ const structure=await update(old,async()=>response({wrong:[]}),now);assert.equal(structure.snapshot.sources.lol.error,'structure');assert.deepEqual(structure.snapshot.sources.lol.matches,old.sources.lol.matches);
 });

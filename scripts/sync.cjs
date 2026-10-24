@@ -13,7 +13,7 @@ async function request(url, headers, fetcher) {
 function upcoming(items, now, end) {
   return items.filter(m=>!['已结束','取消'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() && Date.parse(m.start)<end.getTime() : !m.sourceDate || m.sourceDate>=now.toISOString().slice(0,10) && m.sourceDate<end.toISOString().slice(0,10)));
 }
-async function update(previous, env, fetcher=fetch, now=new Date()) {
+async function update(previous, fetcher=fetch, now=new Date()) {
   const result=structuredClone(previous),end=new Date(now.getTime()+7*86400000);
   let failures=0;
   for(const sport of ['football','lol']) {
@@ -27,24 +27,17 @@ async function update(previous, env, fetcher=fetch, now=new Date()) {
         lastModified=response.lastModified;
         sourceName='openfootball · 英超（社区数据）';
       } else {
-        if(!env.PANDASCORE_TOKEN) throw new SourceError('configuration','PandaScore token not configured');
-        sourceUrl='https://api.pandascore.co/lol/matches/upcoming';
-        sourceName='PandaScore · LPL / Worlds';
-        items=[];
-        // Read every upcoming page so undated matches are not silently excluded by a time-range filter.
-        for(let page=1;;page++) {
-          if(page>100) throw new SourceError('pagination','Pagination limit reached');
-          const url=new URL(sourceUrl);
-          url.searchParams.set('per_page','100');url.searchParams.set('page',String(page));
-          const {data}=await request(url,{Authorization:`Bearer ${env.PANDASCORE_TOKEN}`},fetcher);
-          items.push(...lol(data,sourceUrl));
-          if(data.length<100) break;
-        }
+        sourceUrl='https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json';
+        sourceName='zlypher/lol-events · LPL / Worlds';
+        const response=await request(sourceUrl,{},fetcher);
+        items=lol(response.data,sourceUrl);
+        lastModified=response.data.generatedAt;
+
       }
       if(new Set(items.map(m=>m.id)).size!==items.length) throw new SourceError('structure','Duplicate match ID');
       const selected=upcoming(items,now,end);
       const finished=items.length>0 && items.every(m=>m.status==='已结束');
-      result.sources[sport]={...old,name:sourceName,sport,sourceUrl,status:'ok',availability:finished?'offseason':selected.length?'scheduled':'empty',updatedAt:now.toISOString(),lastAttemptAt:now.toISOString(),upstreamLastModified:lastModified,error:null,matches:selected};
+      result.sources[sport]={...old,name:sourceName,sport,sourceUrl,status:'ok',availability:finished?'offseason':selected.length?'scheduled':'empty',updatedAt:now.toISOString(),lastAttemptAt:now.toISOString(),upstreamLastModified:lastModified,upstreamGeneratedAt:sport==='lol'?lastModified:null,error:null,matches:selected};
     } catch(error) {
       failures++;
       result.sources[sport]={...old,sport,status:'error',lastAttemptAt:now.toISOString(),error:error.code||'fetch'};
@@ -57,7 +50,7 @@ if(require.main===module) {
   (async()=>{
     const file=path.join(__dirname,'../data/schedule.json');
     const previous=JSON.parse(await fs.readFile(file,'utf8'));
-    const {snapshot,failures}=await update(previous,process.env);
+    const {snapshot,failures}=await update(previous);
     const text=JSON.stringify(snapshot,null,2)+'\n';
     if(text!==await fs.readFile(file,'utf8')){await fs.writeFile(file+'.tmp',text);await fs.rename(file+'.tmp',file);}
     if(failures)process.exitCode=1;
