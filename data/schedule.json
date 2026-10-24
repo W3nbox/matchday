@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:25:02.883Z",
+      "updatedAt": "2026-11-07T15:25:25.507Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -3929,7 +3929,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-07T15:25:02.883Z",
+      "lastAttemptAt": "2026-11-07T15:25:25.507Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null
@@ -3937,7 +3937,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-07T15:25:02.883Z",
+      "updatedAt": "2026-11-07T15:25:25.507Z",
       "matches": [
         {
           "id": "pandascore:1711019",
@@ -3978,7 +3978,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-07T15:25:02.883Z",
+      "lastAttemptAt": "2026-11-07T15:25:25.507Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-07T05:45:58.096Z",
