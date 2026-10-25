@@ -122,3 +122,6 @@ assert.equal(vm.runInContext("safeLogo('assets/team-logos/../evil.svg')",browser
 
 assert.equal(run("sports.filter(s=>s[3]==='sports').length"),2);
 assert.equal(run("filterMatches([{...matches[0],sport:'baseball'}],{page:'sports',category:'baseball'}).length"),1);
+
+assert.equal(run("safeSource('https://www.mlb.com/gameday/9001')"),true);
+assert.equal(run("safeSource('https://www.mlb.com.evil.example/gameday/9001')"),false);

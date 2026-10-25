@@ -8,10 +8,10 @@ const fm={round:'Matchday 12',date:'2026-11-08',time:'20:00',team1:'Arsenal',tea
 const dataset=matches=>({name:'English Premier League 2026/27',matches});
 const lm={id:2,uid:'2@zlypher.github.io',leagueId:297,leagueName:'Worlds',summary:'Semifinals: A vs B',start:'2026-11-08T12:00:00Z',status:null,opponents:[{name:'A'},{name:'B'}]};
 const calendar=records=>({version:1,generatedAt:now.toISOString(),matches:Object.fromEntries(records.map(m=>[String(m.id),m]))});
-const mlbAsset='https://github.com/sportsdataverse/sportsdataverse-data/releases/download/mlb_schedules/mlb_schedule_2027.csv.gz';
 const bm={game_pk:'9001',game_date:'2027-04-03',game_datetime:'2027-04-03T23:05:00Z',season:'2027',game_type:'R',detailed_state:'Scheduled',abstract_state:'Preview',home_team_id:'147',home_team_name:'New York Yankees',away_team_id:'111',away_team_name:'Boston Red Sox'};
-const mlbCsv=()=>Object.keys(bm).join(',')+'\n'+Object.values(bm).join(',')+'\n';
-const baseballResponse=u=>String(u).includes('api.github.com/repos/sportsdataverse/')?{ok:true,json:async()=>({assets:[{name:'mlb_schedule_2027.csv.gz',browser_download_url:mlbAsset,updated_at:now.toISOString()}]})}:String(u)===mlbAsset?{ok:true,arrayBuffer:async()=>require('node:zlib').gzipSync(mlbCsv())}:null;
+const mg={gamePk:9001,gameType:'R',season:'2027',gameDate:bm.game_datetime,officialDate:bm.game_date,status:{detailedState:'Scheduled',abstractGameState:'Preview',startTimeTBD:false},teams:{home:{team:{id:147,name:bm.home_team_name}},away:{team:{id:111,name:bm.away_team_name}}}};
+const mlbPayload=games=>({totalGames:games.length,dates:games.length?[{date:'2027-04-03',games}]:[]});
+const baseballResponse=u=>String(u).includes('statsapi.mlb.com')?{ok:true,json:async()=>String(u).includes('/seasons/all')?{seasons:[{seasonId:'2027'}]}:mlbPayload([mg])}:null;
 const update=(previous,fetcher,at)=>updateSources(previous,async(u,o)=>baseballResponse(u)||fetcher(u,o),at);
 const initial={sources:{football:{name:'openfootball',sport:'football',status:'pending',updatedAt:null,matches:[]},lol:{name:'zlypher/lol-events',sport:'lol',status:'pending',updatedAt:null,matches:[]}}};
 test('London summer/winter, midnight and impossible DST times',()=>{
@@ -109,11 +109,22 @@ test('MLB stages, UTC boundary, exact logos, postponement identity and unknown t
  for(const e of Object.values(logos))assert.equal(require('node:fs').readFileSync(require('node:path').join(__dirname,'..',e.file)).subarray(0,8).toString('hex'),'89504e470d0a1a0a');
 });
 
-test('MLB failed fetch preserves data; valid empty is successful and all published future seasons load',async()=>{
+test('official MLB adapter confirms times, preserves identity, rejects broken payloads and accepts empty',()=>{
+ const {mlb}=require('./parse.cjs');
+ const a=mlb(mlbPayload([mg]))[0];assert.equal(a.id,'mlb:9001');assert.equal(a.start,'2027-04-03T23:05:00.000Z');assert.equal(a.sourceUrl,'https://www.mlb.com/gameday/9001');
+ assert.equal(mlb(mlbPayload([{...mg,status:{...mg.status,startTimeTBD:true}}]))[0].start,null);
+ assert.equal(mlb(mlbPayload([{...mg,status:{...mg.status,startTimeTBD:undefined}}]))[0].start,null);
+ assert.equal(mlb(mlbPayload([{...mg,gameDate:'2027-04-05T20:00:00Z',officialDate:'2027-04-05'}]))[0].id,a.id);
+ assert.deepEqual(mlb(mlbPayload([])),[]);assert.throws(()=>mlb({totalGames:1,dates:[]}));assert.throws(()=>mlb(mlbPayload([{...mg,teams:null}])));
+});
+test('MLB failure retains snapshot, normal empty succeeds and all published future seasons load',async()=>{
  const old=structuredClone(initial);old.sources.baseball={name:'MLB',status:'ok',updatedAt:now.toISOString(),matches:require('./parse.cjs').baseball([bm],url)};
- const mock=async(u,o)=>{if(String(u).includes('api.github.com/repos/sportsdataverse/'))throw Error('offline');return baseballResponse(u)||{ok:true,json:async()=>String(u).includes('openfootball/')?dataset([]):calendar([]),arrayBuffer:async()=>require('node:fs').readFileSync(require('node:path').join(__dirname,'fixtures/calendars.zip'))};};
- const failure=await updateSources(old,mock,now);assert.equal(failure.snapshot.sources.baseball.status,'error');assert.deepEqual(failure.snapshot.sources.baseball.matches,old.sources.baseball.matches);
- const emptyCsv=Object.keys(bm).join(',')+'\n';const visited=[];
- const fetcher=async(u,o)=>{visited.push(String(u));if(String(u).includes('api.github.com/repos/sportsdataverse/'))return {ok:true,json:async()=>({assets:[2027,2029].map(y=>({name:'mlb_schedule_'+y+'.csv.gz',browser_download_url:mlbAsset.replace('2027',y),updated_at:now.toISOString()}))})};if(String(u).includes('/mlb_schedules/'))return {ok:true,arrayBuffer:async()=>require('node:zlib').gzipSync(emptyCsv)};return mock(u,o);};
- const result=await updateSources(old,fetcher,now);assert.equal(result.snapshot.sources.baseball.status,'ok');assert.deepEqual(result.snapshot.sources.baseball.matches,[]);assert.equal(result.snapshot.sources.baseball.availability,'empty');assert.ok(visited.some(u=>u.includes('2029.csv.gz')));
+ const other=async u=>({ok:true,json:async()=>String(u).includes('openfootball/')?dataset([]):calendar([]),arrayBuffer:async()=>require('node:fs').readFileSync(require('node:path').join(__dirname,'fixtures/calendars.zip'))});
+ const fail=await updateSources(old,async u=>{if(String(u).includes('statsapi.mlb.com'))throw Error('offline');return other(u);},now);
+ assert.equal(fail.snapshot.sources.baseball.status,'error');assert.deepEqual(fail.snapshot.sources.baseball.matches,old.sources.baseball.matches);
+ const visited=[];
+ const result=await updateSources(old,async u=>{visited.push(String(u));if(String(u).includes('statsapi.mlb.com'))return {ok:true,json:async()=>String(u).includes('/seasons/all')?{seasons:[{seasonId:'2027'},{seasonId:'2029'}]}:mlbPayload([])};return other(u);},now);
+ assert.equal(result.snapshot.sources.baseball.status,'ok');assert.equal(result.snapshot.sources.baseball.availability,'empty');assert.deepEqual(result.snapshot.sources.baseball.matches,[]);assert.ok(visited.some(u=>u.includes('season=2029')));
+ const broken=await updateSources(old,async u=>String(u).includes('statsapi.mlb.com')?{ok:true,json:async()=>({seasons:[]})}:other(u),now);
+ assert.equal(broken.snapshot.sources.baseball.status,'error');assert.deepEqual(broken.snapshot.sources.baseball.matches,old.sources.baseball.matches);
 });

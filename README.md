@@ -57,9 +57,11 @@ node scripts/sync.cjs
 CS2/瓦洛兰特队徽：按游戏与准确队名匹配，官方页面、图片地址及核对日期记录在 data/esports-logos.json。已确认12支CS2、6支瓦洛兰特队伍；HooK官网赛程栏提供的对手图标也逐一按显示名称核对。保存本站原始PNG/WebP/SVG，沿用失败文字回退。100 Thieves内嵌SVG设置官网深色背景使用的白色继承色，NIP、FaZe与BIG黑色标志增加浅底，不重绘标志。不同分队、未知缩写与TBD不模糊匹配，不借用主队图标。后续同步会自动应用相同映射；未确认的其他队伍保留文字。队徽与商标权仍属相应权利人。
 
 ## 棒球（MLB）
-通过 https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/mlb_schedules 读取公开发布的 CSV.gz；仓库 README 标注数据为 CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）。MATCHDAY 仅选取MLB球队比赛、翻译阶段、按稳定game_pk去重并转为本站格式，保留来源与发布资产更新时间。未访问需要密钥的服务。
-每两小时读取发布资产清单，收录当前及以后所有已发布赛季，不设未来日期截止；如当前赛季也尚未发布，则检查最近一个已发布赛季并明确显示覆盖范围。任一下载、列结构、日期或重复冲突失败保留上次MLB数据；表头正确但无记录作为正常空结果。
-本次实际读取2026年表：2951条MLB队伍对阵，延期前后记录按同一game_pk取较新的比赛日期，得到2921场；没有未来比赛。该来源目前没有2027年文件，不代表MLB官方尚未公布2027赛程。页面显示来源只覆盖至2026赛季，不虚构未来记录。
-CSV未完整保留原始startTimeTBD字段，Preview时间一律待定，除非未来上游明确增加start_time_tbd=false字段。确认的时间必须有UTC/时区；页面日期仍用Asia/Shanghai。仅有官方比赛日期时，保守保留至该日期结束后至少24小时，避免因美国球场时区未提供而提前移除；日期筛选不会猜测其北京时间。已结束及取消记录不展示。
-30支MLB真实队徽保存为本地PNG，来自 https://github.com/alexmarple/mlb-images 的logos目录，球队ID/名称对照参考 https://github.com/camdenk/mlbplotR/blob/main/data-raw/MLB_Colors_Logos.csv ，明细见data/baseball-logos.json。图标按球队ID匹配，加载失败或TBD回退文字。队徽与商标仍属各球队；没有将项目代码许可解释为商标授权。
-已检查MLB官方公开Stats数据实际HTTP返回与其附带条款 https://gdx.mlb.com/components/copyright.txt ，其中限制批量使用；https://www.mlb.com/official-information/terms-of-use 也限制自动采集。因此未把该官方端点接入自动任务。Stats站robots返回404，www.mlb.com/robots.txt返回403，未尝试绕过。
+使用 MLB 公开 Stats 接口（https://statsapi.mlb.com），无需账号、Token 或额外服务器。获取方式参考 https://github.com/toddrob99/MLB-StatsAPI 所封装的公开接口；本项目直接用现有Node fetch，不复制该GPL库或引入新依赖。
+每两小时请求 /api/v1/seasons/all?sportId=1 获取官方发布的赛季清单，再按赛季请求 /api/v1/schedule?sportId=1&season=...。只请求必要字段，收录当前及以后全部已发布赛季，不设置7天、30天等日期上限。任一赛季请求或结构校验失败，整份MLB快照保留上次成功内容，不发布部分新赛季。正常空dates与抓取失败分别处理。
+按gamePk生成稳定编号mlb:<id>，沿用旧编号，改期不影响收藏。不同日期上的延期副本保留较新官方比赛日期，同日冲突则拒绝新快照。按MLB球队ID排除大学队、国际俱乐部与全明星队；包含春训、常规赛、外卡、分区系列赛、联盟冠军赛和世界大赛等明确赛事阶段。
+只有官方startTimeTBD=false才显示Preview的gameDate，待定或缺少确认标记显示待定；时间必须明确带时区，内部转为UTC，页面与日期筛选统一Asia/Shanghai。仅有官方比赛日期时保守延迟移除，不猜测北京时间。比赛链接指向MLB官方gameday。最近成功检查表示本项目读取成功时间，不声称数据实时不变。
+30支MLB真实队徽保存为本地PNG，来自 https://github.com/alexmarple/mlb-images 的logos目录，球队ID/名称对照参考 https://github.com/camdenk/mlbplotR/blob/main/data-raw/MLB_Colors_Logos.csv ，明细见data/baseball-logos.json。按球队ID匹配，TBD或图标失败回退文字。队徽和数据权利仍属相应权利人。
+MLB数据使用仍受 https://gdx.mlb.com/components/copyright.txt 和 https://www.mlb.com/official-information/terms-of-use 约束；公开可读取、第三方包装库开源不等于数据获得开源许可。本项目不宣称获得MLB授权，不绕过登录、验证码或访问限制；若接口拒绝访问，保留旧数据并报错。
+
+2026-11-08真实读取验证：2897场未来比赛（467场春训、2430场常规赛），1342场确认时间、1555场待定；全部匹配本地队徽。待定场次显示官方比赛日，与北京时间日期筛选明确区分。

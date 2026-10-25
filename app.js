@@ -7,7 +7,7 @@ function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
 function safeSource(value) {
-  try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com'].includes(url.hostname);} catch {return false;}
+  try {const url=new URL(value);return url.protocol==='https:' && ['raw.githubusercontent.com','github.com','www.mlb.com'].includes(url.hostname);} catch {return false;}
 }
 function safeLogo(value) {
   if(typeof value!=='string') return false;
@@ -146,6 +146,7 @@ function render() {
       time.dateTime = match.start;
       time.append(element('small','',new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',weekday:'short'}).format(new Date(match.start))));
     }
+    if(!match.start && match.sport==='baseball' && match.sourceDate) time.append(element('small','','官方比赛日 '+match.sourceDate));
     time.append(element('small','',match.status));
     const star = element('button','star');
     star.type = 'button';

@@ -60,7 +60,7 @@ function lol(payload, sourceUrl) {
 }
 function baseball(rows, sourceUrl) {
   const required=['game_pk','game_date','game_datetime','season','game_type','detailed_state','abstract_state','home_team_id','home_team_name','away_team_id','away_team_name'];
-  if(!Array.isArray(rows) || rows.some(r=>required.some(k=>typeof r[k]!=='string'))) throw new SourceError('structure','Invalid MLB CSV');
+  if(!Array.isArray(rows) || rows.some(r=>required.some(k=>typeof r[k]!=='string'))) throw new SourceError('structure','Invalid MLB records');
   const stages={S:'春训赛',E:'表演赛',R:'常规赛',F:'外卡赛',D:'分区系列赛',L:'联盟冠军赛',W:'世界大赛'};
   const items=rows.flatMap(r=>{
     // MLB team IDs exclude college opponents, international clubs and All-Star teams.
@@ -70,7 +70,7 @@ function baseball(rows, sourceUrl) {
     const finished=r.abstract_state==='Final' && !/Postponed|Suspended/i.test(r.detailed_state);
     const cancelled=r.detailed_state==='Cancelled';
     const postponed=/Postponed|Suspended/i.test(r.detailed_state);
-    // This CSV omits the original TBD flag. Preview times stay unknown unless explicitly confirmed.
+    // Only explicit source confirmation permits displaying a preview kickoff time.
     const confirmed=r.start_time_tbd==='false' || ['Live','Final'].includes(r.abstract_state);
     const start=confirmed && !postponed && r.game_datetime ? instant(r.game_datetime) : null;
     return [{id:'mlb:'+r.game_pk,sport:'baseball',league:'MLB',stage:r.season+'赛季 · '+stages[r.game_type],season:r.season,home:r.home_team_name.trim()||'TBD',away:r.away_team_name.trim()||'TBD',homeLogo:baseballLogos[r.home_team_id]?.file||null,awayLogo:baseballLogos[r.away_team_id]?.file||null,start,sourceDate:r.game_date,status:cancelled?'取消':finished?'已结束':postponed?'延期':start?'未开赛':'时间待定',sourceUrl,timeZone:'UTC'}];
@@ -84,4 +84,14 @@ function baseball(rows, sourceUrl) {
   }
   return [...unique.values()];
 }
-module.exports={SourceError,zonedTime,instant,football,lol,teamLogo,baseball};
+function mlb(payload) {
+  if(!Number.isInteger(payload?.totalGames) || payload.totalGames<0 || !Array.isArray(payload.dates) || payload.dates.some(d=>!Array.isArray(d.games)) || payload.dates.reduce((n,d)=>n+d.games.length,0)!==payload.totalGames) throw new SourceError('structure','Invalid MLB schedule');
+  const games=payload.dates.flatMap(d=>d.games);
+  const rows=games.map(g=>{
+    if(!Number.isInteger(g.gamePk) || typeof g.season!=='string' || !g.status || !g.teams?.home?.team || !g.teams?.away?.team || typeof g.gameType!=='string' || typeof g.officialDate!=='string') throw new SourceError('structure','Invalid MLB game');
+    if(g.status.startTimeTBD!=null && typeof g.status.startTimeTBD!=='boolean') throw new SourceError('structure','Invalid MLB TBD flag');
+    return {game_pk:String(g.gamePk),game_date:g.officialDate,game_datetime:g.gameDate??'',season:g.season,game_type:g.gameType,detailed_state:g.status.detailedState,abstract_state:g.status.abstractGameState,start_time_tbd:String(g.status.startTimeTBD),home_team_id:g.teams.home.team.id==null?'':String(g.teams.home.team.id),home_team_name:g.teams.home.team.name||'TBD',away_team_id:g.teams.away.team.id==null?'':String(g.teams.away.team.id),away_team_name:g.teams.away.team.name||'TBD'};
+  });
+  return baseball(rows,'https://www.mlb.com/schedule').map(m=>({...m,sourceUrl:'https://www.mlb.com/gameday/'+m.id.slice(4)}));
+}
+module.exports={SourceError,zonedTime,instant,football,lol,teamLogo,baseball,mlb};
