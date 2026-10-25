@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-08T06:13:36.625Z",
+      "updatedAt": "2026-11-08T13:37:27.635Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T06:13:36.625Z",
+      "lastAttemptAt": "2026-11-08T13:37:27.635Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-08T06:13:36.625Z",
+      "updatedAt": "2026-11-08T13:37:27.635Z",
       "matches": [
         {
           "id": "pandascore:1711019",
@@ -4531,7 +4531,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-08T06:13:36.625Z",
+      "lastAttemptAt": "2026-11-08T13:37:27.635Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-08T05:49:24.697Z",
@@ -4543,7 +4543,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-08T06:13:36.625Z",
+      "updatedAt": "2026-11-08T13:37:27.635Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1789253@esport-ics",
@@ -4557,20 +4557,6 @@
           "start": "2026-11-24T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/100-thieves.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1789485@esport-ics",
-          "sport": "cs2",
-          "league": "European Pro League - Season 10 2026 - Group A",
-          "stage": "Elimination match",
-          "home": "6yuBoJlbl",
-          "away": "Azuolas",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T09:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/6yubojlbl.ics",
           "timeZone": "UTC"
         },
         {
@@ -4868,20 +4854,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1784405@esport-ics",
-          "sport": "cs2",
-          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
-          "stage": "阶段待定",
-          "home": "BMB",
-          "away": "TS.A",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T09:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/basement-boys.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1789260@esport-ics",
           "sport": "cs2",
           "league": "PGL Major - Singapore 2026 - Stage 1",
@@ -4893,20 +4865,6 @@
           "start": "2026-11-24T09:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/bc-game-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1788076@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group A",
-          "stage": "Decider match",
-          "home": "BBP",
-          "away": "ILLYR",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T09:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/bebop.ics",
           "timeZone": "UTC"
         },
         {
@@ -5120,20 +5078,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1788761@esport-ics",
-          "sport": "cs2",
-          "league": "United21 - Season 58 2026 - Group B",
-          "stage": "Winners match",
-          "home": "EAC",
-          "away": "BRUTE.SQ",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T09:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/brute-sq.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1790240@esport-ics",
           "sport": "cs2",
           "league": "MČR - 2026 - Playoffs",
@@ -5187,20 +5131,6 @@
           "start": "2026-11-08T20:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/detonate.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1784406@esport-ics",
-          "sport": "cs2",
-          "league": "NODWIN Clutch Series - Season 14 2026 - Play-Ins",
-          "stage": "阶段待定",
-          "home": "Noir Verse",
-          "away": "DRAMA",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T12:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/drama-esports.ics",
           "timeZone": "UTC"
         },
         {
@@ -5302,6 +5232,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1788763@esport-ics",
+          "sport": "cs2",
+          "league": "United21 - Season 58 2026 - Group B",
+          "stage": "Decider match",
+          "home": "EAC",
+          "away": "TBD",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-11T11:30:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/esport-academy-copenhagen.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1790241@esport-ics",
           "sport": "cs2",
           "league": "MČR - 2026 - Playoffs",
@@ -5386,20 +5330,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1788762@esport-ics",
-          "sport": "cs2",
-          "league": "United21 - Season 58 2026 - Group B",
-          "stage": "Elimination match",
-          "home": "EYE",
-          "away": "IC.P",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T11:30:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/eyeballers.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1789256@esport-ics",
           "sport": "cs2",
           "league": "PGL Major - Singapore 2026 - Stage 1",
@@ -5481,20 +5411,6 @@
           "start": "2026-11-11T07:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/fut-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1786808@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Series #13 2026 - Group Stage",
-          "stage": "Round 3",
-          "home": "G2.A",
-          "away": "IC.A",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T09:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/g2-ares.ics",
           "timeZone": "UTC"
         },
         {
@@ -5722,20 +5638,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1788081@esport-ics",
-          "sport": "cs2",
-          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Group B",
-          "stage": "Decider match",
-          "home": "PRE",
-          "away": "KSM",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T12:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/kuusamo-gg.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1777592@esport-ics",
           "sport": "cs2",
           "league": "Elisa Open Suomi - Season 14 2026 - Group Stage",
@@ -5932,34 +5834,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1786714@esport-ics",
-          "sport": "cs2",
-          "league": "CCT South America - Series 8 2026 - Group Stage",
-          "stage": "Round 3",
-          "home": "MEIA NOITE",
-          "away": "Zetta Games",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T13:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/meia-noite.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1789486@esport-ics",
-          "sport": "cs2",
-          "league": "European Pro League - Season 10 2026 - Group A",
-          "stage": "Winners match",
-          "home": "PCIFIC",
-          "away": "Morrow Esports",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T11:30:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/morrow-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1789494@esport-ics",
           "sport": "cs2",
           "league": "European Pro League - Season 10 2026 - Group C",
@@ -5971,20 +5845,6 @@
           "start": "2026-11-09T14:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/mouz-nxt.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1781486@esport-ics",
-          "sport": "cs2",
-          "league": "IEM - Beijing 2026 - Playoffs",
-          "stage": "Grand Final",
-          "home": "MGLZ",
-          "away": "MOUZ",
-          "homeLogo": null,
-          "awayLogo": "assets/team-logos/mouz.svg",
-          "start": "2026-11-08T07:30:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/mouz.ics",
           "timeZone": "UTC"
         },
         {
@@ -6255,7 +6115,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T06:13:36.625Z",
+      "lastAttemptAt": "2026-11-08T13:37:27.635Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6266,7 +6126,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-08T06:13:36.625Z",
+      "updatedAt": "2026-11-08T13:37:27.635Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -6451,20 +6311,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1797551@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Oceania 2027 - Playoffs",
-          "stage": "Grand Final",
-          "home": "CECIL",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T08:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/cecil.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792378@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
@@ -6616,20 +6462,6 @@
           "start": "2026-11-15T08:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/fancy-united.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1790332@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Vietnam 2027 - Playoffs",
-          "stage": "Lower Bracket Semifinal1",
-          "home": "Original Gaming",
-          "away": "Ferix",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T08:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/ferix.ics",
           "timeZone": "UTC"
         },
         {
@@ -6801,6 +6633,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "valorant:pandascore-match-1790318@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Philippines 2027 - Playoffs",
+          "stage": "Grand final",
+          "home": "Maxxing",
+          "away": "OAS",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-22T06:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/maxxing.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "valorant:pandascore-match-1792350@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
@@ -6827,24 +6673,10 @@
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/reh-gaming.ics",
           "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1790333@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Vietnam 2027 - Playoffs",
-          "stage": "Lower Bracket Final",
-          "home": "Saigon Phantom",
-          "away": "TBD",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-08T10:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/saigon-phantom.ics",
-          "timeZone": "UTC"
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T06:13:36.625Z",
+      "lastAttemptAt": "2026-11-08T13:37:27.635Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6855,9 +6687,9 @@
       "sport": "baseball",
       "sourceUrl": "https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/mlb_schedules",
       "status": "ok",
-      "updatedAt": "2026-11-08T06:13:36.625Z",
+      "updatedAt": "2026-11-08T13:37:27.635Z",
       "matches": [],
-      "lastAttemptAt": "2026-11-08T06:13:36.625Z",
+      "lastAttemptAt": "2026-11-08T13:37:27.635Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-10-29T12:35:19.000Z",
