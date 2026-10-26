@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-08T23:46:33.330Z",
+      "updatedAt": "2026-11-09T06:47:05.415Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T23:46:33.330Z",
+      "lastAttemptAt": "2026-11-09T06:47:05.415Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,17 +4498,17 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-08T23:46:33.330Z",
+      "updatedAt": "2026-11-09T06:47:05.415Z",
       "matches": [
         {
           "id": "pandascore:1711021",
           "sport": "lol",
           "league": "Worlds",
           "stage": "(Playoffs) Grand Final",
-          "home": "Gen.G",
-          "away": "TBD",
-          "homeLogo": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png",
-          "awayLogo": null,
+          "home": "Bilibili Gaming",
+          "away": "Gen.G",
+          "homeLogo": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png",
+          "awayLogo": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png",
           "start": "2026-11-14T19:00:00.000Z",
           "status": "赛程预告",
           "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
@@ -4517,11 +4517,11 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-08T23:46:33.330Z",
+      "lastAttemptAt": "2026-11-09T06:47:05.415Z",
       "error": null,
       "availability": "scheduled",
-      "upstreamLastModified": "2026-11-08T05:49:24.697Z",
-      "upstreamGeneratedAt": "2026-11-08T05:49:24.697Z",
+      "upstreamLastModified": "2026-11-09T05:59:43.344Z",
+      "upstreamGeneratedAt": "2026-11-09T05:59:43.344Z",
       "coverageNote": null
     },
     "cs2": {
@@ -4529,7 +4529,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-08T23:46:33.330Z",
+      "updatedAt": "2026-11-09T06:47:05.415Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1789253@esport-ics",
@@ -5036,6 +5036,34 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1800891@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "DXE",
+          "away": "wnT",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T17:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/dimonix-esports.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1800889@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "Y.TigeRES",
+          "away": "DINERO",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T16:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/dinero.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1688015@esport-ics",
           "sport": "cs2",
           "league": "Dust2.dk Ligaen - Season 33 2026 - Regular Season",
@@ -5386,6 +5414,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1800892@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "HEC",
+          "away": "ZOTIX",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T17:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/hermine-esports-club.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1760320@esport-ics",
           "sport": "cs2",
           "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
@@ -5414,6 +5456,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1788739@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Play-In",
+          "stage": "阶段待定",
+          "home": "Honvéd",
+          "away": "Ryvex",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T18:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/honved.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1661643@esport-ics",
           "sport": "cs2",
           "league": "DACH CS Masters - Season 6 2026 - Regular Season",
@@ -5439,6 +5495,20 @@
           "start": "2026-11-09T19:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/huskies-esport.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1788738@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Play-In",
+          "stage": "阶段待定",
+          "home": "PHTM.Ac",
+          "away": "ILLYR",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T15:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/illyrians.ics",
           "timeZone": "UTC"
         },
         {
@@ -5554,6 +5624,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1788737@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Play-In",
+          "stage": "阶段待定",
+          "home": "maybe",
+          "away": "MSC",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T12:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/masonic.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1688024@esport-ics",
           "sport": "cs2",
           "league": "Dust2.dk Ligaen - Season 33 2026 - Regular Season",
@@ -5629,7 +5713,7 @@
           "league": "MČR - 2026 - Playoffs",
           "stage": "Grand final",
           "home": "Monkeys",
-          "away": "TBD",
+          "away": "UNiTY",
           "homeLogo": null,
           "awayLogo": null,
           "start": "2026-11-22T12:00:00Z",
@@ -5649,6 +5733,20 @@
           "start": "2026-11-09T14:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/mouz-nxt.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1800890@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "TG",
+          "away": "MTX",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T17:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/mtx.ics",
           "timeZone": "UTC"
         },
         {
@@ -5792,6 +5890,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "cs2:pandascore-match-1788736@esport-ics",
+          "sport": "cs2",
+          "league": "CCT Europe - Closed Qualifier: Series #14 2026 - Play-In",
+          "stage": "阶段待定",
+          "home": "SKR",
+          "away": "PRE",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T09:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/prestige.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "cs2:pandascore-match-1777590@esport-ics",
           "sport": "cs2",
           "league": "Elisa Open Suomi - Season 14 2026 - Group Stage",
@@ -5817,6 +5929,20 @@
           "start": "2026-11-09T19:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/reveal.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "cs2:pandascore-match-1800888@esport-ics",
+          "sport": "cs2",
+          "league": "ESEA - Advanced Europe season 59 2026 - Regular Season",
+          "stage": "阶段待定",
+          "home": "SINQU",
+          "away": "RGG",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-09T16:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/rounds.ics",
           "timeZone": "UTC"
         },
         {
@@ -5919,7 +6045,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T23:46:33.330Z",
+      "lastAttemptAt": "2026-11-09T06:47:05.415Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -5930,7 +6056,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-08T23:46:33.330Z",
+      "updatedAt": "2026-11-09T06:47:05.415Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -6452,7 +6578,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-08T23:46:33.330Z",
+      "lastAttemptAt": "2026-11-09T06:47:05.415Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6463,7 +6589,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-08T23:46:33.330Z",
+      "updatedAt": "2026-11-09T06:47:05.415Z",
       "matches": [
         {
           "id": "mlb:868576",
@@ -52818,7 +52944,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-08T23:46:33.330Z",
+      "lastAttemptAt": "2026-11-09T06:47:05.415Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
