@@ -3,7 +3,10 @@ const footballLogos = require('../data/football-logos.json');
 const esportsLogos = require('../data/esports-logos.json');
 const baseballLogos = require('../data/baseball-logos.json');
 // Exact game/name pairs avoid confusing academies or unrelated teams with the same initials.
-function teamLogo(sport,name) {return esportsLogos.find(e=>e.sport===sport && e.name===name)?.file||null;}
+function teamLogo(sport, name, league = '') {
+  return esportsLogos.find(entry => entry.sport === sport && entry.name === name
+    && (!entry.leaguePrefix || league.startsWith(entry.leaguePrefix)))?.file || null;
+}
 class SourceError extends Error {constructor(code,message){super(message);this.code=code;}}
 function zonedTime(local, zone) {
   const parts = /^(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)(?::(\d\d))?$/.exec(local);

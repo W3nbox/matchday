@@ -63,7 +63,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
         })();
         const calendars=await calendarPromise;
         if(calendars[sport]?.error || !Array.isArray(calendars[sport]?.matches)) throw new SourceError('structure','Calendar parsing failed');
-        items=calendars[sport].matches.map(m=>({...m,homeLogo:teamLogo(sport,m.home),awayLogo:teamLogo(sport,m.away)}));
+        items=calendars[sport].matches.map(m=>({...m,homeLogo:teamLogo(sport,m.home,m.league),awayLogo:teamLogo(sport,m.away,m.league)}));
       }
       if(new Set(items.map(m=>m.id)).size!==items.length) throw new SourceError('structure','Duplicate match ID');
       const selected=upcoming(items,now);

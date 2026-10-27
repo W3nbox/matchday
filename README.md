@@ -54,7 +54,7 @@ node scripts/sync.cjs
 日历 DTSTAMP 在该项目中等于比赛时间，不能用作数据更新时间，因此页面仅显示本项目最近成功读取时间；上游未提供可靠生成时间。此来源依赖社区维护，不保证覆盖全部赛事。
 本地真实验证 CS2 122 场、瓦洛兰特43场。工作流新增 setup-python 和 python scripts/test_calendars.py；Node 逻辑和原有网页检查继续运行。
 
-CS2/瓦洛兰特队徽：按游戏与准确队名匹配，官方页面、图片地址及核对日期记录在 data/esports-logos.json。已确认12支CS2、6支瓦洛兰特队伍；HooK官网赛程栏提供的对手图标也逐一按显示名称核对。保存本站原始PNG/WebP/SVG，沿用失败文字回退。100 Thieves内嵌SVG设置官网深色背景使用的白色继承色，NIP、FaZe与BIG黑色标志增加浅底，不重绘标志。不同分队、未知缩写与TBD不模糊匹配，不借用主队图标。后续同步会自动应用相同映射；未确认的其他队伍保留文字。队徽与商标权仍属相应权利人。
+CS2/瓦洛兰特队徽：按游戏与准确队名匹配，战队官网、赛事主办方或对阵资料页及图片地址记录在 data/esports-logos.json。缩写 CW 按赛事区分 Chinggis Warriors 和 Copenhagen Wolves；HooK官网赛程栏提供的对手图标也逐一按显示名称核对。保存本站原始PNG/WebP/SVG，沿用失败文字回退。100 Thieves内嵌SVG设置官网深色背景使用的白色继承色，NIP、FaZe与BIG黑色标志增加浅底，不重绘标志。不同分队、未知缩写与TBD不模糊匹配，不借用主队图标。后续同步会自动应用相同映射；未确认的其他队伍保留文字。队徽与商标权仍属相应权利人。
 
 ## 棒球（MLB）
 使用 MLB 公开 Stats 接口（https://statsapi.mlb.com），无需账号、Token 或额外服务器。获取方式参考 https://github.com/toddrob99/MLB-StatsAPI 所封装的公开接口；本项目直接用现有Node fetch，不复制该GPL库或引入新依赖。

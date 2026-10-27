@@ -144,5 +144,907 @@
     "url": "https://100thieves.com",
     "checkedAt": "2026-11-07",
     "embedded": true
+  },
+  {
+    "sport": "valorant",
+    "name": "BERG",
+    "full": "BERG",
+    "file": "assets/team-logos/valorant-berg.png",
+    "page": "https://www.vlr.gg/772844/berg-vs-glacial-guardians-spike-series-2026-convergence-emea-dach-r6",
+    "url": "https://owcdn.net/img/6ad67efc6706a.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "PL",
+    "full": "Pixel Lumina",
+    "file": "assets/team-logos/valorant-pixel-lumina.png",
+    "page": "https://www.vlr.gg/786471/aurora-gaming-vs-pixel-lumina-vct-2027-emea-kickoff-europe-qualifier-qualifier-1-sf",
+    "url": "https://owcdn.net/img/6a9c93fa8e858.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "GG",
+    "full": "Glacial Guardians",
+    "file": "assets/team-logos/valorant-glacial-guardians.png",
+    "page": "https://www.vlr.gg/772837/cgn-esports-vs-glacial-guardians-spike-series-2026-convergence-emea-dach-r5",
+    "url": "https://owcdn.net/img/68aca82e739cf.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "F9",
+    "full": "F9 EICAR",
+    "file": "assets/team-logos/valorant-f9-eicar.png",
+    "page": "https://www.vlr.gg/786470/xxxmasterpromegateamxxx-vs-f9-eicar-vct-2027-emea-kickoff-europe-qualifier-qualifier-1-sf",
+    "url": "https://owcdn.net/img/6873c999c300f.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Aurora Gaming",
+    "full": "Aurora Gaming",
+    "file": "assets/team-logos/valorant-aurora-gaming.png",
+    "page": "https://www.vlr.gg/786471/aurora-gaming-vs-pixel-lumina-vct-2027-emea-kickoff-europe-qualifier-qualifier-1-sf",
+    "url": "https://owcdn.net/img/6ae26e877b8e9.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "9z",
+    "full": "9z",
+    "file": "assets/team-logos/cs2-9z.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/126709/9z_team_2024_lightmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FLY",
+    "full": "FlyQuest",
+    "file": "assets/team-logos/cs2-flyquest.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/134746/fly_questlogo_square.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "IMP",
+    "full": "Imperial",
+    "file": "assets/team-logos/cs2-imperial.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/126377/711px_imperial_esports_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "CW",
+    "full": "Chinggis Warriors",
+    "file": "assets/team-logos/cs2-chinggis-warriors.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/134264/222px_cw_allmode.png",
+    "checkedAt": "2026-11-10",
+    "leaguePrefix": "PGL Major - "
+  },
+  {
+    "sport": "cs2",
+    "name": "HERO",
+    "full": "Heroic",
+    "file": "assets/team-logos/cs2-heroic.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/3246/680px_heroic_2023_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LVG",
+    "full": "Lynn Vision",
+    "file": "assets/team-logos/cs2-lynn-vision.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/126439/800px_lynn_vision_gaming_2024_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BCG",
+    "full": "BC.Game Esports",
+    "file": "assets/team-logos/cs2-bc-game-esports.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/135177/188px_bc.game_esports_lightmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "DEN",
+    "full": "DENDELE CS",
+    "file": "assets/team-logos/cs2-dendele-cs.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138988/454px_dendele_cs_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "PRV",
+    "full": "PARIVISION",
+    "file": "assets/team-logos/cs2-parivision.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/images/team/image/133719/250px_parivision_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "WC",
+    "full": "Wildcard",
+    "file": "assets/team-logos/cs2-wildcard.png",
+    "page": "https://esportnow.com/tournaments/pgl-major-singapore-2026-stage-1/?tournament_tab=teams",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/135273/188px_wildcard_2024_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "ECS",
+    "full": "ECSTATIC",
+    "file": "assets/team-logos/cs2-ecstatic.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/7979/team-logo-7979-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "EACE",
+    "full": "EAC Extra",
+    "file": "assets/team-logos/cs2-eac-extra.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/1003484/team-logo-1003484-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FORZE.R",
+    "full": "FORZE Reload",
+    "file": "assets/team-logos/cs2-forze-reload.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/2798/team-logo-2798-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Honvéd",
+    "full": "Honvéd",
+    "file": "assets/team-logos/cs2-honve-d.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/128887/honved_budapest_old_logo_70_adbfc97_d_seeklogo.com.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "st0ny",
+    "full": "struggletony",
+    "file": "assets/team-logos/cs2-struggletony.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/9363/team-logo-9363-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LLE",
+    "full": "Linx Legacy Esport",
+    "file": "assets/team-logos/cs2-linx-legacy-esport.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/7959/team-logo-7959-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "XI",
+    "full": "XI Esport",
+    "file": "assets/team-logos/cs2-xi-esport.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/6279/team-logo-6279-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LEI",
+    "full": "Team LEISURE",
+    "file": "assets/team-logos/cs2-team-leisure.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138178/team_leisure_aug_2024_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "MSC",
+    "full": "MASONIC",
+    "file": "assets/team-logos/cs2-masonic.png",
+    "page": "https://esportsbetting.com/tournament/dust2-dk-ligaen-season-33-2026-regular-season-587752/",
+    "url": "https://esportsbetting.com/logos/1/teams/9849/team-logo-9849-40x40.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "SSP",
+    "full": "Sissi State Punks",
+    "file": "assets/team-logos/cs2-sissi-state-punks.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/images/team/image/127933/s_uujc_tn.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "REV",
+    "full": "Reveal",
+    "file": "assets/team-logos/cs2-reveal.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/images/team/image/132551/153px_reveal_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "B8.A",
+    "full": "B8 Academy",
+    "file": "assets/team-logos/cs2-b8-academy.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137538/123px_b8_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BLUEJAYS.de",
+    "full": "BLUEJAYS.de",
+    "file": "assets/team-logos/cs2-bluejays-de.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139187/600px_bluejays_2015_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Pandaric eSports",
+    "full": "Pandaric eSports",
+    "file": "assets/team-logos/cs2-pandaric-esports.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139188/pandaric_e_sports_2021_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LK",
+    "full": "los kogutos",
+    "file": "assets/team-logos/cs2-los-kogutos.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/127837/201px_los_kogutos_new.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "HUSK",
+    "full": "Huskies eSport",
+    "file": "assets/team-logos/cs2-huskies-esport.png",
+    "page": "https://esportsresults.com/event/dach-cs-masters-season-6-2026-21811",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138179/huskies_e_sport_julich_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FF",
+    "full": "Fire Flux Esports",
+    "file": "assets/team-logos/cs2-fire-flux-esports.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/135474/190px_fire_flux_esports_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "ESB",
+    "full": "eSuba",
+    "file": "assets/team-logos/cs2-esuba.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/127497/630px_e_suba_2021_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "SHU",
+    "full": "Spirit HU",
+    "file": "assets/team-logos/cs2-spirit-hu.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139071/spirit_esports_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BJNG",
+    "full": "BOJONG",
+    "file": "assets/team-logos/cs2-bojong.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138129/63v6k8_ogkds_rq93i_y_dd_pyy_bs_g_ac_lxqjh_tw_k_kfz_fa.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "OBOYS",
+    "full": "OldBoys",
+    "file": "assets/team-logos/cs2-oldboys.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/137473/gemini_generated_image_pttysjpttysjptty_removebg_preview_2.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Rcave",
+    "full": "Rcave",
+    "file": "assets/team-logos/cs2-rcave.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137582/139px_rcave_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "PHTM.Ac",
+    "full": "Phantom Academy",
+    "file": "assets/team-logos/cs2-phantom-academy.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137580/500px_phantom_esports_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "TCF",
+    "full": "The Chosen Few",
+    "file": "assets/team-logos/cs2-the-chosen-few.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/131552/571px_the_chosen_few_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "ZOTIX",
+    "full": "ZOTIX",
+    "file": "assets/team-logos/cs2-zotix.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/133991/600px_zotix_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "HEC",
+    "full": "Hermine Esports Club",
+    "file": "assets/team-logos/cs2-hermine-esports-club.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/137285/hermine_esports_club_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "OLDBOYS PL",
+    "full": "OLDBOYS PL",
+    "file": "assets/team-logos/cs2-oldboys-pl.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137474/600px_oldboys_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FAL.F",
+    "full": "Falcons Force",
+    "file": "assets/team-logos/cs2-falcons-force.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137508/183px_team_falcons_2022_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "RGG",
+    "full": "ROUNDS",
+    "file": "assets/team-logos/cs2-rounds.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/132459/194px_rounds_2025_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "TTG Esports",
+    "full": "TTG Esports",
+    "file": "assets/team-logos/cs2-ttg-esports.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139353/ttg_esports_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LPH",
+    "full": "LPH Gaming",
+    "file": "assets/team-logos/cs2-lph-gaming.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/136786/171px_lph_gaming_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Al Ahli",
+    "full": "Al Ahli",
+    "file": "assets/team-logos/cs2-al-ahli.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138875/66px_al_ahli_saudi_fc_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "maybe",
+    "full": "maybe",
+    "file": "assets/team-logos/cs2-maybe.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138899/maybe__ukrainian_team__allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "SINQU",
+    "full": "SINQU",
+    "file": "assets/team-logos/cs2-sinqu.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/images/team/image/137707/151px_sinqu_esports_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "EP",
+    "full": "eternal premium",
+    "file": "assets/team-logos/cs2-eternal-premium.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/135978/eternal_premium_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "VIT.A",
+    "full": "Vitality Academy",
+    "file": "assets/team-logos/cs2-vitality-academy.png",
+    "page": "https://esportsresults.com/event/esea-advanced-europe-season-59-2026-22135",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138618/638px_vitality_academy_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Enisorail",
+    "full": "Enisorail",
+    "file": "assets/team-logos/valorant-enisorail.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139521/722px_enisorail_2025_oct_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Brest Esport",
+    "full": "Brest Esport",
+    "file": "assets/team-logos/valorant-brest-esport.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139522/113px_brest_esport_july_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Backed by Nobody",
+    "full": "Backed by Nobody",
+    "file": "assets/team-logos/valorant-backed-by-nobody.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139524/backed_by_nobody_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "YL",
+    "full": "Younglings",
+    "file": "assets/team-logos/cs2-younglings.png",
+    "page": "https://esports-news.co.uk/matches/cs2/bjng-vs-yl-1765767/",
+    "url": "https://esports-news.co.uk/wp-content/uploads/2026/09/6_l4_ft1_l.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "regnum4games",
+    "full": "regnum4games",
+    "file": "assets/team-logos/valorant-regnum4games.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139519/75px_regnum4_games_2026_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "GSH",
+    "full": "Gesichtenhausen",
+    "file": "assets/team-logos/valorant-gesichtenhausen.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/images/team/image/137579/152px_gesichtenhausen_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "TFG",
+    "full": "TwoFace Gaming",
+    "file": "assets/team-logos/valorant-twoface-gaming.png",
+    "page": "https://esportsresults.com/event/spike-series-convergence-emea-dach-2026-22392",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139520/800px_two_face_black_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BOYB",
+    "full": "BoyBand",
+    "file": "assets/team-logos/cs2-boyband.png",
+    "page": "https://esportsresults.com/event/elisa-open-suomi-season-14-2026-22329",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138131/gi_tvzsr3_syzem_si_yidbb_fn3pdq2_o_tncv_ds60_v0_hf.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "KSM",
+    "full": "KUUSAMO.gg",
+    "file": "assets/team-logos/cs2-kuusamo-gg.png",
+    "page": "https://esportsresults.com/event/elisa-open-suomi-season-14-2026-22329",
+    "url": "https://cdn-api.pandascore.co/images/team/image/130733/177px_kuusamo.gg_2023_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "PRE",
+    "full": "Prestige",
+    "file": "assets/team-logos/cs2-prestige.png",
+    "page": "https://esportsresults.com/event/elisa-open-suomi-season-14-2026-22329",
+    "url": "https://cdn-api.pandascore.co/images/team/image/136846/get_team_logos.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "OAS",
+    "full": "Oasis Gaming",
+    "file": "assets/team-logos/valorant-oasis-gaming.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-philippines-2027-22386",
+    "url": "https://cdn-api.pandascore.co/images/team/image/129397/oasis_gaming_2021_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "HAVU",
+    "full": "HAVU",
+    "file": "assets/team-logos/cs2-havu.png",
+    "page": "https://esportsresults.com/event/elisa-open-suomi-season-14-2026-22329",
+    "url": "https://cdn-api.pandascore.co/images/team/image/125774/606px_havu_2025_full_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "GAS",
+    "full": "GAS Esports",
+    "file": "assets/team-logos/valorant-gas-esports.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-indonesia-2027-22424",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139558/800px_logo_gas_esports.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "HE",
+    "full": "Hertz Esport",
+    "file": "assets/team-logos/valorant-hertz-esport.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-indonesia-2027-22424",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139560/hertz_esport_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Maxxing",
+    "full": "Maxxing",
+    "file": "assets/team-logos/valorant-maxxing.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-philippines-2027-22386",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139508/731px_maxxing_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Straight outta PIK",
+    "full": "Straight outta PIK",
+    "file": "assets/team-logos/valorant-straight-outta-pik.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-indonesia-2027-22424",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139557/straight_outta_pik_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "UNiTY",
+    "full": "UNiTY esports",
+    "file": "assets/team-logos/cs2-unity-esports.png",
+    "page": "https://esportsresults.com/event/stake-ranked-episode-6-2026-22388",
+    "url": "https://cdn-api.pandascore.co/images/team/image/133063/190px_u_ni_ty_esports_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "ICE",
+    "full": "Inner Circle Esports",
+    "file": "assets/team-logos/cs2-inner-circle-esports.png",
+    "page": "https://esportsresults.com/event/stake-ranked-episode-6-2026-22388",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/136497/127px_inner_circle_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "G2.A",
+    "full": "G2 Ares",
+    "file": "assets/team-logos/cs2-g2-ares.png",
+    "page": "https://esportsresults.com/event/european-pro-league-season-10-2026-22382",
+    "url": "https://cdn-api.pandascore.co/images/team/image/135321/g2_esportslogo_square.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LG",
+    "full": "Luminosity",
+    "file": "assets/team-logos/cs2-luminosity.png",
+    "page": "https://esportsresults.com/event/stake-ranked-episode-6-2026-22388",
+    "url": "https://cdn-api.pandascore.co/images/team/image/3228/LUMINOSITY.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BCA",
+    "full": "Betclic Apogee Esports",
+    "file": "assets/team-logos/cs2-betclic-apogee-esports.png",
+    "page": "https://esportsresults.com/event/stake-ranked-episode-6-2026-22388",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/135381/235px_betclic_apogee_esports_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "SNG",
+    "full": "Sangal",
+    "file": "assets/team-logos/cs2-sangal.png",
+    "page": "https://esportsresults.com/event/stake-ranked-episode-6-2026-22388",
+    "url": "https://cdn-api.pandascore.co/images/team/image/127365/sangal.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "ZZ",
+    "full": "Team Z",
+    "file": "assets/team-logos/valorant-team-z.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-japan-2027-22403",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139541/team_z_japanese_lightmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "NAVI.J",
+    "full": "NAVI Junior",
+    "file": "assets/team-logos/cs2-navi-junior.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22373",
+    "url": "https://cdn-api.pandascore.co/images/team/image/126491/630px_na_vi_jr.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "AMHR",
+    "full": "雨のち晴れ",
+    "file": "assets/team-logos/valorant-amhr.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-japan-2027-22403",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139534/550px_ame_nochi_hare_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "SIB",
+    "full": "Team SEIBI",
+    "file": "assets/team-logos/valorant-team-seibi.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-japan-2027-22403",
+    "url": "https://cdn-api.pandascore.co/images/team/image/135962/285px_team_seibi_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": " SNCTM",
+    "full": "SANCTUM",
+    "file": "assets/team-logos/cs2-sanctum.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22373",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139426/377px_sanctum_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "FAC",
+    "full": "FA CLUB",
+    "file": "assets/team-logos/valorant-fa-club.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-japan-2027-22403",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139536/fa_club_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "FCY",
+    "full": "Fancy United",
+    "file": "assets/team-logos/valorant-fancy-united.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-vietnam-2027-22387",
+    "url": "https://cdn-api.pandascore.co/images/team/image/130482/600px_fancy_united_esports_2022_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "ISG",
+    "full": "Isurus",
+    "file": "assets/team-logos/cs2-isurus.png",
+    "page": "https://esportsresults.com/event/cct-south-america-series-8-2026-22353",
+    "url": "https://cdn-api.pandascore.co/images/team/image/125863/1160px_isurus_2025_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "BST.A",
+    "full": "BESTIA Academy",
+    "file": "assets/team-logos/cs2-bestia-academy.png",
+    "page": "https://esportsresults.com/event/cct-south-america-series-8-2026-22353",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/135743/124px_bestia_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Rush",
+    "full": "Rush",
+    "file": "assets/team-logos/cs2-rush.png",
+    "page": "https://esportsresults.com/event/cct-south-america-series-8-2026-22353",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138939/533px_rush_gaming_br_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "RED.A",
+    "full": "RED Canids Academy",
+    "file": "assets/team-logos/cs2-red-canids-academy.png",
+    "page": "https://esportsresults.com/event/cct-south-america-series-8-2026-22353",
+    "url": "https://cdn-api.pandascore.co/images/team/image/135505/red_canids_cs_go.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "Original Gaming",
+    "full": "Original Gaming",
+    "file": "assets/team-logos/valorant-original-gaming.png",
+    "page": "https://esportsresults.com/event/asia-pacific-predator-league-vietnam-2027-22387",
+    "url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/139515/original_gaming_2026_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "EYE",
+    "full": "EYEBALLERS",
+    "file": "assets/team-logos/cs2-eyeballers.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22372",
+    "url": "https://cdn-api.pandascore.co/images/team/image/131189/105px_eyeballers_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "PSN.A",
+    "full": "Passion Academy",
+    "file": "assets/team-logos/cs2-passion-academy.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22374",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138281/687px_passion_ua_academy_2025_darkmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "9INE.A",
+    "full": "9INE Academy",
+    "file": "assets/team-logos/cs2-9ine-academy.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22371",
+    "url": "https://cdn-api.pandascore.co/images/team/image/130421/d8_wxn_rx.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "EAC",
+    "full": "Esport Academy Copenhagen",
+    "file": "assets/team-logos/cs2-esport-academy-copenhagen.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22372",
+    "url": "https://cdn-api.pandascore.co/images/team/image/138685/esport_academy_copenhagen_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "CW",
+    "full": "Copenhagen Wolves",
+    "file": "assets/team-logos/cs2-copenhagen-wolves.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22374",
+    "url": "https://cdn-api.pandascore.co/images/team/image/134261/600px_copenhagen_wolves_2012_allmode.png",
+    "checkedAt": "2026-11-10",
+    "leaguePrefix": "United21 - "
+  },
+  {
+    "sport": "cs2",
+    "name": "BBV",
+    "full": "Bad Beavers",
+    "file": "assets/team-logos/cs2-bad-beavers.png",
+    "page": "https://esportsresults.com/event/united21-season-58-2026-22374",
+    "url": "https://cdn-api.pandascore.co/images/team/image/139500/900px_bad_beavers_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "JUMBO",
+    "full": "JUMBO TEAM",
+    "file": "assets/team-logos/cs2-jumbo-team.png",
+    "page": "https://esports-news.co.uk/matches/cs2/rgg-vs-jumbo-1792537/",
+    "url": "https://esports-news.co.uk/wp-content/uploads/2026/08/138px_jumbo_team_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LT",
+    "full": "Lunacy Team",
+    "file": "assets/team-logos/cs2-lunacy-team.png",
+    "page": "https://esports-news.co.uk/matches/cs2/g2-a-vs-lt-1789501/",
+    "url": "https://esports-news.co.uk/wp-content/uploads/2026/11/521px_lunacy_team_allmode.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FAL",
+    "full": "Team Falcons",
+    "file": "assets/team-logos/cs2-team-falcons.svg",
+    "page": "https://blast.tv/cs/news/blast-rivals-hk-26-teams",
+    "url": "https://assets.blast.tv/images/teams/30c9dd5b-95bb-4db2-a83f-26f672265cab?height=20&format=auto",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "TS",
+    "full": "Spirit",
+    "file": "assets/team-logos/cs2-spirit.svg",
+    "page": "https://blast.tv/cs/news/blast-rivals-hk-26-teams",
+    "url": "https://assets.blast.tv/images/teams/80b609cb-707b-48f2-83ee-0f68b8ba8cca?height=20&format=auto",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "LGC",
+    "full": "Legacy",
+    "file": "assets/team-logos/cs2-legacy.svg",
+    "page": "https://blast.tv/cs/news/blast-rivals-hk-26-teams",
+    "url": "https://assets.blast.tv/images/teams/7417378d-29a3-4376-85eb-05db707e784d?height=20&format=auto",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "valorant",
+    "name": "SGE Vision",
+    "full": "Eintracht Frankfurt Team Vision",
+    "file": "assets/team-logos/valorant-eintracht-frankfurt-team-vision.png",
+    "page": "https://www.vlr.gg/772856/gesichtenhausen-vs-eintracht-frankfurt-team-vision-spike-series-2026-convergence-emea-dach-r7",
+    "url": "https://owcdn.net/img/659d1013d5cf5.png",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Morrow Esports",
+    "full": "Morrow Esports",
+    "file": "assets/team-logos/cs2-morrow-esports.webp",
+    "page": "https://reloader.gg/esports/cs2/team/morrow",
+    "url": "https://reloader.gg/api/esports/team-logo/336-all-128.webp?v=0eba62e523",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "FURIA",
+    "full": "FURIA",
+    "file": "assets/team-logos/cs2-furia.svg",
+    "page": "https://blast.tv/cs/news/blast-rivals-hk-26-teams",
+    "url": "https://assets.blast.tv/images/teams/f239109c-ffef-4e83-830e-5ca340ee432b?height=20&format=auto",
+    "checkedAt": "2026-11-10"
+  },
+  {
+    "sport": "cs2",
+    "name": "Azuolas",
+    "full": "Azuolas",
+    "file": "assets/team-logos/cs2-azuolas.webp",
+    "page": "https://reloader.gg/esports/cs2/team/morrow",
+    "url": "https://reloader.gg/api/esports/team-logo/302-all-128.webp?v=90ed33bea3",
+    "checkedAt": "2026-11-10"
   }
 ]

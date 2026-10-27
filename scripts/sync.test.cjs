@@ -74,10 +74,10 @@ test('real logo mappings and LoL source images follow their teams',()=>{
  const item=lol(calendar([e]),url)[0];assert.equal(item.homeLogo,e.opponents[0].imageUrl);assert.equal(item.awayLogo,e.opponents[1].imageUrl);
 });
 
-test('official esports crests use exact sport and name, valid local assets and documented sources',()=>{
+test('esports crests use verified sport, name and tournament, valid local assets and documented sources',()=>{
  const fs=require('node:fs'),path=require('node:path');
  const {teamLogo}=require('./parse.cjs'),logos=require('../data/esports-logos.json');
- assert.equal(new Set(logos.map(e=>e.sport+':'+e.name)).size,logos.length);
+ assert.equal(new Set(logos.map(e=>e.sport+':'+e.name+':'+(e.leaguePrefix||''))).size,logos.length);
  for(const e of logos){
   assert.match(e.page,/^https:\/\//);assert.match(e.url,/^https:\/\//);
   assert.match(e.file,/^assets\/team-logos\/[a-z0-9-]+\.(png|svg|webp)$/);
@@ -85,10 +85,14 @@ test('official esports crests use exact sport and name, valid local assets and d
   if(e.file.endsWith('.png'))assert.equal(b.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
   if(e.file.endsWith('.webp')){assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');}
   if(e.file.endsWith('.svg')){assert.match(b.toString(),/<svg\b/);assert.doesNotMatch(b.toString(),/<script|on\w+\s*=|(?:href|src)\s*=/i);}
-  assert.equal(teamLogo(e.sport,e.name),e.file);
+  assert.equal(teamLogo(e.sport,e.name,e.leaguePrefix),e.file);
  }
+ assert.equal(teamLogo('cs2','CW'),null);
+ const chinggis=teamLogo('cs2','CW','PGL Major - Singapore');
+ const copenhagen=teamLogo('cs2','CW','United21 - Season 58');
+ assert.ok(chinggis && copenhagen);assert.notEqual(chinggis,copenhagen);
  assert.ok(teamLogo('cs2','G2'));assert.ok(teamLogo('valorant','CGN'));
- assert.equal(teamLogo('cs2','G2.A'),null);assert.equal(teamLogo('valorant','G2'),null);assert.equal(teamLogo('cs2','TBD'),null);
+ assert.notEqual(teamLogo('cs2','G2.A'),teamLogo('cs2','G2'));assert.equal(teamLogo('valorant','G2'),null);assert.equal(teamLogo('cs2','TBD'),null);
 });
 
 test('MLB stages, UTC boundary, exact logos, postponement identity and unknown time',()=>{
