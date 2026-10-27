@@ -69,7 +69,7 @@ try {
   const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
   if (Array.isArray(stored)) favorites = stored.filter(id => typeof id === 'string');
 } catch {
-  feedback.textContent = '无法读取本地收藏。你仍可浏览赛事并在本次会话中关注。';
+  if (feedback) feedback.textContent = '无法读取本地收藏。你仍可浏览赛事并在本次会话中关注。';
 }
 let category = 'all';
 function element(tag, className, text) {
@@ -93,7 +93,7 @@ function teamBadge(name, logo) {
   return badge;
 }
 const categoryItems = [['all','全部项目','↗'], ...sports.filter(s => page !== 'sports' && page !== 'esports' || s[3] === page)];
-for (const [id, name, icon] of categoryItems) {
+for (const [id, name, icon] of categories ? categoryItems : []) {
   const button = element('button','category');
   button.type = 'button';
   button.dataset.category = id;
@@ -109,6 +109,7 @@ for (const [id, name, icon] of categoryItems) {
   categories.append(button);
 }
 function render() {
+  if (!container) return;
   const filtered = filterMatches(matches, {page, category, search:search.value, date:date.value, favorites});
   container.replaceChildren();
   document.querySelector('#result-count').textContent = loadState === 'loading' ? '正在加载赛程…' : loadState === 'error' ? '赛程加载失败，请稍后重试。' : `找到 ${filtered.length} 场比赛`;
@@ -174,10 +175,10 @@ function render() {
     group.append(row);
   }
 }
-search.addEventListener('input',render);
-date.addEventListener('change',render);
-document.querySelector('#filters').addEventListener('submit',event => event.preventDefault());
-document.querySelector('#filters').addEventListener('reset', () => {
+search?.addEventListener('input',render);
+date?.addEventListener('change',render);
+document.querySelector('#filters')?.addEventListener('submit',event => event.preventDefault());
+document.querySelector('#filters')?.addEventListener('reset', () => {
   search.value = '';
   date.value = '';
   category = 'all';
@@ -185,7 +186,7 @@ document.querySelector('#filters').addEventListener('reset', () => {
   render();
 });
 window.addEventListener('storage', event => {
-  if (event.key !== storageKey && event.key !== null) return;
+  if (!feedback || (event.key !== storageKey && event.key !== null)) return;
   try {
     const stored = JSON.parse(event.newValue || '[]');
     favorites = Array.isArray(stored) ? stored.filter(id => typeof id === 'string') : [];
@@ -198,7 +199,7 @@ async function loadSchedule() {
   loadState = 'loading';
   render();
   const status = document.querySelector('#sync-status');
-  status.textContent = '正在读取赛程数据…';
+  if (status) status.textContent = '正在读取赛程数据…';
   try {
     const response = await fetch('data/schedule.json', {cache:'no-cache', signal:AbortSignal.timeout(15000)});
     if (!response.ok) throw Error('Request failed');
@@ -206,9 +207,8 @@ async function loadSchedule() {
     snapshot = next;
     matches = Object.values(next.sources).flatMap(s => s.matches);
     loadState = 'ready';
-    const relevant = Object.entries(next.sources).filter(([sport]) => page !== 'sports' && page !== 'esports' || sports.find(s => s[0] === sport)[3] === page);
-    status.replaceChildren();
-    for (const [,s] of relevant) {
+    status?.replaceChildren();
+    for (const s of status ? Object.values(next.sources) : []) {
       const line=element('p');
       const source=element(safeSource(s.sourceUrl)?'a':'span','',s.name);
       if (safeSource(s.sourceUrl)) {source.href=s.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';}
@@ -222,9 +222,9 @@ async function loadSchedule() {
     }
   } catch {
     loadState = snapshot ? 'ready' : 'error';
-    status.textContent = snapshot ? '刷新失败，继续显示本页面上次加载的数据。' : '无法读取赛程。请检查网络后点击「重新加载」。';
+    if (status) status.textContent = snapshot ? '刷新失败，继续显示本页面上次加载的数据。' : '无法读取赛程。请检查网络后点击「重新加载」。';
   }
   render();
 }
-document.querySelector('#reload-schedule').addEventListener('click', loadSchedule);
+document.querySelector('#reload-schedule')?.addEventListener('click', loadSchedule);
 loadSchedule();

@@ -26,19 +26,21 @@ assert.equal(run("filterMatches(matches,{page:'favorites',favorites:['football-d
 assert.equal(run("filterMatches(matches,{page:'favorites'}).length"),0);
 assert.equal(run("filterMatches(matches,{page:'index'})[2].start"),null);
 assert.throws(()=>run("validateSnapshot({sources:{}})"));
-for (const file of ['index.html','sports.html','esports.html','favorites.html']) {
+for (const file of ['index.html','sports.html','esports.html','favorites.html','information.html']) {
   const html = fs.readFileSync(path.join(root,file),'utf8');
   assert.equal((html.match(/<h1>/g)||[]).length,1);
   assert.match(html,/<html lang="zh-CN">/);
   assert.match(html,/aria-current="page"/);
   assert.match(html,/id="navigation-toggle"[^>]*aria-expanded="false"[^>]*aria-controls="navigation-panel"/);
-  assert.match(html,/<nav id="navigation-panel"[^>]* hidden><\/nav>/);
+  assert.match(html,/<nav id="navigation-panel"[^>]* hidden>[\s\S]*?href="information.html">Information<\/a><\/nav>/);
+  assert.equal(html.includes('id="sync-status"'), file === 'information.html');
+  if (file !== 'information.html') assert.match(html, /<nav id="navigation-panel"[^>]*>.*id="categories"/);
   assert.doesNotMatch(html,/class="(?:hero|pitch|manifesto|tagline)"/);
   for (const [,target] of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
     if (!target.startsWith('http')) assert.ok(fs.existsSync(path.join(root,target.split('?')[0])),`${file}: ${target}`);
   }
 }
-console.log('Passed: filtering, empty results, date ordering inputs, unique IDs, four-page links and semantic landmarks.');
+console.log('Passed: filtering, empty results, date ordering inputs, unique IDs, five-page links and semantic landmarks.');
 
 // Minimal DOM harness checks real event handlers without third-party dependencies.
 class Element {
@@ -90,7 +92,12 @@ assert.equal(panel.hidden,false);
 assert.equal(toggle.attrs['aria-expanded'],'true');
 assert.equal(toggle.attrs['aria-label'],'收起侧边导航');
 assert.equal(body.dataset.navigationOpen,'true');
-assert.equal(panel.children.length,0);
+assert.equal(nodes['#categories'].children.length,6);
+const footballButton = nodes['#categories'].children.find(button => button.dataset.category === 'football');
+footballButton.events.click();
+assert.equal(footballButton.attrs['aria-pressed'],'true');
+assert.match(nodes['#result-count'].textContent,/1 场/);
+nodes['#filters'].events.reset();
 documentEvents.keydown({key:'Enter'});
 assert.equal(panel.hidden,false);
 documentEvents.keydown({key:'Escape'});
@@ -103,7 +110,7 @@ toggle.events.click();
 toggle.events.click();
 assert.equal(panel.hidden,true);
 assert.equal(toggle.attrs['aria-expanded'],'false');
-console.log('Passed: empty side navigation, button open/close, aria state, Escape close and returned focus.');
+console.log('Passed: side navigation, button open/close, aria state, Escape close and returned focus.');
 
 failFetch = true;
 await vm.runInContext('loadSchedule()',browser);
@@ -114,8 +121,8 @@ await vm.runInContext('loadSchedule()',browser);
 assert.match(nodes['#result-count'].textContent,/赛程加载失败/);
 console.log('Passed: async loading, refresh fallback, initial load failure, Beijing date boundary and undated matches.');
 }
-checkBrowser().catch(error=>{console.error(error);process.exitCode=1;});
 
+checkBrowser().then(checkInformation).catch(error=>{console.error(error);process.exitCode=1;});
 assert.equal(vm.runInContext("safeLogo('assets/team-logos/big.svg')",browser),true);
 assert.equal(vm.runInContext("safeLogo('assets/team-logos/hook.webp')",browser),true);
 assert.equal(vm.runInContext("safeLogo('assets/team-logos/../evil.svg')",browser),false);
@@ -125,3 +132,19 @@ assert.equal(run("filterMatches([{...matches[0],sport:'baseball'}],{page:'sports
 
 assert.equal(run("safeSource('https://www.mlb.com/gameday/9001')"),true);
 assert.equal(run("safeSource('https://www.mlb.com.evil.example/gameday/9001')"),false);
+
+async function checkInformation() {
+  const infoNodes = Object.fromEntries(['navigation-toggle','navigation-panel','sync-status','reload-schedule'].map(id => ['#'+id,new Element()]));
+  let fetches = 0;
+  const info = vm.createContext({...browser,
+    document: {...browser.document, body:{dataset:{page:'information'}}, querySelector: selector => infoNodes[selector]},
+    fetch: async () => { fetches++; return {ok:true,json:async()=>fixture}; }
+  });
+  vm.runInContext(source, info);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(infoNodes['#sync-status'].children.length,5);
+  await infoNodes['#reload-schedule'].events.click();
+  assert.equal(fetches,2);
+  assert.equal(infoNodes['#sync-status'].children.length,5);
+  console.log('Passed: Information shows all sources and reloads without schedule controls.');
+}
