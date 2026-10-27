@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-10T02:46:04.957Z",
+      "updatedAt": "2026-11-10T12:44:35.181Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
+      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-10T02:46:04.957Z",
+      "updatedAt": "2026-11-10T12:44:35.181Z",
       "matches": [
         {
           "id": "pandascore:1711021",
@@ -4517,11 +4517,11 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
+      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
       "error": null,
       "availability": "scheduled",
-      "upstreamLastModified": "2026-11-09T05:59:43.344Z",
-      "upstreamGeneratedAt": "2026-11-09T05:59:43.344Z",
+      "upstreamLastModified": "2026-11-10T07:02:11.344Z",
+      "upstreamGeneratedAt": "2026-11-10T07:02:11.344Z",
       "coverageNote": null
     },
     "cs2": {
@@ -5765,7 +5765,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
+      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -5776,7 +5776,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-10T02:46:04.957Z",
+      "updatedAt": "2026-11-10T12:44:35.181Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -5790,6 +5790,20 @@
           "start": "2026-11-14T05:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1803628@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
+          "stage": "Upper bracket quarterfinal 3",
+          "home": "Alter Ego x Kertanegara",
+          "away": "RJL",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-10T14:30:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/alter-ego-x-kertanegara.ics",
           "timeZone": "UTC"
         },
         {
@@ -5902,20 +5916,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/berg.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1800758@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
-          "stage": "Upper Bracket Quarterfinal 1",
-          "home": "BOOM",
-          "away": "RJL",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-10T12:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/boom-esports.ics",
           "timeZone": "UTC"
         },
         {
@@ -6123,7 +6123,7 @@
           "away": "Original Gaming",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-15T08:00:00Z",
+          "start": "2026-11-15T10:00:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/fancy-united.ics",
           "timeZone": "UTC"
@@ -6295,24 +6295,10 @@
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/reh-gaming.ics",
           "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1800759@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
-          "stage": "Upper Bracket Quarterfinal 2",
-          "home": "SLG",
-          "away": "SUR",
-          "homeLogo": null,
-          "awayLogo": null,
-          "start": "2026-11-10T12:00:00Z",
-          "status": "赛程预告",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/seventh-letter-gaming.ics",
-          "timeZone": "UTC"
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
+      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6323,7 +6309,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-10T02:46:04.957Z",
+      "updatedAt": "2026-11-10T12:44:35.181Z",
       "matches": [
         {
           "id": "mlb:868576",
@@ -52678,7 +52664,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
+      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
