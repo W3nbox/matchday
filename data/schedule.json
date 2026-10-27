@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · 英超（社区数据）",
       "status": "ok",
-      "updatedAt": "2026-11-09T18:53:04.070Z",
+      "updatedAt": "2026-11-10T02:46:04.957Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-09T18:53:04.070Z",
+      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-09T18:53:04.070Z",
+      "updatedAt": "2026-11-10T02:46:04.957Z",
       "matches": [
         {
           "id": "pandascore:1711021",
@@ -4517,7 +4517,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-09T18:53:04.070Z",
+      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-09T05:59:43.344Z",
@@ -4528,7 +4528,7 @@
       "name": "esport_ics · CS2",
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
-      "status": "ok",
+      "status": "error",
       "updatedAt": "2026-11-09T18:53:04.070Z",
       "matches": [
         {
@@ -5765,10 +5765,10 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-09T18:53:04.070Z",
+      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
-      "error": null,
+      "error": "structure",
       "coverageNote": null
     },
     "valorant": {
@@ -5776,7 +5776,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-09T18:53:04.070Z",
+      "updatedAt": "2026-11-10T02:46:04.957Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -5804,6 +5804,20 @@
           "start": "2026-11-10T14:30:00Z",
           "status": "赛程预告",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/alter-ego-x-kertanegara.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1802839@esport-ics",
+          "sport": "valorant",
+          "league": "VCT - EMEA Kickoff: Europe Qualifier 2027 - Playoffs",
+          "stage": "Semifinal 2",
+          "home": "Aurora Gaming",
+          "away": "PL",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-10T16:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/aurora-gaming.ics",
           "timeZone": "UTC"
         },
         {
@@ -6073,6 +6087,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "valorant:pandascore-match-1802838@esport-ics",
+          "sport": "valorant",
+          "league": "VCT - EMEA Kickoff: Europe Qualifier 2027 - Playoffs",
+          "stage": "Semifinal 1",
+          "home": "xXxMasterProMegaTeamxXx",
+          "away": "F9",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-10T16:00:00Z",
+          "status": "赛程预告",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/f9-eicar.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "valorant:pandascore-match-1797438@esport-ics",
           "sport": "valorant",
           "league": "Asia Pacific Predator League - Japan 2027 - Playoffs",
@@ -6284,7 +6312,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-09T18:53:04.070Z",
+      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6295,7 +6323,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-09T18:53:04.070Z",
+      "updatedAt": "2026-11-10T02:46:04.957Z",
       "matches": [
         {
           "id": "mlb:868576",
@@ -11498,22 +11526,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868191",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 春训赛",
-          "season": "2027",
-          "home": "Seattle Mariners",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-136.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": "2027-03-13T20:05:00.000Z",
-          "sourceDate": "2027-03-13",
-          "status": "未开赛",
-          "sourceUrl": "https://www.mlb.com/gameday/868191",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868176",
           "sport": "baseball",
           "league": "MLB",
@@ -11527,6 +11539,22 @@
           "sourceDate": "2027-03-13",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/868176",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868191",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 春训赛",
+          "season": "2027",
+          "home": "Seattle Mariners",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-136.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-03-13T20:10:00.000Z",
+          "sourceDate": "2027-03-13",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/868191",
           "timeZone": "UTC"
         },
         {
@@ -13418,22 +13446,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868352",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 春训赛",
-          "season": "2027",
-          "home": "Tampa Bay Rays",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-139.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-03-21",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/868352",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868361",
           "sport": "baseball",
           "league": "MLB",
@@ -13559,6 +13571,22 @@
           "sourceDate": "2027-03-22",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/868350",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868352",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 春训赛",
+          "season": "2027",
+          "home": "Tampa Bay Rays",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-139.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-03-22T17:05:00.000Z",
+          "sourceDate": "2027-03-22",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/868352",
           "timeZone": "UTC"
         },
         {
@@ -13690,6 +13718,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868349",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 春训赛",
+          "season": "2027",
+          "home": "Tampa Bay Rays",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-139.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-03-23T16:35:00.000Z",
+          "sourceDate": "2027-03-23",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/868349",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:872834",
           "sport": "baseball",
           "league": "MLB",
@@ -13735,22 +13779,6 @@
           "sourceDate": "2027-03-23",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/868119",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868349",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 春训赛",
-          "season": "2027",
-          "home": "Tampa Bay Rays",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-139.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-03-23",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/868349",
           "timeZone": "UTC"
         },
         {
@@ -13847,6 +13875,22 @@
           "sourceDate": "2027-03-25",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853965",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853558",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-03-25T20:10:00.000Z",
+          "sourceDate": "2027-03-25",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853558",
           "timeZone": "UTC"
         },
         {
@@ -13994,22 +14038,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853558",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-03-25",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853558",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852747",
           "sport": "baseball",
           "league": "MLB",
@@ -14103,6 +14131,22 @@
           "sourceDate": "2027-03-27",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852998",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853556",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-03-27T18:10:00.000Z",
+          "sourceDate": "2027-03-27",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853556",
           "timeZone": "UTC"
         },
         {
@@ -14282,22 +14326,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853556",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-03-27",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853556",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854120",
           "sport": "baseball",
           "league": "MLB",
@@ -14375,6 +14403,22 @@
           "sourceDate": "2027-03-28",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853968",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853557",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-03-28T18:10:00.000Z",
+          "sourceDate": "2027-03-28",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853557",
           "timeZone": "UTC"
         },
         {
@@ -14506,22 +14550,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853557",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-03-28",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853557",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854289",
           "sport": "baseball",
           "league": "MLB",
@@ -14583,6 +14611,22 @@
           "sourceDate": "2027-03-29",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852991",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853555",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-03-29T23:40:00.000Z",
+          "sourceDate": "2027-03-29",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853555",
           "timeZone": "UTC"
         },
         {
@@ -14746,22 +14790,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853555",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-03-29",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853555",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853960",
           "sport": "baseball",
           "league": "MLB",
@@ -14807,6 +14835,22 @@
           "sourceDate": "2027-03-30",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852996",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853551",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-03-30T23:40:00.000Z",
+          "sourceDate": "2027-03-30",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853551",
           "timeZone": "UTC"
         },
         {
@@ -14970,22 +15014,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853551",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-03-30",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853551",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853963",
           "sport": "baseball",
           "league": "MLB",
@@ -15031,6 +15059,22 @@
           "sourceDate": "2027-03-31",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853230",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853548",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-03-31T18:10:00.000Z",
+          "sourceDate": "2027-03-31",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853548",
           "timeZone": "UTC"
         },
         {
@@ -15207,22 +15251,6 @@
           "sourceDate": "2027-03-31",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/853395",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853548",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-03-31",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853548",
           "timeZone": "UTC"
         },
         {
@@ -16858,6 +16886,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853546",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Pittsburgh Pirates",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-134.png",
+          "start": "2027-04-09T23:40:00.000Z",
+          "sourceDate": "2027-04-09",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853546",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853226",
           "sport": "baseball",
           "league": "MLB",
@@ -17018,22 +17062,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853546",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Pittsburgh Pirates",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-134.png",
-          "start": null,
-          "sourceDate": "2027-04-09",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853546",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852972",
           "sport": "baseball",
           "league": "MLB",
@@ -17047,6 +17075,22 @@
           "sourceDate": "2027-04-10",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852972",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853547",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Pittsburgh Pirates",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-134.png",
+          "start": "2027-04-10T18:10:00.000Z",
+          "sourceDate": "2027-04-10",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853547",
           "timeZone": "UTC"
         },
         {
@@ -17258,22 +17302,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853547",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Pittsburgh Pirates",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-134.png",
-          "start": null,
-          "sourceDate": "2027-04-10",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853547",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854279",
           "sport": "baseball",
           "league": "MLB",
@@ -17335,6 +17363,22 @@
           "sourceDate": "2027-04-11",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853946",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853549",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Pittsburgh Pirates",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-134.png",
+          "start": "2027-04-11T18:10:00.000Z",
+          "sourceDate": "2027-04-11",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853549",
           "timeZone": "UTC"
         },
         {
@@ -17498,22 +17542,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853549",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Pittsburgh Pirates",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-134.png",
-          "start": null,
-          "sourceDate": "2027-04-11",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853549",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854280",
           "sport": "baseball",
           "league": "MLB",
@@ -17623,6 +17651,22 @@
           "sourceDate": "2027-04-13",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853063",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853552",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-13T23:40:00.000Z",
+          "sourceDate": "2027-04-13",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853552",
           "timeZone": "UTC"
         },
         {
@@ -17802,22 +17846,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853552",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-13",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853552",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853945",
           "sport": "baseball",
           "league": "MLB",
@@ -17863,6 +17891,22 @@
           "sourceDate": "2027-04-14",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853057",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853553",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-14T23:40:00.000Z",
+          "sourceDate": "2027-04-14",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853553",
           "timeZone": "UTC"
         },
         {
@@ -18042,22 +18086,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853553",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-14",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853553",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853947",
           "sport": "baseball",
           "league": "MLB",
@@ -18119,6 +18147,22 @@
           "sourceDate": "2027-04-15",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853227",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853554",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-15T18:10:00.000Z",
+          "sourceDate": "2027-04-15",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853554",
           "timeZone": "UTC"
         },
         {
@@ -18282,22 +18326,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853554",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-15",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853554",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852908",
           "sport": "baseball",
           "league": "MLB",
@@ -18343,6 +18371,22 @@
           "sourceDate": "2027-04-16",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854364",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853550",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-04-16T23:40:00.000Z",
+          "sourceDate": "2027-04-16",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853550",
           "timeZone": "UTC"
         },
         {
@@ -18522,22 +18566,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853550",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-04-16",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853550",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852981",
           "sport": "baseball",
           "league": "MLB",
@@ -18551,6 +18579,22 @@
           "sourceDate": "2027-04-17",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852981",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853535",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-04-17T18:10:00.000Z",
+          "sourceDate": "2027-04-17",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853535",
           "timeZone": "UTC"
         },
         {
@@ -18746,22 +18790,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853535",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-04-17",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853535",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852574",
           "sport": "baseball",
           "league": "MLB",
@@ -18823,6 +18851,22 @@
           "sourceDate": "2027-04-18",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852894",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853533",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-04-18T18:10:00.000Z",
+          "sourceDate": "2027-04-18",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853533",
           "timeZone": "UTC"
         },
         {
@@ -18999,22 +19043,6 @@
           "sourceDate": "2027-04-18",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852575",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853533",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-04-18",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853533",
           "timeZone": "UTC"
         },
         {
@@ -20570,6 +20598,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853534",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-26T23:40:00.000Z",
+          "sourceDate": "2027-04-26",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853534",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852491",
           "sport": "baseball",
           "league": "MLB",
@@ -20666,22 +20710,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853534",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-26",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853534",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854260",
           "sport": "baseball",
           "league": "MLB",
@@ -20759,6 +20787,22 @@
           "sourceDate": "2027-04-27",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853144",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853536",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-27T23:40:00.000Z",
+          "sourceDate": "2027-04-27",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853536",
           "timeZone": "UTC"
         },
         {
@@ -20906,22 +20950,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853536",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-27",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853536",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854262",
           "sport": "baseball",
           "league": "MLB",
@@ -20967,6 +20995,22 @@
           "sourceDate": "2027-04-28",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852489",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853537",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-28T18:10:00.000Z",
+          "sourceDate": "2027-04-28",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853537",
           "timeZone": "UTC"
         },
         {
@@ -21143,22 +21187,6 @@
           "sourceDate": "2027-04-28",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/853372",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853537",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-28",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853537",
           "timeZone": "UTC"
         },
         {
@@ -21994,6 +22022,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853538",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-05-03T23:40:00.000Z",
+          "sourceDate": "2027-05-03",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853538",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853210",
           "sport": "baseball",
           "league": "MLB",
@@ -22170,22 +22214,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853538",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-05-03",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853538",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852898",
           "sport": "baseball",
           "league": "MLB",
@@ -22231,6 +22259,22 @@
           "sourceDate": "2027-05-04",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854347",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853539",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-05-04T23:40:00.000Z",
+          "sourceDate": "2027-05-04",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853539",
           "timeZone": "UTC"
         },
         {
@@ -22410,22 +22454,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853539",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-05-04",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853539",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853218",
           "sport": "baseball",
           "league": "MLB",
@@ -22439,6 +22467,22 @@
           "sourceDate": "2027-05-05",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853218",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853543",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-05-05T18:10:00.000Z",
+          "sourceDate": "2027-05-05",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853543",
           "timeZone": "UTC"
         },
         {
@@ -22647,22 +22691,6 @@
           "sourceDate": "2027-05-05",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852568",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853543",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-05-05",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853543",
           "timeZone": "UTC"
         },
         {
@@ -22890,6 +22918,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853541",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-05-07T23:40:00.000Z",
+          "sourceDate": "2027-05-07",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853541",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853129",
           "sport": "baseball",
           "league": "MLB",
@@ -23050,22 +23094,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853541",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-05-07",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853541",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853125",
           "sport": "baseball",
           "league": "MLB",
@@ -23143,6 +23171,22 @@
           "sourceDate": "2027-05-08",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853951",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853542",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-05-08T23:10:00.000Z",
+          "sourceDate": "2027-05-08",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853542",
           "timeZone": "UTC"
         },
         {
@@ -23290,22 +23334,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853542",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-05-08",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853542",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852889",
           "sport": "baseball",
           "league": "MLB",
@@ -23367,6 +23395,22 @@
           "sourceDate": "2027-05-09",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853043",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853540",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-05-09T18:10:00.000Z",
+          "sourceDate": "2027-05-09",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853540",
           "timeZone": "UTC"
         },
         {
@@ -23527,22 +23571,6 @@
           "sourceDate": "2027-05-09",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/854518",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853540",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-05-09",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853540",
           "timeZone": "UTC"
         },
         {
@@ -25258,6 +25286,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853544",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-18T23:40:00.000Z",
+          "sourceDate": "2027-05-18",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853544",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852323",
           "sport": "baseball",
           "league": "MLB",
@@ -25402,22 +25446,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853544",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-18",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853544",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852879",
           "sport": "baseball",
           "league": "MLB",
@@ -25511,6 +25539,22 @@
           "sourceDate": "2027-05-19",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854349",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853545",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-19T23:40:00.000Z",
+          "sourceDate": "2027-05-19",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853545",
           "timeZone": "UTC"
         },
         {
@@ -25642,22 +25686,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853545",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-19",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853545",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854261",
           "sport": "baseball",
           "league": "MLB",
@@ -25687,6 +25715,22 @@
           "sourceDate": "2027-05-20",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853197",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853524",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-20T18:10:00.000Z",
+          "sourceDate": "2027-05-20",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853524",
           "timeZone": "UTC"
         },
         {
@@ -25786,22 +25830,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853524",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-20",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853524",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853930",
           "sport": "baseball",
           "league": "MLB",
@@ -25863,6 +25891,22 @@
           "sourceDate": "2027-05-21",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853137",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853522",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-05-21T23:40:00.000Z",
+          "sourceDate": "2027-05-21",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853522",
           "timeZone": "UTC"
         },
         {
@@ -26026,22 +26070,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853522",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-05-21",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853522",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852967",
           "sport": "baseball",
           "league": "MLB",
@@ -26103,6 +26131,22 @@
           "sourceDate": "2027-05-22",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853936",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853527",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-05-22T20:10:00.000Z",
+          "sourceDate": "2027-05-22",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853527",
           "timeZone": "UTC"
         },
         {
@@ -26266,22 +26310,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853527",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-05-22",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853527",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852882",
           "sport": "baseball",
           "league": "MLB",
@@ -26343,6 +26371,22 @@
           "sourceDate": "2027-05-23",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853138",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853532",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-05-23T18:10:00.000Z",
+          "sourceDate": "2027-05-23",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853532",
           "timeZone": "UTC"
         },
         {
@@ -26503,22 +26547,6 @@
           "sourceDate": "2027-05-23",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852557",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853532",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-05-23",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853532",
           "timeZone": "UTC"
         },
         {
@@ -28826,6 +28854,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853529",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-06-05T00:10:00.000Z",
+          "sourceDate": "2027-06-04",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853529",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853772",
           "sport": "baseball",
           "league": "MLB",
@@ -29002,22 +29046,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853529",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-06-04",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853529",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852875",
           "sport": "baseball",
           "league": "MLB",
@@ -29031,6 +29059,22 @@
           "sourceDate": "2027-06-05",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852875",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853526",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-06-05T20:10:00.000Z",
+          "sourceDate": "2027-06-05",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853526",
           "timeZone": "UTC"
         },
         {
@@ -29242,22 +29286,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853526",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-06-05",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853526",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852878",
           "sport": "baseball",
           "league": "MLB",
@@ -29303,6 +29331,22 @@
           "sourceDate": "2027-06-06",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853049",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853525",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-06-06T18:10:00.000Z",
+          "sourceDate": "2027-06-06",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853525",
           "timeZone": "UTC"
         },
         {
@@ -29466,22 +29510,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853525",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-06-06",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853525",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853934",
           "sport": "baseball",
           "league": "MLB",
@@ -29495,6 +29523,22 @@
           "sourceDate": "2027-06-07",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853934",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853523",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-06-07T23:40:00.000Z",
+          "sourceDate": "2027-06-07",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853523",
           "timeZone": "UTC"
         },
         {
@@ -29642,22 +29686,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853523",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-06-07",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853523",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852142",
           "sport": "baseball",
           "league": "MLB",
@@ -29703,6 +29731,22 @@
           "sourceDate": "2027-06-08",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853935",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853530",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-06-08T23:40:00.000Z",
+          "sourceDate": "2027-06-08",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853530",
           "timeZone": "UTC"
         },
         {
@@ -29882,22 +29926,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853530",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-06-08",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853530",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853940",
           "sport": "baseball",
           "league": "MLB",
@@ -29927,6 +29955,22 @@
           "sourceDate": "2027-06-09",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853116",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853531",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-06-09T18:10:00.000Z",
+          "sourceDate": "2027-06-09",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853531",
           "timeZone": "UTC"
         },
         {
@@ -30122,22 +30166,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853531",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-06-09",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853531",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852151",
           "sport": "baseball",
           "league": "MLB",
@@ -30330,6 +30358,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853521",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-06-12T00:10:00.000Z",
+          "sourceDate": "2027-06-11",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853521",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852307",
           "sport": "baseball",
           "league": "MLB",
@@ -30474,22 +30518,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853521",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-06-11",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853521",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853119",
           "sport": "baseball",
           "league": "MLB",
@@ -30535,6 +30563,22 @@
           "sourceDate": "2027-06-12",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854254",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853520",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-06-12T20:10:00.000Z",
+          "sourceDate": "2027-06-12",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853520",
           "timeZone": "UTC"
         },
         {
@@ -30714,22 +30758,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853520",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-06-12",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853520",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852150",
           "sport": "baseball",
           "league": "MLB",
@@ -30791,6 +30819,22 @@
           "sourceDate": "2027-06-13",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853918",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853528",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-06-13T18:10:00.000Z",
+          "sourceDate": "2027-06-13",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853528",
           "timeZone": "UTC"
         },
         {
@@ -30951,22 +30995,6 @@
           "sourceDate": "2027-06-13",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/854414",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853528",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-06-13",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853528",
           "timeZone": "UTC"
         },
         {
@@ -32490,6 +32518,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853515",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-06-21T23:40:00.000Z",
+          "sourceDate": "2027-06-21",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853515",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853121",
           "sport": "baseball",
           "league": "MLB",
@@ -32634,22 +32678,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853515",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-06-21",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853515",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852713",
           "sport": "baseball",
           "league": "MLB",
@@ -32727,6 +32755,22 @@
           "sourceDate": "2027-06-22",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854326",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853510",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-06-22T23:40:00.000Z",
+          "sourceDate": "2027-06-22",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853510",
           "timeZone": "UTC"
         },
         {
@@ -32890,22 +32934,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853510",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-06-22",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853510",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853032",
           "sport": "baseball",
           "league": "MLB",
@@ -32919,6 +32947,22 @@
           "sourceDate": "2027-06-23",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853032",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853517",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-06-23T18:10:00.000Z",
+          "sourceDate": "2027-06-23",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853517",
           "timeZone": "UTC"
         },
         {
@@ -33111,22 +33155,6 @@
           "sourceDate": "2027-06-23",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852548",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853517",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-06-23",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853517",
           "timeZone": "UTC"
         },
         {
@@ -33978,6 +34006,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853508",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-06-28T23:40:00.000Z",
+          "sourceDate": "2027-06-28",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853508",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853186",
           "sport": "baseball",
           "league": "MLB",
@@ -34090,22 +34134,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853508",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-06-28",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853508",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854237",
           "sport": "baseball",
           "league": "MLB",
@@ -34167,6 +34195,22 @@
           "sourceDate": "2027-06-29",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853921",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853516",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-06-29T23:40:00.000Z",
+          "sourceDate": "2027-06-29",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853516",
           "timeZone": "UTC"
         },
         {
@@ -34330,22 +34374,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853516",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-06-29",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853516",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853182",
           "sport": "baseball",
           "league": "MLB",
@@ -34423,6 +34451,22 @@
           "sourceDate": "2027-06-30",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853927",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853511",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-06-30T23:40:00.000Z",
+          "sourceDate": "2027-06-30",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853511",
           "timeZone": "UTC"
         },
         {
@@ -34570,22 +34614,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853511",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-06-30",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853511",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854235",
           "sport": "baseball",
           "league": "MLB",
@@ -34647,6 +34675,22 @@
           "sourceDate": "2027-07-01",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852947",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853518",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-07-01T23:40:00.000Z",
+          "sourceDate": "2027-07-01",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853518",
           "timeZone": "UTC"
         },
         {
@@ -34762,22 +34806,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853518",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-07-01",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853518",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852859",
           "sport": "baseball",
           "league": "MLB",
@@ -34855,6 +34883,22 @@
           "sourceDate": "2027-07-02",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854323",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853513",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-03T00:10:00.000Z",
+          "sourceDate": "2027-07-02",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853513",
           "timeZone": "UTC"
         },
         {
@@ -35002,22 +35046,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853513",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-02",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853513",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852941",
           "sport": "baseball",
           "league": "MLB",
@@ -35127,6 +35155,22 @@
           "sourceDate": "2027-07-03",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854328",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853509",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-04T00:10:00.000Z",
+          "sourceDate": "2027-07-03",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853509",
           "timeZone": "UTC"
         },
         {
@@ -35242,22 +35286,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853509",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-03",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853509",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852140",
           "sport": "baseball",
           "league": "MLB",
@@ -35335,6 +35363,22 @@
           "sourceDate": "2027-07-04",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853916",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853506",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-04T18:10:00.000Z",
+          "sourceDate": "2027-07-04",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853506",
           "timeZone": "UTC"
         },
         {
@@ -35479,22 +35523,6 @@
           "sourceDate": "2027-07-04",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/854484",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853506",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-04",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853506",
           "timeZone": "UTC"
         },
         {
@@ -37098,6 +37126,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853514",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": "2027-07-17T00:10:00.000Z",
+          "sourceDate": "2027-07-16",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853514",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852290",
           "sport": "baseball",
           "league": "MLB",
@@ -37242,22 +37286,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853514",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-07-16",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853514",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852931",
           "sport": "baseball",
           "league": "MLB",
@@ -37319,6 +37347,22 @@
           "sourceDate": "2027-07-17",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853912",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853507",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": "2027-07-17T23:10:00.000Z",
+          "sourceDate": "2027-07-17",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853507",
           "timeZone": "UTC"
         },
         {
@@ -37482,22 +37526,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853507",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-07-17",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853507",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854245",
           "sport": "baseball",
           "league": "MLB",
@@ -37559,6 +37587,22 @@
           "sourceDate": "2027-07-18",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853909",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853512",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": "2027-07-18T18:10:00.000Z",
+          "sourceDate": "2027-07-18",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853512",
           "timeZone": "UTC"
         },
         {
@@ -37722,22 +37766,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853512",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-07-18",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853512",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853915",
           "sport": "baseball",
           "league": "MLB",
@@ -37799,6 +37827,22 @@
           "sourceDate": "2027-07-19",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854307",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853519",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-07-19T23:40:00.000Z",
+          "sourceDate": "2027-07-19",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853519",
           "timeZone": "UTC"
         },
         {
@@ -37962,22 +38006,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853519",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-07-19",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853519",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854240",
           "sport": "baseball",
           "league": "MLB",
@@ -38039,6 +38067,22 @@
           "sourceDate": "2027-07-20",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854308",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853501",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-07-20T23:40:00.000Z",
+          "sourceDate": "2027-07-20",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853501",
           "timeZone": "UTC"
         },
         {
@@ -38202,22 +38246,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853501",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-07-20",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853501",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854309",
           "sport": "baseball",
           "league": "MLB",
@@ -38263,6 +38291,22 @@
           "sourceDate": "2027-07-21",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852933",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853496",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-07-21T18:10:00.000Z",
+          "sourceDate": "2027-07-21",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853496",
           "timeZone": "UTC"
         },
         {
@@ -38439,22 +38483,6 @@
           "sourceDate": "2027-07-21",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/854479",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853496",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-07-21",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853496",
           "timeZone": "UTC"
         },
         {
@@ -40010,6 +40038,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853493",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-07-29T23:40:00.000Z",
+          "sourceDate": "2027-07-29",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853493",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852377",
           "sport": "baseball",
           "league": "MLB",
@@ -40106,22 +40150,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853493",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-07-29",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853493",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852936",
           "sport": "baseball",
           "league": "MLB",
@@ -40183,6 +40211,22 @@
           "sourceDate": "2027-07-30",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852293",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853497",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-07-31T00:10:00.000Z",
+          "sourceDate": "2027-07-30",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853497",
           "timeZone": "UTC"
         },
         {
@@ -40346,22 +40390,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853497",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-07-30",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853497",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852943",
           "sport": "baseball",
           "league": "MLB",
@@ -40407,6 +40435,22 @@
           "sourceDate": "2027-07-31",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852295",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853498",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-07-31T23:10:00.000Z",
+          "sourceDate": "2027-07-31",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853498",
           "timeZone": "UTC"
         },
         {
@@ -40586,22 +40630,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853498",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-07-31",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853498",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854312",
           "sport": "baseball",
           "league": "MLB",
@@ -40647,6 +40675,22 @@
           "sourceDate": "2027-08-01",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853911",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853505",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-08-01T18:10:00.000Z",
+          "sourceDate": "2027-08-01",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853505",
           "timeZone": "UTC"
         },
         {
@@ -40823,22 +40867,6 @@
           "sourceDate": "2027-08-01",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/854393",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853505",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-08-01",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853505",
           "timeZone": "UTC"
         },
         {
@@ -41050,6 +41078,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853504",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-08-03T23:40:00.000Z",
+          "sourceDate": "2027-08-03",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853504",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853175",
           "sport": "baseball",
           "league": "MLB",
@@ -41178,22 +41222,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853504",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-08-03",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853504",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853168",
           "sport": "baseball",
           "league": "MLB",
@@ -41303,6 +41331,22 @@
           "sourceDate": "2027-08-04",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/854306",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853495",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-08-04T23:40:00.000Z",
+          "sourceDate": "2027-08-04",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853495",
           "timeZone": "UTC"
         },
         {
@@ -41418,22 +41462,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853495",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-08-04",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853495",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854220",
           "sport": "baseball",
           "league": "MLB",
@@ -41479,6 +41507,22 @@
           "sourceDate": "2027-08-05",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852918",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853499",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-08-05T18:10:00.000Z",
+          "sourceDate": "2027-08-05",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853499",
           "timeZone": "UTC"
         },
         {
@@ -41559,22 +41603,6 @@
           "sourceDate": "2027-08-05",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/853330",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853499",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-08-05",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853499",
           "timeZone": "UTC"
         },
         {
@@ -43338,6 +43366,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853502",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-08-14T23:10:00.000Z",
+          "sourceDate": "2027-08-14",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853502",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854311",
           "sport": "baseball",
           "league": "MLB",
@@ -43514,22 +43558,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853502",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-08-14",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853502",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852124",
           "sport": "baseball",
           "league": "MLB",
@@ -43591,6 +43619,22 @@
           "sourceDate": "2027-08-15",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853902",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853492",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-08-15T18:10:00.000Z",
+          "sourceDate": "2027-08-15",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853492",
           "timeZone": "UTC"
         },
         {
@@ -43754,22 +43798,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853492",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-08-15",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853492",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852117",
           "sport": "baseball",
           "league": "MLB",
@@ -43815,6 +43843,22 @@
           "sourceDate": "2027-08-16",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852921",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853494",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-08-16T23:40:00.000Z",
+          "sourceDate": "2027-08-16",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853494",
           "timeZone": "UTC"
         },
         {
@@ -43946,22 +43990,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853494",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-08-16",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853494",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853890",
           "sport": "baseball",
           "league": "MLB",
@@ -44023,6 +44051,22 @@
           "sourceDate": "2027-08-17",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852922",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853500",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-08-17T23:40:00.000Z",
+          "sourceDate": "2027-08-17",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853500",
           "timeZone": "UTC"
         },
         {
@@ -44186,22 +44230,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853500",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-08-17",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853500",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853086",
           "sport": "baseball",
           "league": "MLB",
@@ -44279,6 +44307,22 @@
           "sourceDate": "2027-08-18",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852113",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853487",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-08-18T23:40:00.000Z",
+          "sourceDate": "2027-08-18",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853487",
           "timeZone": "UTC"
         },
         {
@@ -44423,22 +44467,6 @@
           "sourceDate": "2027-08-18",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852516",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853487",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-08-18",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853487",
           "timeZone": "UTC"
         },
         {
@@ -46746,6 +46774,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853481",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-08-30T23:40:00.000Z",
+          "sourceDate": "2027-08-30",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853481",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854142",
           "sport": "baseball",
           "league": "MLB",
@@ -46842,22 +46886,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853481",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-08-30",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853481",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852844",
           "sport": "baseball",
           "league": "MLB",
@@ -46919,6 +46947,22 @@
           "sourceDate": "2027-08-31",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853093",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853478",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-08-31T23:40:00.000Z",
+          "sourceDate": "2027-08-31",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853478",
           "timeZone": "UTC"
         },
         {
@@ -47082,22 +47126,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853478",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-08-31",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853478",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852110",
           "sport": "baseball",
           "league": "MLB",
@@ -47159,6 +47187,22 @@
           "sourceDate": "2027-09-01",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853087",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853483",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-09-01T23:40:00.000Z",
+          "sourceDate": "2027-09-01",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853483",
           "timeZone": "UTC"
         },
         {
@@ -47319,22 +47363,6 @@
           "sourceDate": "2027-09-01",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/853322",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853483",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-09-01",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853483",
           "timeZone": "UTC"
         },
         {
@@ -47546,6 +47574,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853479",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": "2027-09-03T23:40:00.000Z",
+          "sourceDate": "2027-09-03",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853479",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853083",
           "sport": "baseball",
           "league": "MLB",
@@ -47706,22 +47750,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853479",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
-          "start": null,
-          "sourceDate": "2027-09-03",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853479",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852924",
           "sport": "baseball",
           "league": "MLB",
@@ -47783,6 +47811,22 @@
           "sourceDate": "2027-09-04",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853901",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853490",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": "2027-09-04T23:10:00.000Z",
+          "sourceDate": "2027-09-04",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853490",
           "timeZone": "UTC"
         },
         {
@@ -47946,22 +47990,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853490",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
-          "start": null,
-          "sourceDate": "2027-09-04",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853490",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853885",
           "sport": "baseball",
           "league": "MLB",
@@ -48023,6 +48051,22 @@
           "sourceDate": "2027-09-05",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852917",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853480",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": "2027-09-05T18:10:00.000Z",
+          "sourceDate": "2027-09-05",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853480",
           "timeZone": "UTC"
         },
         {
@@ -48183,22 +48227,6 @@
           "sourceDate": "2027-09-05",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/853969",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853480",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
-          "start": null,
-          "sourceDate": "2027-09-05",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853480",
           "timeZone": "UTC"
         },
         {
@@ -48762,22 +48790,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852674",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "San Diego Padres",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-135.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": "2027-09-08T22:40:00.000Z",
-          "sourceDate": "2027-09-08",
-          "status": "未开赛",
-          "sourceUrl": "https://www.mlb.com/gameday/852674",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852836",
           "sport": "baseball",
           "league": "MLB",
@@ -48839,6 +48851,22 @@
           "sourceDate": "2027-09-08",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853726",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852674",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "San Diego Padres",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-135.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-09-09T00:40:00.000Z",
+          "sourceDate": "2027-09-08",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/852674",
           "timeZone": "UTC"
         },
         {
@@ -49690,6 +49718,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853482",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-09-13T23:40:00.000Z",
+          "sourceDate": "2027-09-13",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853482",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853644",
           "sport": "baseball",
           "league": "MLB",
@@ -49770,22 +49814,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853482",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-09-13",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853482",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853877",
           "sport": "baseball",
           "league": "MLB",
@@ -49831,6 +49859,22 @@
           "sourceDate": "2027-09-14",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852916",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853484",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-09-14T23:40:00.000Z",
+          "sourceDate": "2027-09-14",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853484",
           "timeZone": "UTC"
         },
         {
@@ -50010,22 +50054,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853484",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-09-14",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853484",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853884",
           "sport": "baseball",
           "league": "MLB",
@@ -50071,6 +50099,22 @@
           "sourceDate": "2027-09-15",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852905",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853485",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-09-15T23:40:00.000Z",
+          "sourceDate": "2027-09-15",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853485",
           "timeZone": "UTC"
         },
         {
@@ -50250,22 +50294,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853485",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-09-15",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853485",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852106",
           "sport": "baseball",
           "league": "MLB",
@@ -50295,6 +50323,22 @@
           "sourceDate": "2027-09-16",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853154",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853488",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-09-16T18:10:00.000Z",
+          "sourceDate": "2027-09-16",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853488",
           "timeZone": "UTC"
         },
         {
@@ -50474,22 +50518,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853488",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-09-16",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853488",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853880",
           "sport": "baseball",
           "league": "MLB",
@@ -50535,6 +50563,22 @@
           "sourceDate": "2027-09-17",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/852909",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853491",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-17T23:40:00.000Z",
+          "sourceDate": "2027-09-17",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853491",
           "timeZone": "UTC"
         },
         {
@@ -50714,22 +50758,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853491",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-17",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853491",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852902",
           "sport": "baseball",
           "league": "MLB",
@@ -50775,6 +50803,22 @@
           "sourceDate": "2027-09-18",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853883",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853489",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-18T23:10:00.000Z",
+          "sourceDate": "2027-09-18",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853489",
           "timeZone": "UTC"
         },
         {
@@ -50954,22 +50998,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853489",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-18",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853489",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852104",
           "sport": "baseball",
           "league": "MLB",
@@ -51015,6 +51043,22 @@
           "sourceDate": "2027-09-19",
           "status": "未开赛",
           "sourceUrl": "https://www.mlb.com/gameday/853876",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853486",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027赛季 · 常规赛",
+          "season": "2027",
+          "home": "Kansas City Royals",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-118.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-19T18:10:00.000Z",
+          "sourceDate": "2027-09-19",
+          "status": "未开赛",
+          "sourceUrl": "https://www.mlb.com/gameday/853486",
           "timeZone": "UTC"
         },
         {
@@ -51191,22 +51235,6 @@
           "sourceDate": "2027-09-19",
           "status": "时间待定",
           "sourceUrl": "https://www.mlb.com/gameday/852578",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853486",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027赛季 · 常规赛",
-          "season": "2027",
-          "home": "Kansas City Royals",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-118.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-19",
-          "status": "时间待定",
-          "sourceUrl": "https://www.mlb.com/gameday/853486",
           "timeZone": "UTC"
         },
         {
@@ -52650,7 +52678,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-09T18:53:04.070Z",
+      "lastAttemptAt": "2026-11-10T02:46:04.957Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
