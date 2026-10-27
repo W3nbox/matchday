@@ -2,7 +2,7 @@
 let matches = [];
 let snapshot = null;
 let loadState = 'loading';
-const sports = [['football','足球','⚽','sports'], ['baseball','棒球 · MLB','⚾','sports'], ['lol','英雄联盟','L','esports'], ['cs2','CS2','⌖','esports'], ['valorant','瓦洛兰特','V','esports']];
+const sports = [['football','Football','⚽','sports'], ['baseball','Baseball · MLB','⚾','sports'], ['lol','League of Legends','L','esports'], ['cs2','CS2','⌖','esports'], ['valorant','VALORANT','V','esports']];
 function beijingDate(value) {
   return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 }
@@ -47,7 +47,7 @@ const navigationPanel = document.querySelector('#navigation-panel');
 function setNavigationOpen(open) {
   document.body.dataset.navigationOpen = String(open);
   navigationToggle.setAttribute('aria-expanded', String(open));
-  navigationToggle.setAttribute('aria-label', open ? '收起侧边导航' : '展开侧边导航');
+  navigationToggle.setAttribute('aria-label', open ? 'Close sidebar' : 'Open sidebar');
   navigationToggle.textContent = open ? '‹' : '☰';
   navigationPanel.hidden = !open;
 }
@@ -69,7 +69,7 @@ try {
   const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
   if (Array.isArray(stored)) favorites = stored.filter(id => typeof id === 'string');
 } catch {
-  if (feedback) feedback.textContent = '无法读取本地收藏。你仍可浏览赛事并在本次会话中关注。';
+  if (feedback) feedback.textContent = 'Could not read saved favorites. You can still save matches for this session.';
 }
 let category = 'all';
 function element(tag, className, text) {
@@ -92,7 +92,7 @@ function teamBadge(name, logo) {
   }
   return badge;
 }
-const categoryItems = [['all','全部项目','↗'], ...sports.filter(s => page !== 'sports' && page !== 'esports' || s[3] === page)];
+const categoryItems = [['all','All Categories','↗'], ...sports.filter(s => page !== 'sports' && page !== 'esports' || s[3] === page)];
 for (const [id, name, icon] of categories ? categoryItems : []) {
   const button = element('button','category');
   button.type = 'button';
@@ -112,12 +112,12 @@ function render() {
   if (!container) return;
   const filtered = filterMatches(matches, {page, category, search:search.value, date:date.value, favorites});
   container.replaceChildren();
-  document.querySelector('#result-count').textContent = loadState === 'loading' ? '正在加载赛程…' : loadState === 'error' ? '赛程加载失败，请稍后重试。' : `找到 ${filtered.length} 场比赛`;
+  document.querySelector('#result-count').textContent = loadState === 'loading' ? 'Loading matches…' : loadState === 'error' ? 'Could not load matches. Please try again later.' : `${filtered.length} ${filtered.length === 1 ? "match" : "matches"} found`;
   if (loadState !== 'ready') return;
   if (!filtered.length) {
     const empty = element('div','empty');
-    empty.append(element('p','',page === 'favorites' ? '还没有符合条件的关注赛事，或当前筛选没有结果。' : '没有符合条件的赛程；尚未同步的数据源不代表没有比赛。'));
-    const link = element('a','','浏览全部赛事 →');
+    empty.append(element('p','',page === 'favorites' ? 'No saved matches fit these filters.' : 'No matches fit these filters. Check Information for data source status.'));
+    const link = element('a','','Browse all matches →');
     link.href = 'index.html';
     empty.append(link);
     container.append(empty);
@@ -129,25 +129,25 @@ function render() {
     if (!group) {
       group = element('section','league');
       const heading = element('h3','',groupName);
-      heading.append(element('span','','北京时间'));
+      heading.append(element('span','','Beijing Time'));
       group.append(heading);
       groups.set(groupName,group);
       container.append(group);
     }
     const row = element('article','match');
-    row.setAttribute('aria-label', `${match.home} 对阵 ${match.away}`);
+    row.setAttribute('aria-label', `${match.home} vs. ${match.away}`);
     const teams = element('div','teams');
     for(const [name,logo] of [[match.home,match.homeLogo],[match.away,match.awayLogo]]) {
       const row=element('div','team-row');
       row.append(teamBadge(name,logo),element('span','team-name',name));
       teams.append(row);
     }
-    const time = element(match.start ? 'time' : 'div','match-time', match.start && match.status !== '时间待定' ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(match.start)) : '待定');
+    const time = element(match.start ? 'time' : 'div','match-time', match.start && match.status !== 'Time TBD' ? new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(match.start)) : 'TBD');
     if (match.start) {
       time.dateTime = match.start;
-      time.append(element('small','',new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',weekday:'short'}).format(new Date(match.start))));
+      time.append(element('small','',new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',weekday:'short'}).format(new Date(match.start))));
     }
-    if(!match.start && match.sport==='baseball' && match.sourceDate) time.append(element('small','','官方比赛日 '+match.sourceDate));
+    if(!match.start && match.sport==='baseball' && match.sourceDate) time.append(element('small','','Official game date: '+match.sourceDate));
     time.append(element('small','',match.status));
     const star = element('button','star');
     star.type = 'button';
@@ -155,7 +155,7 @@ function render() {
       const selected = favorites.includes(match.id);
       star.textContent = selected ? '★' : '☆';
       star.setAttribute('aria-pressed',String(selected));
-      star.setAttribute('aria-label',`${selected ? '取消关注' : '关注'} ${match.home} 对阵 ${match.away}`);
+      star.setAttribute('aria-label',`${selected ? 'Remove from favorites:' : 'Add to favorites:'} ${match.home} vs. ${match.away}`);
     };
     updateStar();
     star.addEventListener('click', () => {
@@ -164,7 +164,7 @@ function render() {
       try { localStorage.setItem(storageKey,JSON.stringify(favorites)); }
       catch { saved = false; }
       updateStar();
-      feedback.textContent = saved ? '关注清单已更新，仅保存在当前浏览器。' : '本地存储不可用，关注仅保留至本页面关闭。';
+      feedback.textContent = saved ? 'Favorites saved in this browser.' : 'Local storage is unavailable. Favorites are saved for this session.';
       if (page === 'favorites') {
         render();
         const next = container.querySelector('button') || search;
@@ -191,7 +191,7 @@ window.addEventListener('storage', event => {
     const stored = JSON.parse(event.newValue || '[]');
     favorites = Array.isArray(stored) ? stored.filter(id => typeof id === 'string') : [];
     render();
-  } catch { feedback.textContent = '其他页面的收藏数据无法读取，请刷新后重试。'; }
+  } catch { feedback.textContent = 'Could not read favorites from another tab. Reload to try again.'; }
 });
 render();
 
@@ -199,7 +199,7 @@ async function loadSchedule() {
   loadState = 'loading';
   render();
   const status = document.querySelector('#sync-status');
-  if (status) status.textContent = '正在读取赛程数据…';
+  if (status) status.textContent = 'Loading schedule data…';
   try {
     const response = await fetch('data/schedule.json', {cache:'no-cache', signal:AbortSignal.timeout(15000)});
     if (!response.ok) throw Error('Request failed');
@@ -212,17 +212,17 @@ async function loadSchedule() {
       const line=element('p');
       const source=element(safeSource(s.sourceUrl)?'a':'span','',s.name);
       if (safeSource(s.sourceUrl)) {source.href=s.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';}
-      const checked=s.updatedAt?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)):'尚未成功同步';
+      const checked=s.updatedAt?new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.updatedAt)):'No successful sync yet';
       const stale=s.updatedAt && Date.now()-Date.parse(s.updatedAt)>6*3600000;
       const upstreamStale=s.upstreamGeneratedAt && Date.now()-Date.parse(s.upstreamGeneratedAt)>36*3600000;
-      const generated=s.upstreamGeneratedAt?' · 上游生成 '+new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.upstreamGeneratedAt)):'';
-      const state=s.status==='error' ? s.error==='configuration'?' · 数据源尚未接通':' · 同步失败，旧数据可能过期' : stale||upstreamStale?' · 数据可能过期' : s.availability==='offseason'?' · 收录赛季已结束' : s.availability==='empty'?' · 当前来源暂无未来赛程':'';
-      line.append(source,element('span','',`：最近成功检查 ${checked}${generated}${state}${s.coverageNote?' · '+s.coverageNote:''}`));
+      const generated=s.upstreamGeneratedAt?' · Source updated '+new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'short'}).format(new Date(s.upstreamGeneratedAt)):'';
+      const state=s.status==='error' ? s.error==='configuration'?' · Source not configured':' · Sync failed. Data may be stale.' : stale||upstreamStale?' · Data may be stale' : s.availability==='offseason'?' · Season ended' : s.availability==='empty'?' · No upcoming matches from this source':'';
+      line.append(source,element('span','',`: Last successful check ${checked}${generated}${state}${s.coverageNote?' · '+s.coverageNote:''}`));
       status.append(line);
     }
   } catch {
     loadState = snapshot ? 'ready' : 'error';
-    if (status) status.textContent = snapshot ? '刷新失败，继续显示本页面上次加载的数据。' : '无法读取赛程。请检查网络后点击「重新加载」。';
+    if (status) status.textContent = snapshot ? 'Reload failed. Showing the last loaded data.' : 'Could not load the schedule. Check your connection and select Reload.';
   }
   render();
 }

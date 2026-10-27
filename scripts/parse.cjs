@@ -31,7 +31,7 @@ function football(payload, sourceUrl) {
     if (m.time != null && !/^([01]\d|2[0-3]):[0-5]\d$/.test(m.time)) throw new SourceError('structure','Invalid kickoff');
     const start = m.date && m.time ? zonedTime(`${m.date} ${m.time}`,'Europe/London') : null;
     const hash = createHash('sha256').update(`${season}|${m.team1}|${m.team2}`).digest('hex').slice(0,24);
-    return {id:`openfootball:${m.id ?? hash}`,sport:'football',league:'Premier League',stage:m.round,season,home:m.team1,away:m.team2,homeLogo:footballLogos[m.team1]||null,awayLogo:footballLogos[m.team2]||null,start,sourceDate:m.date||null,status:Array.isArray(m.score?.ft)?'已结束':start?'未开赛':'时间待定',sourceUrl,timeZone:'Europe/London'};
+    return {id:`openfootball:${m.id ?? hash}`,sport:'football',league:'Premier League',stage:m.round,season,home:m.team1,away:m.team2,homeLogo:footballLogos[m.team1]||null,awayLogo:footballLogos[m.team2]||null,start,sourceDate:m.date||null,status:Array.isArray(m.score?.ft)?'Final':start?'Scheduled':'Time TBD',sourceUrl,timeZone:'Europe/London'};
   });
   if (new Set(records.map(m=>m.id)).size!==records.length) throw new SourceError('structure','Duplicate football match');
   return records;
@@ -54,14 +54,14 @@ function lol(payload, sourceUrl) {
     const home=m.opponents?.[0]?.name || description[2] || 'TBD';
     const away=m.opponents?.[1]?.name || description[3] || 'TBD';
     // Retain the underlying PandaScore match ID so existing saved matches survive the source change.
-    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:description[1]||'阶段待定',home,away,homeLogo:m.opponents?.[0]?.imageUrl||null,awayLogo:m.opponents?.[1]?.imageUrl||null,start,status:m.status==='CANCELLED'?'取消':start?'赛程预告':'时间待定',sourceUrl,timeZone:'UTC'});
+    records.push({id:`pandascore:${m.id}`,sport:'lol',league,stage:description[1]||'Stage TBD',home,away,homeLogo:m.opponents?.[0]?.imageUrl||null,awayLogo:m.opponents?.[1]?.imageUrl||null,start,status:m.status==='CANCELLED'?'Cancelled':start?'Scheduled':'Time TBD',sourceUrl,timeZone:'UTC'});
   }
   return records;
 }
 function baseball(rows, sourceUrl) {
   const required=['game_pk','game_date','game_datetime','season','game_type','detailed_state','abstract_state','home_team_id','home_team_name','away_team_id','away_team_name'];
   if(!Array.isArray(rows) || rows.some(r=>required.some(k=>typeof r[k]!=='string'))) throw new SourceError('structure','Invalid MLB records');
-  const stages={S:'春训赛',E:'表演赛',R:'常规赛',F:'外卡赛',D:'分区系列赛',L:'联盟冠军赛',W:'世界大赛'};
+  const stages={S:'Spring Training',E:'Exhibition',R:'Regular Season',F:'Wild Card Series',D:'Division Series',L:'League Championship Series',W:'World Series'};
   const items=rows.flatMap(r=>{
     // MLB team IDs exclude college opponents, international clubs and All-Star teams.
     const pending=side=>!r[side+'_team_id'] && ['', 'TBD'].includes(r[side+'_team_name'].trim());
@@ -73,7 +73,7 @@ function baseball(rows, sourceUrl) {
     // Only explicit source confirmation permits displaying a preview kickoff time.
     const confirmed=r.start_time_tbd==='false' || ['Live','Final'].includes(r.abstract_state);
     const start=confirmed && !postponed && r.game_datetime ? instant(r.game_datetime) : null;
-    return [{id:'mlb:'+r.game_pk,sport:'baseball',league:'MLB',stage:r.season+'赛季 · '+stages[r.game_type],season:r.season,home:r.home_team_name.trim()||'TBD',away:r.away_team_name.trim()||'TBD',homeLogo:baseballLogos[r.home_team_id]?.file||null,awayLogo:baseballLogos[r.away_team_id]?.file||null,start,sourceDate:r.game_date,status:cancelled?'取消':finished?'已结束':postponed?'延期':start?'未开赛':'时间待定',sourceUrl,timeZone:'UTC'}];
+    return [{id:'mlb:'+r.game_pk,sport:'baseball',league:'MLB',stage:r.season+' Season · '+stages[r.game_type],season:r.season,home:r.home_team_name.trim()||'TBD',away:r.away_team_name.trim()||'TBD',homeLogo:baseballLogos[r.home_team_id]?.file||null,awayLogo:baseballLogos[r.away_team_id]?.file||null,start,sourceDate:r.game_date,status:cancelled?'Cancelled':finished?'Final':postponed?'Postponed':start?'Scheduled':'Time TBD',sourceUrl,timeZone:'UTC'}];
   });
   const unique=new Map();
   for(const m of items) {

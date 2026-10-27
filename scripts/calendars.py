@@ -52,14 +52,14 @@ def events(content, sport, source_url, now):
         if not match:
             if summary.strip() not in ('TBD', ''):
                 raise ValueError('Unrecognized match summary')
-            stage, home, away = '阶段待定', 'TBD', 'TBD'
+            stage, home, away = 'Stage TBD', 'TBD', 'TBD'
         else:
-            stage, home, away = match[1] or '阶段待定', match[2], match[3]
+            stage, home, away = match[1] or 'Stage TBD', match[2], match[3]
         context = fields.get('DESCRIPTION', '').split('\n')[0]
         league = context or ('CS2' if sport == 'cs2' else 'VALORANT')
         result.append(dict(id=f'{sport}:{uid}', sport=sport, league=league, stage=stage,
                            home=home, away=away, homeLogo=None, awayLogo=None, start=iso,
-                           status='赛程预告' if iso else '时间待定', sourceUrl=source_url, timeZone='UTC'))
+                           status='Scheduled' if iso else 'Time TBD', sourceUrl=source_url, timeZone='UTC'))
     return result
 
 

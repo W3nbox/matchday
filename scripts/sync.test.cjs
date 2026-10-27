@@ -36,9 +36,9 @@ test('public snapshot validates league IDs, stages, stable IDs and timezone',()=
  const records=lol(calendar([lm,{...lm,id:3,uid:'3@zlypher.github.io',leagueId:294,leagueName:'LPL'},...other]),url);
  assert.deepEqual(records.map(m=>m.league),['Worlds','LPL']);assert.equal(records[0].stage,'Semifinals');
  const tbd=lol(calendar([{...lm,opponents:[],summary:'TBD vs TBD',start:null}]),url)[0];
- assert.equal(tbd.home,'TBD');assert.equal(tbd.start,null);assert.equal(tbd.stage,'阶段待定');
+ assert.equal(tbd.home,'TBD');assert.equal(tbd.start,null);assert.equal(tbd.stage,'Stage TBD');
  assert.equal(lol(calendar([{...lm,start:'2026-11-09T10:00:00Z'}]),url)[0].id,'pandascore:2');
- assert.equal(lol(calendar([{...lm,status:'CANCELLED'}]),url)[0].status,'取消');
+ assert.equal(lol(calendar([{...lm,status:'CANCELLED'}]),url)[0].status,'Cancelled');
  assert.throws(()=>lol(calendar([{...lm,leagueName:'MSI'}]),url));
  assert.throws(()=>lol(calendar([{...lm,start:'2026-11-08 12:00'}]),url));
  assert.throws(()=>lol({wrong:[]},url));
@@ -61,7 +61,7 @@ test('no credentials, independent failures, valid empty and structural failure p
 
 test('all future fixtures retained, past/finished/cancelled excluded and TBD retained',()=>{
  const items=football(dataset([{...fm,date:'2026-11-21'},{...fm,team1:'Other',date:'2027-05-30'},{...fm,team1:'Past',date:'2026-11-01'},{...fm,team1:'Unknown',date:undefined,time:undefined},{...fm,team1:'Finished',date:'2026-11-21',score:{ft:[1,0]}}]),url);
- const selected=upcoming([...items,{...items[0],id:'cancelled',status:'取消'}],now);
+ const selected=upcoming([...items,{...items[0],id:'cancelled',status:'Cancelled'}],now);
  assert.deepEqual(selected.map(m=>m.home),['Arsenal','Other','Unknown']);
 });
 
@@ -101,10 +101,10 @@ test('MLB stages, UTC boundary, exact logos, postponement identity and unknown t
  const tbd=baseball([{...bm,away_team_id:'',away_team_name:'TBD',game_type:'W'}],url)[0];assert.equal(tbd.away,'TBD');assert.equal(tbd.awayLogo,null);
  assert.deepEqual(baseball([],url),[]);assert.deepEqual(baseball([{...bm,away_team_id:'999999'}],url),[]);
  const moved=baseball([{...bm,detailed_state:'Postponed',abstract_state:'Final'},{...bm,game_date:'2027-04-04',start_time_tbd:'false'}],url);
- assert.equal(moved.length,1);assert.equal(moved[0].sourceDate,'2027-04-04');assert.equal(moved[0].status,'未开赛');
+ assert.equal(moved.length,1);assert.equal(moved[0].sourceDate,'2027-04-04');assert.equal(moved[0].status,'Scheduled');
  assert.throws(()=>baseball([{...bm,start_time_tbd:'false',game_datetime:'2027-04-03 23:05'}],url));
  assert.throws(()=>baseball([bm,{...bm,home_team_name:'Other'}],url));
- for(const [type,stage] of Object.entries({S:'春训赛',R:'常规赛',W:'世界大赛'}))assert.ok(baseball([{...bm,game_type:type}],url)[0].stage.includes(stage));
+ for(const [type,stage] of Object.entries({S:'Spring Training',R:'Regular Season',W:'World Series'}))assert.ok(baseball([{...bm,game_type:type}],url)[0].stage.includes(stage));
  const logos=require('../data/baseball-logos.json');assert.equal(Object.keys(logos).length,30);
  for(const e of Object.values(logos))assert.equal(require('node:fs').readFileSync(require('node:path').join(__dirname,'..',e.file)).subarray(0,8).toString('hex'),'89504e470d0a1a0a');
 });

@@ -14,7 +14,7 @@ async function request(url, headers, fetcher) {
 function upcoming(items, now) {
   const londonToday=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
   // Unknown MLB dates lack ballpark timezones; allow a conservative two-day expiry margin.
-  return items.filter(m=>!['已结束','取消'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() : !m.sourceDate || m.sourceDate>=(m.sport==='baseball'?new Date(now.getTime()-48*3600000).toISOString().slice(0,10):londonToday)));
+  return items.filter(m=>!['Final','Cancelled'].includes(m.status) && (m.start ? Date.parse(m.start)>=now.getTime() : !m.sourceDate || m.sourceDate>=(m.sport==='baseball'?new Date(now.getTime()-48*3600000).toISOString().slice(0,10):londonToday)));
 }
 async function update(previous, fetcher=fetch, now=new Date()) {
   const result=structuredClone(previous);
@@ -30,7 +30,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
         const response=await request(sourceUrl,{},fetcher);
         items=football(response.data,sourceUrl);
         lastModified=response.lastModified;
-        sourceName='openfootball · 英超（社区数据）';
+        sourceName='openfootball · Premier League (community data)';
       } else if(sport==='lol') {
         sourceUrl='https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json';
         sourceName='zlypher/lol-events · LPL / Worlds';
@@ -39,7 +39,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
         lastModified=response.data.generatedAt;
       } else if(sport==='baseball') {
         sourceUrl='https://www.mlb.com/schedule';
-        sourceName='MLB · 官方赛程';
+        sourceName='MLB · Official Schedule';
         const {data:catalog}=await request('https://statsapi.mlb.com/api/v1/seasons/all?sportId=1',{},fetcher);
         if(!Array.isArray(catalog.seasons) || !catalog.seasons.length || catalog.seasons.some(s=>!/^\d{4}$/.test(s.seasonId))) throw new SourceError('structure','Invalid MLB seasons');
         const seasons=[...new Set(catalog.seasons.filter(s=>!s.seasonEndDate || s.seasonEndDate>=now.toISOString().slice(0,10)).map(s=>+s.seasonId))].filter(year=>year>=now.getUTCFullYear()).sort((a,b)=>a-b);
@@ -50,7 +50,7 @@ async function update(previous, fetcher=fetch, now=new Date()) {
           const {data}=await request('https://statsapi.mlb.com/api/v1/schedule?sportId=1&season='+season+'&fields='+fields,{},fetcher);
           items.push(...mlb(data));
         }
-        coverageNote='已读取官方已发布赛季：'+seasons.join('、')+'；开赛时间待定的场次不推测时间。';
+        coverageNote='Official seasons loaded: '+seasons.join(', ')+'. Unconfirmed start times are marked TBD.';
       } else {
         sourceUrl='https://github.com/snutij/esport_ics';
         sourceName=`esport_ics · ${sport==='cs2'?'CS2':'VALORANT'}`;
@@ -67,12 +67,12 @@ async function update(previous, fetcher=fetch, now=new Date()) {
       }
       if(new Set(items.map(m=>m.id)).size!==items.length) throw new SourceError('structure','Duplicate match ID');
       const selected=upcoming(items,now);
-      const finished=items.length>0 && items.every(m=>m.status==='已结束');
+      const finished=items.length>0 && items.every(m=>m.status==='Final');
       result.sources[sport]={...old,name:sourceName,sport,sourceUrl,status:'ok',availability:finished?'offseason':selected.length?'scheduled':'empty',updatedAt:now.toISOString(),lastAttemptAt:now.toISOString(),upstreamLastModified:lastModified,upstreamGeneratedAt:['lol','baseball'].includes(sport)?lastModified:null,coverageNote,error:null,matches:selected};
     } catch(error) {
       failures++;
       result.sources[sport]={...old,sport,status:'error',lastAttemptAt:now.toISOString(),error:error.code||'fetch'};
-      console.error(`${sport}: 同步失败（${error.code||'fetch'}），保留上次成功数据。`);
+      console.error(`${sport}: Sync failed (${error.code||'fetch'}). Keeping the last successful snapshot.`);
     }
   }
   return {snapshot:result,failures};
@@ -85,6 +85,6 @@ if(require.main===module) {
     const text=JSON.stringify(snapshot,null,2)+'\n';
     if(text!==await fs.readFile(file,'utf8')){await fs.writeFile(file+'.tmp',text);await fs.rename(file+'.tmp',file);}
     if(failures)process.exitCode=1;
-  })().catch(()=>{console.error('无法更新赛程文件，未替换已有快照。');process.exitCode=1;});
+  })().catch(()=>{console.error('Could not update the schedule. Keeping the existing snapshot.');process.exitCode=1;});
 }
 module.exports={football,lol,update,seasonAt,upcoming};

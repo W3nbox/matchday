@@ -6,8 +6,8 @@ const root = __dirname;
 const source = fs.readFileSync(path.join(root,'app.js'),'utf8');
 const definitions = source.slice(0,source.indexOf('const page = document'));
 const fixture = {sources:{
-  football:{name:'football-data.org',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'football-data:1',sport:'football',league:'Premier League',home:'Arsenal',away:'Chelsea',start:'2026-11-07T20:00:00Z',status:'未开赛'}]},
-  lol:{name:'PandaScore',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'pandascore:2',sport:'lol',league:'Worlds',home:'NOVA',away:'ECHO',start:'2026-11-07T12:00:00Z',status:'未开赛'},{id:'pandascore:3',sport:'lol',league:'Worlds',home:'待定',away:'ECHO',start:null,status:'时间待定'}]}
+  football:{name:'football-data.org',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'football-data:1',sport:'football',league:'Premier League',home:'Arsenal',away:'Chelsea',start:'2026-11-07T20:00:00Z',status:'Scheduled'}]},
+  lol:{name:'PandaScore',status:'ok',updatedAt:'2026-11-07T00:00:00Z',matches:[{id:'pandascore:2',sport:'lol',league:'Worlds',home:'NOVA',away:'ECHO',start:'2026-11-07T12:00:00Z',status:'Scheduled'},{id:'pandascore:3',sport:'lol',league:'Worlds',home:'TBD',away:'ECHO',start:null,status:'Time TBD'}]}
 }};
 for(const sport of ['cs2','valorant','baseball'])fixture.sources[sport]={name:sport,status:'ok',updatedAt:null,matches:[]};
 for(const [sport,source] of Object.entries(fixture.sources)) {source.sourceUrl=sport==='football'?'https://github.com/openfootball/football.json':'https://github.com/zlypher/lol-events';for(const match of source.matches){match.stage='Stage 1';match.sourceUrl=source.sourceUrl;}}
@@ -29,7 +29,7 @@ assert.throws(()=>run("validateSnapshot({sources:{}})"));
 for (const file of ['index.html','sports.html','esports.html','favorites.html','information.html']) {
   const html = fs.readFileSync(path.join(root,file),'utf8');
   assert.equal((html.match(/<h1>/g)||[]).length,1);
-  assert.match(html,/<html lang="zh-CN">/);
+  assert.match(html,/<html lang="en">/);
   assert.match(html,/aria-current="page"/);
   assert.match(html,/id="navigation-toggle"[^>]*aria-expanded="false"[^>]*aria-controls="navigation-panel"/);
   assert.match(html,/<nav id="navigation-panel"[^>]* hidden>[\s\S]*?href="information.html">Information<\/a><\/nav>/);
@@ -61,7 +61,7 @@ let failFetch = false;
 const browser = vm.createContext({Intl,Date,Map,Set,URL,AbortSignal,fetch:async()=>{if(failFetch) throw Error('network'); return {ok:true,json:async()=>fixture};},document:{body,addEventListener:(key,handler)=>documentEvents[key]=handler,querySelector:s=>nodes[s],createElement:tag=>new Element(tag)},localStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value)},window:{addEventListener(){}}});
 async function checkBrowser() {
 vm.runInContext(source,browser);
-assert.match(nodes['#result-count'].textContent,/正在加载/);
+assert.match(nodes['#result-count'].textContent,/Loading/);
 await new Promise(resolve=>setImmediate(resolve));
 assert.equal(nodes['#matches'].children.length,2);
 let star=nodes['#matches'].querySelector('button');
@@ -71,11 +71,11 @@ assert.deepEqual(JSON.parse(saved.get('matchday.favorites.v1')),['pandascore:2']
 star.events.click();
 assert.deepEqual(JSON.parse(saved.get('matchday.favorites.v1')),[]);
 nodes['#search'].value='NOVA'; nodes['#search'].events.input();
-assert.match(nodes['#result-count'].textContent,/1 场/);
-nodes['#search'].value='不存在'; nodes['#search'].events.input();
+assert.match(nodes['#result-count'].textContent,/1 match/);
+nodes['#search'].value='no-such-match'; nodes['#search'].events.input();
 assert.equal(nodes['#matches'].children[0].className,'empty');
 nodes['#filters'].events.reset();
-assert.match(nodes['#result-count'].textContent,/3 场/);
+assert.match(nodes['#result-count'].textContent,/3 matches/);
 const crest=vm.runInContext("teamBadge('Arsenal FC','assets/team-logos/arsenal.png')",browser);
 const img=crest.querySelector('img');assert.ok(img);assert.equal(img.alt,'');
 img.events.load();assert.equal(img.hidden,false);assert.equal(crest.children[0].hidden,true);
@@ -90,20 +90,20 @@ const panel = nodes['#navigation-panel'];
 toggle.events.click();
 assert.equal(panel.hidden,false);
 assert.equal(toggle.attrs['aria-expanded'],'true');
-assert.equal(toggle.attrs['aria-label'],'收起侧边导航');
+assert.equal(toggle.attrs['aria-label'],'Close sidebar');
 assert.equal(body.dataset.navigationOpen,'true');
 assert.equal(nodes['#categories'].children.length,6);
 const footballButton = nodes['#categories'].children.find(button => button.dataset.category === 'football');
 footballButton.events.click();
 assert.equal(footballButton.attrs['aria-pressed'],'true');
-assert.match(nodes['#result-count'].textContent,/1 场/);
+assert.match(nodes['#result-count'].textContent,/1 match/);
 nodes['#filters'].events.reset();
 documentEvents.keydown({key:'Enter'});
 assert.equal(panel.hidden,false);
 documentEvents.keydown({key:'Escape'});
 assert.equal(panel.hidden,true);
 assert.equal(toggle.attrs['aria-expanded'],'false');
-assert.equal(toggle.attrs['aria-label'],'展开侧边导航');
+assert.equal(toggle.attrs['aria-label'],'Open sidebar');
 assert.equal(body.dataset.navigationOpen,'false');
 assert.equal(toggle.focused,true);
 toggle.events.click();
@@ -114,11 +114,11 @@ console.log('Passed: side navigation, button open/close, aria state, Escape clos
 
 failFetch = true;
 await vm.runInContext('loadSchedule()',browser);
-assert.match(nodes['#sync-status'].textContent,/刷新失败/);
-assert.match(nodes['#result-count'].textContent,/3 场/);
+assert.match(nodes['#sync-status'].textContent,/Reload failed/);
+assert.match(nodes['#result-count'].textContent,/3 matches/);
 vm.runInContext('snapshot=null',browser);
 await vm.runInContext('loadSchedule()',browser);
-assert.match(nodes['#result-count'].textContent,/赛程加载失败/);
+assert.match(nodes['#result-count'].textContent,/Could not load matches/);
 console.log('Passed: async loading, refresh fallback, initial load failure, Beijing date boundary and undated matches.');
 }
 
