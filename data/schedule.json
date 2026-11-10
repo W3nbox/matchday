@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-10T12:44:35.181Z",
+      "updatedAt": "2026-11-10T20:52:43.483Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
+      "lastAttemptAt": "2026-11-10T20:52:43.483Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-10T12:44:35.181Z",
+      "updatedAt": "2026-11-10T20:52:43.483Z",
       "matches": [
         {
           "id": "pandascore:1711021",
@@ -4517,7 +4517,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
+      "lastAttemptAt": "2026-11-10T20:52:43.483Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-10T07:02:11.344Z",
@@ -5765,7 +5765,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
+      "lastAttemptAt": "2026-11-10T20:52:43.483Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -5776,7 +5776,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-10T12:44:35.181Z",
+      "updatedAt": "2026-11-10T20:52:43.483Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1797437@esport-ics",
@@ -5793,45 +5793,31 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1803628@esport-ics",
+          "id": "valorant:pandascore-match-1802914@esport-ics",
           "sport": "valorant",
-          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
-          "stage": "Upper bracket quarterfinal 3",
-          "home": "Alter Ego x Kertanegara",
-          "away": "RJL",
+          "league": "Asia Pacific Predator League - Thailand 2027 - Playoffs",
+          "stage": "Lower Bracket Round 1 match 1",
+          "home": "1DAY24",
+          "away": "GODX",
           "homeLogo": null,
           "awayLogo": null,
-          "start": "2026-11-10T14:30:00Z",
+          "start": "2026-11-11T12:00:00Z",
           "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/alter-ego-x-kertanegara.ics",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/1day24.ics",
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1800760@esport-ics",
+          "id": "valorant:pandascore-match-1804303@esport-ics",
           "sport": "valorant",
           "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
-          "stage": "Upper Bracket Quarterfinal 3",
+          "stage": "Upper Bracket Semifinal 2",
           "home": "Alter Ego x Kertanegara",
-          "away": "GAS",
+          "away": "HE",
           "homeLogo": null,
-          "awayLogo": "assets/team-logos/valorant-gas-esports.png",
-          "start": "2026-11-10T14:30:00Z",
+          "awayLogo": "assets/team-logos/valorant-hertz-esport.png",
+          "start": "2026-11-12T14:30:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/alter-ego-x-kertanegara.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1802839@esport-ics",
-          "sport": "valorant",
-          "league": "VCT - EMEA Kickoff: Europe Qualifier 2027 - Playoffs",
-          "stage": "Semifinal 2",
-          "home": "Aurora Gaming",
-          "away": "PL",
-          "homeLogo": "assets/team-logos/valorant-aurora-gaming.png",
-          "awayLogo": "assets/team-logos/valorant-pixel-lumina.png",
-          "start": "2026-11-10T16:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/aurora-gaming.ics",
           "timeZone": "UTC"
         },
         {
@@ -5919,6 +5905,20 @@
           "timeZone": "UTC"
         },
         {
+          "id": "valorant:pandascore-match-1804302@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
+          "stage": "Upper Bracket Semifinal 1",
+          "home": "BOOM",
+          "away": "SLG",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-12T12:00:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/boom-esports.ics",
+          "timeZone": "UTC"
+        },
+        {
           "id": "valorant:pandascore-match-1792351@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
@@ -5958,20 +5958,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/brest-esport.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792378@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "Frankfurt Bahnhofsviertel",
-          "away": "CGN",
-          "homeLogo": "assets/team-logos/frankfurt-bahnhofsviertel.webp",
-          "awayLogo": "assets/team-logos/cgn.png",
-          "start": "2026-11-10T18:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/cgn-esports.ics",
           "timeZone": "UTC"
         },
         {
@@ -6087,20 +6073,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1802838@esport-ics",
-          "sport": "valorant",
-          "league": "VCT - EMEA Kickoff: Europe Qualifier 2027 - Playoffs",
-          "stage": "Semifinal 1",
-          "home": "xXxMasterProMegaTeamxXx",
-          "away": "F9",
-          "homeLogo": null,
-          "awayLogo": "assets/team-logos/valorant-f9-eicar.png",
-          "start": "2026-11-10T16:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/f9-eicar.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1797438@esport-ics",
           "sport": "valorant",
           "league": "Asia Pacific Predator League - Japan 2027 - Playoffs",
@@ -6126,6 +6098,20 @@
           "start": "2026-11-15T10:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/fancy-united.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1802912@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Thailand 2027 - Playoffs",
+          "stage": "Upper Bracket Semifinal 1",
+          "home": "Fourdaboy",
+          "away": "SPE",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-11T12:00:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/fourdaboy.ics",
           "timeZone": "UTC"
         },
         {
@@ -6157,20 +6143,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1792392@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "REH Gaming",
-          "away": "FRG",
-          "homeLogo": "assets/team-logos/reh-gaming.webp",
-          "awayLogo": "assets/team-logos/frg.webp",
-          "start": "2026-11-10T18:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/frg.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792381@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
@@ -6196,6 +6168,20 @@
           "start": "2026-11-22T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/frg.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1804305@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
+          "stage": "Lower Bracket Round 1 Match 1",
+          "home": "GAS",
+          "away": "SUR",
+          "homeLogo": "assets/team-logos/valorant-gas-esports.png",
+          "awayLogo": null,
+          "start": "2026-11-11T12:00:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/gas-esports.ics",
           "timeZone": "UTC"
         },
         {
@@ -6227,20 +6213,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1800761@esport-ics",
-          "sport": "valorant",
-          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
-          "stage": "Upper Bracket Quarterfinal 4",
-          "home": "Straight outta PIK",
-          "away": "HE",
-          "homeLogo": "assets/team-logos/valorant-straight-outta-pik.png",
-          "awayLogo": "assets/team-logos/valorant-hertz-esport.png",
-          "start": "2026-11-10T14:30:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/hertz-esport.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792389@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
@@ -6266,6 +6238,20 @@
           "start": "2026-11-22T06:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/maxxing.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1802915@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Thailand 2027 - Playoffs",
+          "stage": "Lower Bracket Round 1 match 2",
+          "home": "OneOPae",
+          "away": "NongKaiTod",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-11T12:00:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/nongkaitod.ics",
           "timeZone": "UTC"
         },
         {
@@ -6295,10 +6281,38 @@
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/reh-gaming.ics",
           "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1804306@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Indonesia 2027 - Playoffs",
+          "stage": "Lower Bracket Round 1 Match 2",
+          "home": "RJL",
+          "away": "Straight outta PIK",
+          "homeLogo": null,
+          "awayLogo": "assets/team-logos/valorant-straight-outta-pik.png",
+          "start": "2026-11-11T14:30:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/rojali.ics",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "valorant:pandascore-match-1802911@esport-ics",
+          "sport": "valorant",
+          "league": "Asia Pacific Predator League - Thailand 2027 - Playoffs",
+          "stage": "Upper Bracket Semifinal 2",
+          "home": "XE",
+          "away": "Salamander",
+          "homeLogo": null,
+          "awayLogo": null,
+          "start": "2026-11-11T12:00:00Z",
+          "status": "Scheduled",
+          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/salamander.ics",
+          "timeZone": "UTC"
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
+      "lastAttemptAt": "2026-11-10T20:52:43.483Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -6309,7 +6323,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-10T12:44:35.181Z",
+      "updatedAt": "2026-11-10T20:52:43.483Z",
       "matches": [
         {
           "id": "mlb:868576",
@@ -52664,7 +52678,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-10T12:44:35.181Z",
+      "lastAttemptAt": "2026-11-10T20:52:43.483Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
