@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-11T17:55:42.778Z",
+      "updatedAt": "2026-11-12T00:48:57.623Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-11T17:55:42.778Z",
+      "lastAttemptAt": "2026-11-12T00:48:57.623Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-11T17:55:42.778Z",
+      "updatedAt": "2026-11-12T00:48:57.623Z",
       "matches": [
         {
           "id": "pandascore:1711021",
@@ -4517,7 +4517,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-11T17:55:42.778Z",
+      "lastAttemptAt": "2026-11-12T00:48:57.623Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-11T05:55:54.506Z",
@@ -5765,7 +5765,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-11T17:55:42.778Z",
+      "lastAttemptAt": "2026-11-12T00:48:57.623Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -5775,7 +5775,7 @@
       "name": "esport_ics · VALORANT",
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
-      "status": "ok",
+      "status": "error",
       "updatedAt": "2026-11-11T17:55:42.778Z",
       "matches": [
         {
@@ -7068,10 +7068,10 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-11T17:55:42.778Z",
+      "lastAttemptAt": "2026-11-12T00:48:57.623Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
-      "error": null,
+      "error": "structure",
       "coverageNote": null
     },
     "baseball": {
@@ -7079,7 +7079,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-11T17:55:42.778Z",
+      "updatedAt": "2026-11-12T00:48:57.623Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -7210,6 +7210,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868346",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-02-19T20:10:00.000Z",
+          "sourceDate": "2027-02-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868346",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868570",
           "sport": "baseball",
           "league": "MLB",
@@ -7319,22 +7335,6 @@
           "sourceDate": "2027-02-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868566",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868346",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-02-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868346",
           "timeZone": "UTC"
         },
         {
@@ -7482,6 +7482,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868333",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-02-20T20:10:00.000Z",
+          "sourceDate": "2027-02-20",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868333",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868555",
           "sport": "baseball",
           "league": "MLB",
@@ -7575,22 +7591,6 @@
           "sourceDate": "2027-02-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868332",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868333",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-02-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868333",
           "timeZone": "UTC"
         },
         {
@@ -7962,6 +7962,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868322",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-02-22T20:10:00.000Z",
+          "sourceDate": "2027-02-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868322",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868543",
           "sport": "baseball",
           "league": "MLB",
@@ -8087,22 +8103,6 @@
           "sourceDate": "2027-02-22",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868325",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868322",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-02-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868322",
           "timeZone": "UTC"
         },
         {
@@ -8490,6 +8490,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868312",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-02-24T20:10:00.000Z",
+          "sourceDate": "2027-02-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868312",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868537",
           "sport": "baseball",
           "league": "MLB",
@@ -8583,22 +8599,6 @@
           "sourceDate": "2027-02-24",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868313",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868312",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-02-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868312",
           "timeZone": "UTC"
         },
         {
@@ -8938,6 +8938,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868289",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-02-26T20:10:00.000Z",
+          "sourceDate": "2027-02-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868289",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868518",
           "sport": "baseball",
           "league": "MLB",
@@ -9082,22 +9098,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868289",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-02-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868289",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868508",
           "sport": "baseball",
           "league": "MLB",
@@ -9226,6 +9226,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868280",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": "2027-02-27T20:10:00.000Z",
+          "sourceDate": "2027-02-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868280",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868506",
           "sport": "baseball",
           "league": "MLB",
@@ -9335,22 +9351,6 @@
           "sourceDate": "2027-02-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868276",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868280",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
-          "start": null,
-          "sourceDate": "2027-02-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868280",
           "timeZone": "UTC"
         },
         {
@@ -10010,6 +10010,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868260",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-03-03T20:10:00.000Z",
+          "sourceDate": "2027-03-03",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868260",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868256",
           "sport": "baseball",
           "league": "MLB",
@@ -10135,22 +10151,6 @@
           "sourceDate": "2027-03-03",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868253",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868260",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-03-03",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868260",
           "timeZone": "UTC"
         },
         {
@@ -10474,6 +10474,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868241",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-03-05T20:10:00.000Z",
+          "sourceDate": "2027-03-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868241",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868471",
           "sport": "baseball",
           "league": "MLB",
@@ -10615,22 +10631,6 @@
           "sourceDate": "2027-03-05",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868236",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868241",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-03-05",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868241",
           "timeZone": "UTC"
         },
         {
@@ -11002,6 +11002,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868232",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-03-07T20:10:00.000Z",
+          "sourceDate": "2027-03-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868232",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868452",
           "sport": "baseball",
           "league": "MLB",
@@ -11127,22 +11143,6 @@
           "sourceDate": "2027-03-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868221",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868232",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-03-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868232",
           "timeZone": "UTC"
         },
         {
@@ -11818,6 +11818,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868204",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-03-11T20:10:00.000Z",
+          "sourceDate": "2027-03-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868204",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868433",
           "sport": "baseball",
           "league": "MLB",
@@ -11959,22 +11975,6 @@
           "sourceDate": "2027-03-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868192",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868204",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-03-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868204",
           "timeZone": "UTC"
         },
         {
@@ -12330,6 +12330,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868193",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-03-13T20:10:00.000Z",
+          "sourceDate": "2027-03-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868193",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868179",
           "sport": "baseball",
           "league": "MLB",
@@ -12487,22 +12503,6 @@
           "sourceDate": "2027-03-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868178",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868193",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-03-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868193",
           "timeZone": "UTC"
         },
         {
@@ -12842,6 +12842,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868168",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-03-15T20:10:00.000Z",
+          "sourceDate": "2027-03-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868168",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868404",
           "sport": "baseball",
           "league": "MLB",
@@ -12935,22 +12951,6 @@
           "sourceDate": "2027-03-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868161",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868168",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-03-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868168",
           "timeZone": "UTC"
         },
         {
@@ -13258,6 +13258,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868147",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Arizona Diamondbacks",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-109.png",
+          "start": "2027-03-17T20:10:00.000Z",
+          "sourceDate": "2027-03-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868147",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868156",
           "sport": "baseball",
           "league": "MLB",
@@ -13367,22 +13383,6 @@
           "sourceDate": "2027-03-17",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868153",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868147",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Arizona Diamondbacks",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-109.png",
-          "start": null,
-          "sourceDate": "2027-03-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868147",
           "timeZone": "UTC"
         },
         {
@@ -13722,6 +13722,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868135",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-03-20T01:10:00.000Z",
+          "sourceDate": "2027-03-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868135",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868369",
           "sport": "baseball",
           "league": "MLB",
@@ -13831,22 +13847,6 @@
           "sourceDate": "2027-03-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868133",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868135",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-03-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868135",
           "timeZone": "UTC"
         },
         {
@@ -14170,6 +14170,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868121",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-03-21T20:10:00.000Z",
+          "sourceDate": "2027-03-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868121",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868685",
           "sport": "baseball",
           "league": "MLB",
@@ -14295,22 +14311,6 @@
           "sourceDate": "2027-03-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868128",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868121",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-03-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868121",
           "timeZone": "UTC"
         },
         {
@@ -28810,22 +28810,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853204",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
-          "start": "2027-05-31T18:10:00.000Z",
-          "sourceDate": "2027-05-31",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/853204",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852480",
           "sport": "baseball",
           "league": "MLB",
@@ -28839,6 +28823,22 @@
           "sourceDate": "2027-05-31",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852480",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853204",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": "2027-05-31T19:30:00.000Z",
+          "sourceDate": "2027-05-31",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853204",
           "timeZone": "UTC"
         },
         {
@@ -38042,22 +38042,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852931",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "New York Yankees",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-147.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": "2027-07-17T17:35:00.000Z",
-          "sourceDate": "2027-07-17",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852931",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852871",
           "sport": "baseball",
           "league": "MLB",
@@ -38087,22 +38071,6 @@
           "sourceDate": "2027-07-17",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854244",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853912",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Cincinnati Reds",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-113.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": "2027-07-17T23:10:00.000Z",
-          "sourceDate": "2027-07-17",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/853912",
           "timeZone": "UTC"
         },
         {
@@ -38154,6 +38122,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853912",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Cincinnati Reds",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-113.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-07-17T23:15:00.000Z",
+          "sourceDate": "2027-07-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853912",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852691",
           "sport": "baseball",
           "league": "MLB",
@@ -38163,10 +38147,26 @@
           "away": "Seattle Mariners",
           "homeLogo": "assets/team-logos/mlb-135.png",
           "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": "2027-07-18T00:40:00.000Z",
+          "start": "2027-07-17T23:15:00.000Z",
           "sourceDate": "2027-07-17",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852691",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852931",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "New York Yankees",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-147.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-07-17T23:15:00.000Z",
+          "sourceDate": "2027-07-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852931",
           "timeZone": "UTC"
         },
         {
@@ -39786,22 +39786,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853989",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Chicago White Sox",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-145.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-07-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853989",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852610",
           "sport": "baseball",
           "league": "MLB",
@@ -39831,6 +39815,22 @@
           "sourceDate": "2027-07-24",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852537",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853989",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Chicago White Sox",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-145.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": null,
+          "sourceDate": "2027-07-24",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/853989",
           "timeZone": "UTC"
         },
         {
@@ -41306,38 +41306,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:854071",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Chicago Cubs",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-112.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-07-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/854071",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853585",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-07-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853585",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852527",
           "sport": "baseball",
           "league": "MLB",
@@ -41383,6 +41351,38 @@
           "sourceDate": "2027-07-31",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854402",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:854071",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Chicago Cubs",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-112.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": null,
+          "sourceDate": "2027-07-31",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/854071",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853585",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": null,
+          "sourceDate": "2027-07-31",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/853585",
           "timeZone": "UTC"
         },
         {
@@ -42778,22 +42778,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:854146",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Boston Red Sox",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-111.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-08-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/854146",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853988",
           "sport": "baseball",
           "league": "MLB",
@@ -42807,6 +42791,22 @@
           "sourceDate": "2027-08-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853988",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852609",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "San Francisco Giants",
+          "away": "Los Angeles Dodgers",
+          "homeLogo": "assets/team-logos/mlb-137.png",
+          "awayLogo": "assets/team-logos/mlb-119.png",
+          "start": null,
+          "sourceDate": "2027-08-07",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/852609",
           "timeZone": "UTC"
         },
         {
@@ -42826,19 +42826,19 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852609",
+          "id": "mlb:854146",
           "sport": "baseball",
           "league": "MLB",
           "stage": "2027 Season · Regular Season",
           "season": "2027",
-          "home": "San Francisco Giants",
-          "away": "Los Angeles Dodgers",
-          "homeLogo": "assets/team-logos/mlb-137.png",
-          "awayLogo": "assets/team-logos/mlb-119.png",
+          "home": "Boston Red Sox",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-111.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
           "start": null,
           "sourceDate": "2027-08-07",
           "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852609",
+          "sourceUrl": "https://www.mlb.com/gameday/854146",
           "timeZone": "UTC"
         },
         {
@@ -44074,22 +44074,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853007",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "New York Mets",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-121.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": "2027-08-14T20:10:00.000Z",
-          "sourceDate": "2027-08-14",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/853007",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852121",
           "sport": "baseball",
           "league": "MLB",
@@ -44151,6 +44135,22 @@
           "sourceDate": "2027-08-14",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853502",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853007",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "New York Mets",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-121.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": "2027-08-14T23:15:00.000Z",
+          "sourceDate": "2027-08-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853007",
           "timeZone": "UTC"
         },
         {
@@ -44266,22 +44266,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852525",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Seattle Mariners",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-136.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-08-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852525",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853340",
           "sport": "baseball",
           "league": "MLB",
@@ -44311,6 +44295,22 @@
           "sourceDate": "2027-08-14",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854470",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852525",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Seattle Mariners",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-136.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": null,
+          "sourceDate": "2027-08-14",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/852525",
           "timeZone": "UTC"
         },
         {
@@ -45642,22 +45642,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853176",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Milwaukee Brewers",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-158.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": "2027-08-21T23:10:00.000Z",
-          "sourceDate": "2027-08-21",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/853176",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852443",
           "sport": "baseball",
           "league": "MLB",
@@ -45687,6 +45671,22 @@
           "sourceDate": "2027-08-21",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854304",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853176",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Milwaukee Brewers",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-158.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-08-21T23:15:00.000Z",
+          "sourceDate": "2027-08-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853176",
           "timeZone": "UTC"
         },
         {
@@ -48538,22 +48538,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852832",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Philadelphia Phillies",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-143.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": "2027-09-04T22:05:00.000Z",
-          "sourceDate": "2027-09-04",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852832",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853901",
           "sport": "baseball",
           "league": "MLB",
@@ -48634,6 +48618,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852832",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Philadelphia Phillies",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-143.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-09-04T23:15:00.000Z",
+          "sourceDate": "2027-09-04",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852832",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852685",
           "sport": "baseball",
           "league": "MLB",
@@ -48682,22 +48682,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853653",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-09-04",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853653",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853810",
           "sport": "baseball",
           "league": "MLB",
@@ -48743,6 +48727,22 @@
           "sourceDate": "2027-09-04",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853972",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853653",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": null,
+          "sourceDate": "2027-09-04",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/853653",
           "timeZone": "UTC"
         },
         {
@@ -53434,7 +53434,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-11T17:55:42.778Z",
+      "lastAttemptAt": "2026-11-12T00:48:57.623Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
