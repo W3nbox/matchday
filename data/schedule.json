@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-13T17:50:41.675Z",
+      "updatedAt": "2026-11-13T23:39:11.618Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-13T17:50:41.675Z",
+      "lastAttemptAt": "2026-11-13T23:39:11.618Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,7 +4498,7 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-13T17:50:41.675Z",
+      "updatedAt": "2026-11-13T23:39:11.618Z",
       "matches": [
         {
           "id": "pandascore:1711021",
@@ -4517,7 +4517,7 @@
       ],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-13T17:50:41.675Z",
+      "lastAttemptAt": "2026-11-13T23:39:11.618Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": "2026-11-13T06:24:13.495Z",
@@ -5765,7 +5765,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-13T17:50:41.675Z",
+      "lastAttemptAt": "2026-11-13T23:39:11.618Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7068,7 +7068,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-13T17:50:41.675Z",
+      "lastAttemptAt": "2026-11-13T23:39:11.618Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7079,7 +7079,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-13T17:50:41.675Z",
+      "updatedAt": "2026-11-13T23:39:11.618Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -7274,22 +7274,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868571",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-02-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868571",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868338",
           "sport": "baseball",
           "league": "MLB",
@@ -7335,6 +7319,22 @@
           "sourceDate": "2027-02-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868566",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868571",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": null,
+          "sourceDate": "2027-02-19",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868571",
           "timeZone": "UTC"
         },
         {
@@ -7530,22 +7530,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868567",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Miami Marlins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-146.png",
-          "start": null,
-          "sourceDate": "2027-02-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868567",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868328",
           "sport": "baseball",
           "league": "MLB",
@@ -7591,6 +7575,22 @@
           "sourceDate": "2027-02-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868332",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868567",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Miami Marlins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-146.png",
+          "start": null,
+          "sourceDate": "2027-02-20",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868567",
           "timeZone": "UTC"
         },
         {
@@ -7994,22 +7994,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868546",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-02-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868546",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868550",
           "sport": "baseball",
           "league": "MLB",
@@ -8087,6 +8071,22 @@
           "sourceDate": "2027-02-22",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868325",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868546",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": null,
+          "sourceDate": "2027-02-22",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868546",
           "timeZone": "UTC"
         },
         {
@@ -8730,22 +8730,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868527",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-02-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868527",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868524",
           "sport": "baseball",
           "league": "MLB",
@@ -8839,6 +8823,22 @@
           "sourceDate": "2027-02-25",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868293",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868527",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": null,
+          "sourceDate": "2027-02-25",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868527",
           "timeZone": "UTC"
         },
         {
@@ -9242,22 +9242,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868506",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-02-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868506",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868515",
           "sport": "baseball",
           "league": "MLB",
@@ -9351,6 +9335,22 @@
           "sourceDate": "2027-02-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868276",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868506",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": null,
+          "sourceDate": "2027-02-27",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868506",
           "timeZone": "UTC"
         },
         {
@@ -9866,22 +9866,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868487",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-03-02",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868487",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868476",
           "sport": "baseball",
           "league": "MLB",
@@ -9927,6 +9911,22 @@
           "sourceDate": "2027-03-02",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868258",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868487",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": null,
+          "sourceDate": "2027-03-02",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868487",
           "timeZone": "UTC"
         },
         {
@@ -10266,22 +10266,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868489",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-03-04",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868489",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868463",
           "sport": "baseball",
           "league": "MLB",
@@ -10375,6 +10359,22 @@
           "sourceDate": "2027-03-04",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868235",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868489",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": null,
+          "sourceDate": "2027-03-04",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868489",
           "timeZone": "UTC"
         },
         {
@@ -10794,22 +10794,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868474",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-03-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868474",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868227",
           "sport": "baseball",
           "league": "MLB",
@@ -10887,6 +10871,22 @@
           "sourceDate": "2027-03-06",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868475",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868474",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": null,
+          "sourceDate": "2027-03-06",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868474",
           "timeZone": "UTC"
         },
         {
@@ -11034,22 +11034,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868457",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-03-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868457",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868454",
           "sport": "baseball",
           "league": "MLB",
@@ -11127,6 +11111,22 @@
           "sourceDate": "2027-03-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868221",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868457",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": null,
+          "sourceDate": "2027-03-07",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868457",
           "timeZone": "UTC"
         },
         {
@@ -12138,22 +12138,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868425",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-03-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868425",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868410",
           "sport": "baseball",
           "league": "MLB",
@@ -12231,6 +12215,22 @@
           "sourceDate": "2027-03-12",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868184",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868425",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": null,
+          "sourceDate": "2027-03-12",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868425",
           "timeZone": "UTC"
         },
         {
@@ -12410,22 +12410,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868419",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Miami Marlins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-146.png",
-          "start": null,
-          "sourceDate": "2027-03-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868419",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868416",
           "sport": "baseball",
           "league": "MLB",
@@ -12487,6 +12471,22 @@
           "sourceDate": "2027-03-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868178",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868419",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Miami Marlins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-146.png",
+          "start": null,
+          "sourceDate": "2027-03-13",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868419",
           "timeZone": "UTC"
         },
         {
@@ -12906,22 +12906,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868407",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-03-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868407",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868161",
           "sport": "baseball",
           "league": "MLB",
@@ -12935,6 +12919,22 @@
           "sourceDate": "2027-03-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868161",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868407",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": null,
+          "sourceDate": "2027-03-15",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868407",
           "timeZone": "UTC"
         },
         {
@@ -13050,22 +13050,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868383",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-03-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868383",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868389",
           "sport": "baseball",
           "league": "MLB",
@@ -13143,6 +13127,22 @@
           "sourceDate": "2027-03-16",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868160",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868383",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": null,
+          "sourceDate": "2027-03-16",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868383",
           "timeZone": "UTC"
         },
         {
@@ -13514,22 +13514,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868373",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Miami Marlins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-146.png",
-          "start": null,
-          "sourceDate": "2027-03-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868373",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868148",
           "sport": "baseball",
           "league": "MLB",
@@ -13591,6 +13575,22 @@
           "sourceDate": "2027-03-18",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868379",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868373",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Miami Marlins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-146.png",
+          "start": null,
+          "sourceDate": "2027-03-18",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868373",
           "timeZone": "UTC"
         },
         {
@@ -14202,22 +14202,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868364",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-03-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868364",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868361",
           "sport": "baseball",
           "league": "MLB",
@@ -14295,6 +14279,22 @@
           "sourceDate": "2027-03-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868128",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868364",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": null,
+          "sourceDate": "2027-03-21",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/868364",
           "timeZone": "UTC"
         },
         {
@@ -14634,6 +14634,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853645",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-03-25T20:10:00.000Z",
+          "sourceDate": "2027-03-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853645",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853558",
           "sport": "baseball",
           "league": "MLB",
@@ -14730,22 +14746,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853645",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-03-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853645",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852583",
           "sport": "baseball",
           "league": "MLB",
@@ -14810,6 +14810,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853643",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-03-26T23:10:00.000Z",
+          "sourceDate": "2027-03-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853643",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852747",
           "sport": "baseball",
           "league": "MLB",
@@ -14839,22 +14855,6 @@
           "sourceDate": "2027-03-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852418",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853643",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-03-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853643",
           "timeZone": "UTC"
         },
         {
@@ -14970,6 +14970,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853646",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-03-28T00:10:00.000Z",
+          "sourceDate": "2027-03-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853646",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852748",
           "sport": "baseball",
           "league": "MLB",
@@ -15031,22 +15047,6 @@
           "sourceDate": "2027-03-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853314",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853646",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-03-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853646",
           "timeZone": "UTC"
         },
         {
@@ -15402,6 +15402,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853633",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-03-30T00:10:00.000Z",
+          "sourceDate": "2027-03-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853633",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852745",
           "sport": "baseball",
           "league": "MLB",
@@ -15463,22 +15479,6 @@
           "sourceDate": "2027-03-29",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853311",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853633",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-03-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853633",
           "timeZone": "UTC"
         },
         {
@@ -15626,6 +15626,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853630",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-03-31T00:10:00.000Z",
+          "sourceDate": "2027-03-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853630",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852746",
           "sport": "baseball",
           "league": "MLB",
@@ -15687,22 +15703,6 @@
           "sourceDate": "2027-03-30",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853306",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853630",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-03-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853630",
           "timeZone": "UTC"
         },
         {
@@ -15818,6 +15818,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853628",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-03-31T18:10:00.000Z",
+          "sourceDate": "2027-03-31",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853628",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853548",
           "sport": "baseball",
           "league": "MLB",
@@ -15927,22 +15943,6 @@
           "sourceDate": "2027-03-31",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852988",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853628",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-03-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853628",
           "timeZone": "UTC"
         },
         {
@@ -17674,6 +17674,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853631",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-10T00:10:00.000Z",
+          "sourceDate": "2027-04-09",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853631",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852733",
           "sport": "baseball",
           "league": "MLB",
@@ -17751,22 +17767,6 @@
           "sourceDate": "2027-04-09",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853304",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853631",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-09",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853631",
           "timeZone": "UTC"
         },
         {
@@ -17930,6 +17930,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853635",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-10T23:10:00.000Z",
+          "sourceDate": "2027-04-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853635",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852735",
           "sport": "baseball",
           "league": "MLB",
@@ -17991,22 +18007,6 @@
           "sourceDate": "2027-04-10",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853300",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853635",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853635",
           "timeZone": "UTC"
         },
         {
@@ -18122,6 +18122,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853627",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-11T18:10:00.000Z",
+          "sourceDate": "2027-04-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853627",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853549",
           "sport": "baseball",
           "league": "MLB",
@@ -18231,22 +18247,6 @@
           "sourceDate": "2027-04-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853302",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853627",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853627",
           "timeZone": "UTC"
         },
         {
@@ -18442,6 +18442,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853636",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-04-14T00:10:00.000Z",
+          "sourceDate": "2027-04-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853636",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852731",
           "sport": "baseball",
           "league": "MLB",
@@ -18519,22 +18535,6 @@
           "sourceDate": "2027-04-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853717",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853636",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-04-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853636",
           "timeZone": "UTC"
         },
         {
@@ -18682,6 +18682,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853632",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-04-15T00:10:00.000Z",
+          "sourceDate": "2027-04-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853632",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852739",
           "sport": "baseball",
           "league": "MLB",
@@ -18759,22 +18775,6 @@
           "sourceDate": "2027-04-14",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853708",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853632",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-04-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853632",
           "timeZone": "UTC"
         },
         {
@@ -18922,6 +18922,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853634",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-04-15T18:10:00.000Z",
+          "sourceDate": "2027-04-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853634",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852728",
           "sport": "baseball",
           "league": "MLB",
@@ -18999,22 +19015,6 @@
           "sourceDate": "2027-04-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853710",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853634",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-04-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853634",
           "timeZone": "UTC"
         },
         {
@@ -20682,6 +20682,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853629",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-24T00:10:00.000Z",
+          "sourceDate": "2027-04-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853629",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852497",
           "sport": "baseball",
           "league": "MLB",
@@ -20791,22 +20807,6 @@
           "sourceDate": "2027-04-23",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854112",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853629",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853629",
           "timeZone": "UTC"
         },
         {
@@ -20922,6 +20922,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853626",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-24T23:10:00.000Z",
+          "sourceDate": "2027-04-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853626",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853220",
           "sport": "baseball",
           "league": "MLB",
@@ -20999,22 +21015,6 @@
           "sourceDate": "2027-04-24",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854117",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853626",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853626",
           "timeZone": "UTC"
         },
         {
@@ -21146,6 +21146,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853613",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-04-25T18:10:00.000Z",
+          "sourceDate": "2027-04-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853613",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853209",
           "sport": "baseball",
           "league": "MLB",
@@ -21274,22 +21290,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853613",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-04-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853613",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852887",
           "sport": "baseball",
           "league": "MLB",
@@ -21386,6 +21386,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853619",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-04-27T00:10:00.000Z",
+          "sourceDate": "2027-04-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853619",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853868",
           "sport": "baseball",
           "league": "MLB",
@@ -21399,22 +21415,6 @@
           "sourceDate": "2027-04-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853868",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853619",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-04-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853619",
           "timeZone": "UTC"
         },
         {
@@ -21578,6 +21578,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853622",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-04-28T00:10:00.000Z",
+          "sourceDate": "2027-04-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853622",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852737",
           "sport": "baseball",
           "league": "MLB",
@@ -21639,22 +21655,6 @@
           "sourceDate": "2027-04-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852406",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853622",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-04-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853622",
           "timeZone": "UTC"
         },
         {
@@ -21818,6 +21818,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853615",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-04-29T00:10:00.000Z",
+          "sourceDate": "2027-04-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853615",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852740",
           "sport": "baseball",
           "league": "MLB",
@@ -21879,22 +21895,6 @@
           "sourceDate": "2027-04-28",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852411",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853615",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-04-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853615",
           "timeZone": "UTC"
         },
         {
@@ -23706,6 +23706,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853618",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-08T00:10:00.000Z",
+          "sourceDate": "2027-05-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853618",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852484",
           "sport": "baseball",
           "league": "MLB",
@@ -23783,22 +23799,6 @@
           "sourceDate": "2027-05-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853293",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853618",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853618",
           "timeZone": "UTC"
         },
         {
@@ -23930,6 +23930,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853621",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-08T23:10:00.000Z",
+          "sourceDate": "2027-05-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853621",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853542",
           "sport": "baseball",
           "league": "MLB",
@@ -24023,22 +24039,6 @@
           "sourceDate": "2027-05-08",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853294",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853621",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-08",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853621",
           "timeZone": "UTC"
         },
         {
@@ -24154,6 +24154,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853620",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-05-09T18:10:00.000Z",
+          "sourceDate": "2027-05-09",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853620",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853540",
           "sport": "baseball",
           "league": "MLB",
@@ -24263,22 +24279,6 @@
           "sourceDate": "2027-05-09",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853288",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853620",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-05-09",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853620",
           "timeZone": "UTC"
         },
         {
@@ -25146,6 +25146,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853624",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-05-15T00:10:00.000Z",
+          "sourceDate": "2027-05-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853624",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852320",
           "sport": "baseball",
           "league": "MLB",
@@ -25258,22 +25274,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853624",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-05-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853624",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854021",
           "sport": "baseball",
           "league": "MLB",
@@ -25351,6 +25351,22 @@
           "sourceDate": "2027-05-15",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852162",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853616",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-05-15T23:10:00.000Z",
+          "sourceDate": "2027-05-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853616",
           "timeZone": "UTC"
         },
         {
@@ -25498,22 +25514,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853616",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-05-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853616",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854022",
           "sport": "baseball",
           "league": "MLB",
@@ -25607,6 +25607,22 @@
           "sourceDate": "2027-05-16",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852970",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853623",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-05-16T18:10:00.000Z",
+          "sourceDate": "2027-05-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853623",
           "timeZone": "UTC"
         },
         {
@@ -25738,22 +25754,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853623",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-05-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853623",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854028",
           "sport": "baseball",
           "league": "MLB",
@@ -25834,6 +25834,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853614",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-05-18T00:10:00.000Z",
+          "sourceDate": "2027-05-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853614",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853777",
           "sport": "baseball",
           "league": "MLB",
@@ -25895,22 +25911,6 @@
           "sourceDate": "2027-05-17",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852244",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853614",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-05-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853614",
           "timeZone": "UTC"
         },
         {
@@ -26058,6 +26058,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853625",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-05-19T00:10:00.000Z",
+          "sourceDate": "2027-05-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853625",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852323",
           "sport": "baseball",
           "league": "MLB",
@@ -26138,22 +26154,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853625",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-05-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853625",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854027",
           "sport": "baseball",
           "league": "MLB",
@@ -26215,6 +26215,22 @@
           "sourceDate": "2027-05-19",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852879",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853617",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-05-19T18:10:00.000Z",
+          "sourceDate": "2027-05-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853617",
           "timeZone": "UTC"
         },
         {
@@ -26375,22 +26391,6 @@
           "sourceDate": "2027-05-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853695",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853617",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-05-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853617",
           "timeZone": "UTC"
         },
         {
@@ -28138,6 +28138,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853610",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-05-29T00:10:00.000Z",
+          "sourceDate": "2027-05-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853610",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852309",
           "sport": "baseball",
           "league": "MLB",
@@ -28250,22 +28266,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853610",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-05-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853610",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854012",
           "sport": "baseball",
           "league": "MLB",
@@ -28327,6 +28327,22 @@
           "sourceDate": "2027-05-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852164",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853612",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-05-29T20:10:00.000Z",
+          "sourceDate": "2027-05-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853612",
           "timeZone": "UTC"
         },
         {
@@ -28474,22 +28490,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853612",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-05-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853612",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852474",
           "sport": "baseball",
           "league": "MLB",
@@ -28583,6 +28583,22 @@
           "sourceDate": "2027-05-30",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853052",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853606",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-05-30T18:10:00.000Z",
+          "sourceDate": "2027-05-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853606",
           "timeZone": "UTC"
         },
         {
@@ -28730,22 +28746,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853606",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-05-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853606",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854014",
           "sport": "baseball",
           "league": "MLB",
@@ -28839,6 +28839,22 @@
           "sourceDate": "2027-05-31",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853204",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853603",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-05-31T20:10:00.000Z",
+          "sourceDate": "2027-05-31",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853603",
           "timeZone": "UTC"
         },
         {
@@ -28951,22 +28967,6 @@
           "sourceDate": "2027-05-31",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853276",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853603",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-05-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853603",
           "timeZone": "UTC"
         },
         {
@@ -29114,6 +29114,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853604",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-02T00:10:00.000Z",
+          "sourceDate": "2027-06-01",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853604",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852312",
           "sport": "baseball",
           "league": "MLB",
@@ -29191,22 +29207,6 @@
           "sourceDate": "2027-06-01",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853273",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853604",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-01",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853604",
           "timeZone": "UTC"
         },
         {
@@ -29370,6 +29370,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853601",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-03T00:10:00.000Z",
+          "sourceDate": "2027-06-02",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853601",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852305",
           "sport": "baseball",
           "league": "MLB",
@@ -29434,22 +29450,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853601",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-02",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853601",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854013",
           "sport": "baseball",
           "league": "MLB",
@@ -29498,6 +29498,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853600",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-03T18:10:00.000Z",
+          "sourceDate": "2027-06-03",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853600",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853048",
           "sport": "baseball",
           "league": "MLB",
@@ -29543,22 +29559,6 @@
           "sourceDate": "2027-06-03",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854092",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853600",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-03",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853600",
           "timeZone": "UTC"
         },
         {
@@ -31834,6 +31834,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853602",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-06-15T00:10:00.000Z",
+          "sourceDate": "2027-06-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853602",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853451",
           "sport": "baseball",
           "league": "MLB",
@@ -31895,22 +31911,6 @@
           "sourceDate": "2027-06-14",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854085",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853602",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-06-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853602",
           "timeZone": "UTC"
         },
         {
@@ -32042,6 +32042,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853607",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-06-16T00:10:00.000Z",
+          "sourceDate": "2027-06-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853607",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853445",
           "sport": "baseball",
           "league": "MLB",
@@ -32138,22 +32154,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853607",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-06-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853607",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852620",
           "sport": "baseball",
           "league": "MLB",
@@ -32183,6 +32183,22 @@
           "sourceDate": "2027-06-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854489",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853608",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-06-16T18:10:00.000Z",
+          "sourceDate": "2027-06-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853608",
           "timeZone": "UTC"
         },
         {
@@ -32378,22 +32394,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853608",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-06-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853608",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852623",
           "sport": "baseball",
           "league": "MLB",
@@ -32570,6 +32570,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853609",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-06-19T00:10:00.000Z",
+          "sourceDate": "2027-06-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853609",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852301",
           "sport": "baseball",
           "league": "MLB",
@@ -32682,22 +32698,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853609",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-06-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853609",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854016",
           "sport": "baseball",
           "league": "MLB",
@@ -32762,6 +32762,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852465",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "St. Louis Cardinals",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-138.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-06-19T18:15:00.000Z",
+          "sourceDate": "2027-06-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852465",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852861",
           "sport": "baseball",
           "league": "MLB",
@@ -32807,6 +32823,22 @@
           "sourceDate": "2027-06-19",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852311",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853605",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-06-19T23:15:00.000Z",
+          "sourceDate": "2027-06-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853605",
           "timeZone": "UTC"
         },
         {
@@ -32887,38 +32919,6 @@
           "sourceDate": "2027-06-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852383",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853605",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-06-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853605",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852465",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "St. Louis Cardinals",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-138.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-06-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852465",
           "timeZone": "UTC"
         },
         {
@@ -33050,6 +33050,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853611",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-06-20T18:10:00.000Z",
+          "sourceDate": "2027-06-20",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853611",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852464",
           "sport": "baseball",
           "league": "MLB",
@@ -33159,22 +33175,6 @@
           "sourceDate": "2027-06-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852384",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853611",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-06-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853611",
           "timeZone": "UTC"
         },
         {
@@ -34106,6 +34106,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853592",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-26T00:10:00.000Z",
+          "sourceDate": "2027-06-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853592",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853111",
           "sport": "baseball",
           "league": "MLB",
@@ -34218,22 +34234,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853592",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853592",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853997",
           "sport": "baseball",
           "league": "MLB",
@@ -34330,6 +34330,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853595",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-26T20:10:00.000Z",
+          "sourceDate": "2027-06-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853595",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853917",
           "sport": "baseball",
           "league": "MLB",
@@ -34359,6 +34375,22 @@
           "sourceDate": "2027-06-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853183",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852460",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "St. Louis Cardinals",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-138.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-06-26T20:15:00.000Z",
+          "sourceDate": "2027-06-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852460",
           "timeZone": "UTC"
         },
         {
@@ -34439,38 +34471,6 @@
           "sourceDate": "2027-06-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853279",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853595",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853595",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852460",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "St. Louis Cardinals",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-138.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-06-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852460",
           "timeZone": "UTC"
         },
         {
@@ -34567,6 +34567,22 @@
           "sourceDate": "2027-06-27",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853920",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853594",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-06-27T18:10:00.000Z",
+          "sourceDate": "2027-06-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853594",
           "timeZone": "UTC"
         },
         {
@@ -34695,22 +34711,6 @@
           "sourceDate": "2027-06-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853277",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853594",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-06-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853594",
           "timeZone": "UTC"
         },
         {
@@ -36458,6 +36458,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853598",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-07-07T00:10:00.000Z",
+          "sourceDate": "2027-07-06",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853598",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853757",
           "sport": "baseball",
           "league": "MLB",
@@ -36551,22 +36567,6 @@
           "sourceDate": "2027-07-06",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853838",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853598",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-07-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853598",
           "timeZone": "UTC"
         },
         {
@@ -36698,6 +36698,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853588",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-07-08T00:10:00.000Z",
+          "sourceDate": "2027-07-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853588",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853761",
           "sport": "baseball",
           "league": "MLB",
@@ -36791,22 +36807,6 @@
           "sourceDate": "2027-07-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853840",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853588",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-07-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853588",
           "timeZone": "UTC"
         },
         {
@@ -36954,6 +36954,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853597",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-07-09T00:10:00.000Z",
+          "sourceDate": "2027-07-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853597",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853432",
           "sport": "baseball",
           "league": "MLB",
@@ -37015,22 +37031,6 @@
           "sourceDate": "2027-07-08",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852370",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853597",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-07-08",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853597",
           "timeZone": "UTC"
         },
         {
@@ -37146,6 +37146,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853596",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-07-10T00:10:00.000Z",
+          "sourceDate": "2027-07-09",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853596",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853109",
           "sport": "baseball",
           "league": "MLB",
@@ -37255,22 +37271,6 @@
           "sourceDate": "2027-07-09",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853836",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853596",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-07-09",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853596",
           "timeZone": "UTC"
         },
         {
@@ -37386,6 +37386,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853587",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-07-10T20:10:00.000Z",
+          "sourceDate": "2027-07-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853587",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854325",
           "sport": "baseball",
           "league": "MLB",
@@ -37399,6 +37415,22 @@
           "sourceDate": "2027-07-10",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854325",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852466",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "St. Louis Cardinals",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-138.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-07-10T20:15:00.000Z",
+          "sourceDate": "2027-07-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852466",
           "timeZone": "UTC"
         },
         {
@@ -37498,22 +37530,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853587",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-07-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853587",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854001",
           "sport": "baseball",
           "league": "MLB",
@@ -37527,22 +37543,6 @@
           "sourceDate": "2027-07-10",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854001",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852466",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "St. Louis Cardinals",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-138.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-07-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852466",
           "timeZone": "UTC"
         },
         {
@@ -37623,6 +37623,22 @@
           "sourceDate": "2027-07-11",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853016",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853589",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-07-11T18:10:00.000Z",
+          "sourceDate": "2027-07-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853589",
           "timeZone": "UTC"
         },
         {
@@ -37751,22 +37767,6 @@
           "sourceDate": "2027-07-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853832",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853589",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-07-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853589",
           "timeZone": "UTC"
         },
         {
@@ -39434,6 +39434,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853590",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-07-24T00:10:00.000Z",
+          "sourceDate": "2027-07-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853590",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853104",
           "sport": "baseball",
           "league": "MLB",
@@ -39527,22 +39543,6 @@
           "sourceDate": "2027-07-23",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852204",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853590",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-07-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853590",
           "timeZone": "UTC"
         },
         {
@@ -39658,6 +39658,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853593",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-07-24T23:10:00.000Z",
+          "sourceDate": "2027-07-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853593",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853100",
           "sport": "baseball",
           "league": "MLB",
@@ -39767,22 +39783,6 @@
           "sourceDate": "2027-07-24",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852213",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853593",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-07-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853593",
           "timeZone": "UTC"
         },
         {
@@ -39898,6 +39898,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853599",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-07-25T18:10:00.000Z",
+          "sourceDate": "2027-07-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853599",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853107",
           "sport": "baseball",
           "league": "MLB",
@@ -40007,22 +40023,6 @@
           "sourceDate": "2027-07-25",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852217",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853599",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": null,
-          "sourceDate": "2027-07-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853599",
           "timeZone": "UTC"
         },
         {
@@ -40154,6 +40154,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853591",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-27T00:10:00.000Z",
+          "sourceDate": "2027-07-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853591",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853752",
           "sport": "baseball",
           "league": "MLB",
@@ -40231,22 +40247,6 @@
           "sourceDate": "2027-07-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853834",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853591",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853591",
           "timeZone": "UTC"
         },
         {
@@ -40362,6 +40362,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853581",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-28T00:10:00.000Z",
+          "sourceDate": "2027-07-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853581",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853751",
           "sport": "baseball",
           "league": "MLB",
@@ -40455,22 +40471,6 @@
           "sourceDate": "2027-07-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853829",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853581",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853581",
           "timeZone": "UTC"
         },
         {
@@ -40618,6 +40618,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853578",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-29T00:10:00.000Z",
+          "sourceDate": "2027-07-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853578",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853411",
           "sport": "baseball",
           "league": "MLB",
@@ -40698,22 +40714,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853578",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853578",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853994",
           "sport": "baseball",
           "league": "MLB",
@@ -40775,6 +40775,22 @@
           "sourceDate": "2027-07-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852776",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853580",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-29T18:10:00.000Z",
+          "sourceDate": "2027-07-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853580",
           "timeZone": "UTC"
         },
         {
@@ -40874,22 +40890,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853580",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853580",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852539",
           "sport": "baseball",
           "league": "MLB",
@@ -40967,6 +40967,22 @@
           "sourceDate": "2027-07-30",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854318",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853583",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-07-31T00:10:00.000Z",
+          "sourceDate": "2027-07-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853583",
           "timeZone": "UTC"
         },
         {
@@ -41098,22 +41114,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853583",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-07-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853583",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852526",
           "sport": "baseball",
           "league": "MLB",
@@ -41223,6 +41223,22 @@
           "sourceDate": "2027-07-31",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853498",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853585",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-07-31T23:15:00.000Z",
+          "sourceDate": "2027-07-31",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853585",
           "timeZone": "UTC"
         },
         {
@@ -41370,22 +41386,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853585",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-07-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853585",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852767",
           "sport": "baseball",
           "league": "MLB",
@@ -41447,6 +41447,22 @@
           "sourceDate": "2027-08-01",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853911",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853579",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-08-01T18:10:00.000Z",
+          "sourceDate": "2027-08-01",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853579",
           "timeZone": "UTC"
         },
         {
@@ -41575,22 +41591,6 @@
           "sourceDate": "2027-08-01",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854075",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853579",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-08-01",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853579",
           "timeZone": "UTC"
         },
         {
@@ -43338,6 +43338,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853584",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-11T00:10:00.000Z",
+          "sourceDate": "2027-08-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853584",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852282",
           "sport": "baseball",
           "league": "MLB",
@@ -43447,22 +43463,6 @@
           "sourceDate": "2027-08-10",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852367",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853584",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853584",
           "timeZone": "UTC"
         },
         {
@@ -43610,6 +43610,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853586",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-12T00:10:00.000Z",
+          "sourceDate": "2027-08-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853586",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852285",
           "sport": "baseball",
           "league": "MLB",
@@ -43687,22 +43703,6 @@
           "sourceDate": "2027-08-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852360",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853586",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853586",
           "timeZone": "UTC"
         },
         {
@@ -43786,6 +43786,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853582",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-12T20:10:00.000Z",
+          "sourceDate": "2027-08-12",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853582",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853503",
           "sport": "baseball",
           "league": "MLB",
@@ -43815,22 +43831,6 @@
           "sourceDate": "2027-08-12",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852199",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853582",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853582",
           "timeZone": "UTC"
         },
         {
@@ -43930,6 +43930,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853568",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-08-14T00:10:00.000Z",
+          "sourceDate": "2027-08-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853568",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853740",
           "sport": "baseball",
           "league": "MLB",
@@ -44007,22 +44023,6 @@
           "sourceDate": "2027-08-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854061",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853568",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-08-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853568",
           "timeZone": "UTC"
         },
         {
@@ -44170,6 +44170,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853575",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-08-14T23:19:00.000Z",
+          "sourceDate": "2027-08-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853575",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853739",
           "sport": "baseball",
           "league": "MLB",
@@ -44247,22 +44263,6 @@
           "sourceDate": "2027-08-14",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854067",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853575",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-08-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853575",
           "timeZone": "UTC"
         },
         {
@@ -44410,6 +44410,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853576",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-08-15T18:10:00.000Z",
+          "sourceDate": "2027-08-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853576",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853738",
           "sport": "baseball",
           "league": "MLB",
@@ -44487,22 +44503,6 @@
           "sourceDate": "2027-08-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854056",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853576",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-08-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853576",
           "timeZone": "UTC"
         },
         {
@@ -44858,6 +44858,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853574",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-08-18T00:10:00.000Z",
+          "sourceDate": "2027-08-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853574",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853816",
           "sport": "baseball",
           "league": "MLB",
@@ -44935,22 +44951,6 @@
           "sourceDate": "2027-08-17",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854066",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853574",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-08-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853574",
           "timeZone": "UTC"
         },
         {
@@ -45082,6 +45082,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853573",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-08-19T00:10:00.000Z",
+          "sourceDate": "2027-08-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853573",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853817",
           "sport": "baseball",
           "league": "MLB",
@@ -45178,22 +45194,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853573",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-08-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853573",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853336",
           "sport": "baseball",
           "league": "MLB",
@@ -45274,6 +45274,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853571",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "New York Mets",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-121.png",
+          "start": "2027-08-19T20:10:00.000Z",
+          "sourceDate": "2027-08-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853571",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852200",
           "sport": "baseball",
           "league": "MLB",
@@ -45319,22 +45335,6 @@
           "sourceDate": "2027-08-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853237",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853571",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "New York Mets",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": null,
-          "sourceDate": "2027-08-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853571",
           "timeZone": "UTC"
         },
         {
@@ -47722,6 +47722,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853572",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-09-01T00:10:00.000Z",
+          "sourceDate": "2027-08-31",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853572",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853736",
           "sport": "baseball",
           "league": "MLB",
@@ -47799,22 +47815,6 @@
           "sourceDate": "2027-08-31",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853238",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853572",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-08-31",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853572",
           "timeZone": "UTC"
         },
         {
@@ -47962,6 +47962,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853570",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-09-02T00:10:00.000Z",
+          "sourceDate": "2027-09-01",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853570",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853733",
           "sport": "baseball",
           "league": "MLB",
@@ -48042,22 +48058,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853570",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-09-01",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853570",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854047",
           "sport": "baseball",
           "league": "MLB",
@@ -48135,6 +48135,22 @@
           "sourceDate": "2027-09-02",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853088",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853577",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-09-02T18:10:00.000Z",
+          "sourceDate": "2027-09-02",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853577",
           "timeZone": "UTC"
         },
         {
@@ -48250,22 +48266,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853577",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-09-02",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853577",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853895",
           "sport": "baseball",
           "league": "MLB",
@@ -48378,6 +48378,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853569",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-09-04T00:10:00.000Z",
+          "sourceDate": "2027-09-03",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853569",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852429",
           "sport": "baseball",
           "league": "MLB",
@@ -48474,22 +48490,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853569",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-09-03",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853569",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853979",
           "sport": "baseball",
           "league": "MLB",
@@ -48583,6 +48583,22 @@
           "sourceDate": "2027-09-04",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853490",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853562",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-09-04T23:10:00.000Z",
+          "sourceDate": "2027-09-04",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853562",
           "timeZone": "UTC"
         },
         {
@@ -48695,22 +48711,6 @@
           "sourceDate": "2027-09-04",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853810",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853562",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-09-04",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853562",
           "timeZone": "UTC"
         },
         {
@@ -48842,6 +48842,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853564",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-09-05T18:10:00.000Z",
+          "sourceDate": "2027-09-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853564",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853070",
           "sport": "baseball",
           "league": "MLB",
@@ -48951,22 +48967,6 @@
           "sourceDate": "2027-09-05",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853808",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853564",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-09-05",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853564",
           "timeZone": "UTC"
         },
         {
@@ -50490,6 +50490,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853560",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-14T00:10:00.000Z",
+          "sourceDate": "2027-09-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853560",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853644",
           "sport": "baseball",
           "league": "MLB",
@@ -50503,22 +50519,6 @@
           "sourceDate": "2027-09-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853644",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853560",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853560",
           "timeZone": "UTC"
         },
         {
@@ -50666,6 +50666,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853559",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-15T00:10:00.000Z",
+          "sourceDate": "2027-09-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853559",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852667",
           "sport": "baseball",
           "league": "MLB",
@@ -50743,22 +50759,6 @@
           "sourceDate": "2027-09-14",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854045",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853559",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853559",
           "timeZone": "UTC"
         },
         {
@@ -50906,6 +50906,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853563",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-16T00:10:00.000Z",
+          "sourceDate": "2027-09-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853563",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852670",
           "sport": "baseball",
           "league": "MLB",
@@ -50983,22 +50999,6 @@
           "sourceDate": "2027-09-15",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854052",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853563",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853563",
           "timeZone": "UTC"
         },
         {
@@ -51146,6 +51146,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853565",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-09-17T00:10:00.000Z",
+          "sourceDate": "2027-09-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853565",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852664",
           "sport": "baseball",
           "league": "MLB",
@@ -51223,22 +51239,6 @@
           "sourceDate": "2027-09-16",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854053",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853565",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-09-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853565",
           "timeZone": "UTC"
         },
         {
@@ -51370,6 +51370,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853567",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-09-18T00:10:00.000Z",
+          "sourceDate": "2027-09-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853567",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852661",
           "sport": "baseball",
           "league": "MLB",
@@ -51447,22 +51463,6 @@
           "sourceDate": "2027-09-17",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854050",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853567",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-09-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853567",
           "timeZone": "UTC"
         },
         {
@@ -51594,6 +51594,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853566",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-09-18T23:10:00.000Z",
+          "sourceDate": "2027-09-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853566",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853162",
           "sport": "baseball",
           "league": "MLB",
@@ -51687,22 +51703,6 @@
           "sourceDate": "2027-09-18",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854055",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853566",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-09-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853566",
           "timeZone": "UTC"
         },
         {
@@ -51834,6 +51834,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853561",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Houston Astros",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-117.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-09-19T18:10:00.000Z",
+          "sourceDate": "2027-09-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853561",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853160",
           "sport": "baseball",
           "league": "MLB",
@@ -51927,22 +51943,6 @@
           "sourceDate": "2027-09-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854048",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853561",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Houston Astros",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-117.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-09-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853561",
           "timeZone": "UTC"
         },
         {
@@ -53434,7 +53434,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-13T17:50:41.675Z",
+      "lastAttemptAt": "2026-11-13T23:39:11.618Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
