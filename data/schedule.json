@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-14T15:10:14.003Z",
+      "updatedAt": "2026-11-14T20:46:27.563Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-14T15:10:14.003Z",
+      "lastAttemptAt": "2026-11-14T20:46:27.563Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,28 +4498,13 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-14T15:10:14.003Z",
-      "matches": [
-        {
-          "id": "pandascore:1711021",
-          "sport": "lol",
-          "league": "Worlds",
-          "stage": "(Playoffs) Grand Final",
-          "home": "Bilibili Gaming",
-          "away": "Gen.G",
-          "homeLogo": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png",
-          "awayLogo": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png",
-          "start": "2026-11-14T19:00:00.000Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-          "timeZone": "UTC"
-        }
-      ],
+      "updatedAt": "2026-11-14T20:46:27.563Z",
+      "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-14T15:10:14.003Z",
+      "lastAttemptAt": "2026-11-14T20:46:27.563Z",
       "error": null,
-      "availability": "scheduled",
+      "availability": "empty",
       "upstreamLastModified": "2026-11-14T06:03:37.546Z",
       "upstreamGeneratedAt": "2026-11-14T06:03:37.546Z",
       "coverageNote": null
@@ -5765,7 +5750,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-14T15:10:14.003Z",
+      "lastAttemptAt": "2026-11-14T20:46:27.563Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7068,7 +7053,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-14T15:10:14.003Z",
+      "lastAttemptAt": "2026-11-14T20:46:27.563Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7079,7 +7064,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-14T15:10:14.003Z",
+      "updatedAt": "2026-11-14T20:46:27.563Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -53434,7 +53419,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-14T15:10:14.003Z",
+      "lastAttemptAt": "2026-11-14T20:46:27.563Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
