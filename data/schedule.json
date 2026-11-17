@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-17T13:34:28.945Z",
+      "updatedAt": "2026-11-17T22:28:24.421Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-17T13:34:28.945Z",
+      "lastAttemptAt": "2026-11-17T22:28:24.421Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,11 +4498,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-17T13:34:28.945Z",
+      "updatedAt": "2026-11-17T22:28:24.421Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-17T13:34:28.945Z",
+      "lastAttemptAt": "2026-11-17T22:28:24.421Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-17T07:43:40.835Z",
@@ -5750,7 +5750,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-17T13:34:28.945Z",
+      "lastAttemptAt": "2026-11-17T22:28:24.421Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7053,7 +7053,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-17T13:34:28.945Z",
+      "lastAttemptAt": "2026-11-17T22:28:24.421Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7064,7 +7064,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-17T13:34:28.945Z",
+      "updatedAt": "2026-11-17T22:28:24.421Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -14900,7 +14900,7 @@
           "away": "Athletics",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": "2027-03-27T16:35:00.000Z",
+          "start": "2027-03-27T17:35:00.000Z",
           "sourceDate": "2027-03-27",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852819",
@@ -16587,22 +16587,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852816",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": "2027-04-04T16:35:00.000Z",
-          "sourceDate": "2027-04-04",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852816",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854282",
           "sport": "baseball",
           "league": "MLB",
@@ -16616,6 +16600,22 @@
           "sourceDate": "2027-04-04",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854282",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852816",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-04-04T17:35:00.000Z",
+          "sourceDate": "2027-04-04",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852816",
           "timeZone": "UTC"
         },
         {
@@ -19588,7 +19588,7 @@
           "away": "Cincinnati Reds",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": "2027-04-18T16:35:00.000Z",
+          "start": "2027-04-18T17:35:00.000Z",
           "sourceDate": "2027-04-18",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852817",
@@ -22548,7 +22548,7 @@
           "away": "Washington Nationals",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": "2027-05-02T16:35:00.000Z",
+          "start": "2027-05-02T17:35:00.000Z",
           "sourceDate": "2027-05-02",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852811",
@@ -27083,22 +27083,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852804",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": "2027-05-23T16:35:00.000Z",
-          "sourceDate": "2027-05-23",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852804",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852882",
           "sport": "baseball",
           "league": "MLB",
@@ -27112,6 +27096,22 @@
           "sourceDate": "2027-05-23",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852882",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852804",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-05-23T17:35:00.000Z",
+          "sourceDate": "2027-05-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852804",
           "timeZone": "UTC"
         },
         {
@@ -30068,7 +30068,7 @@
           "away": "Toronto Blue Jays",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": "2027-06-06T16:35:00.000Z",
+          "start": "2027-06-06T17:35:00.000Z",
           "sourceDate": "2027-06-06",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852799",
@@ -34523,22 +34523,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852779",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": "2027-06-27T16:35:00.000Z",
-          "sourceDate": "2027-06-27",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852779",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854234",
           "sport": "baseball",
           "league": "MLB",
@@ -34552,6 +34536,22 @@
           "sourceDate": "2027-06-27",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854234",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852779",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-06-27T17:35:00.000Z",
+          "sourceDate": "2027-06-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852779",
           "timeZone": "UTC"
         },
         {
@@ -37579,22 +37579,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852783",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Miami Marlins",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-146.png",
-          "start": "2027-07-11T16:35:00.000Z",
-          "sourceDate": "2027-07-11",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852783",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852129",
           "sport": "baseball",
           "league": "MLB",
@@ -37624,6 +37608,22 @@
           "sourceDate": "2027-07-11",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854314",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852783",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Miami Marlins",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-146.png",
+          "start": "2027-07-11T17:35:00.000Z",
+          "sourceDate": "2027-07-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852783",
           "timeZone": "UTC"
         },
         {
@@ -39851,22 +39851,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852773",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Arizona Diamondbacks",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-109.png",
-          "start": "2027-07-25T16:35:00.000Z",
-          "sourceDate": "2027-07-25",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852773",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854226",
           "sport": "baseball",
           "league": "MLB",
@@ -39880,6 +39864,22 @@
           "sourceDate": "2027-07-25",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854226",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852773",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Arizona Diamondbacks",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-109.png",
+          "start": "2027-07-25T17:35:00.000Z",
+          "sourceDate": "2027-07-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852773",
           "timeZone": "UTC"
         },
         {
@@ -41412,7 +41412,7 @@
           "away": "New York Mets",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-121.png",
-          "start": "2027-08-01T16:35:00.000Z",
+          "start": "2027-08-01T17:35:00.000Z",
           "sourceDate": "2027-08-01",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852767",
@@ -44331,22 +44331,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852753",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": "2027-08-15T16:35:00.000Z",
-          "sourceDate": "2027-08-15",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852753",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852124",
           "sport": "baseball",
           "league": "MLB",
@@ -44360,6 +44344,22 @@
           "sourceDate": "2027-08-15",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852124",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852753",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-08-15T17:35:00.000Z",
+          "sourceDate": "2027-08-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852753",
           "timeZone": "UTC"
         },
         {
@@ -47291,22 +47291,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852765",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": "2027-08-29T16:35:00.000Z",
-          "sourceDate": "2027-08-29",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852765",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852116",
           "sport": "baseball",
           "league": "MLB",
@@ -47320,6 +47304,22 @@
           "sourceDate": "2027-08-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852116",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852765",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-08-29T17:35:00.000Z",
+          "sourceDate": "2027-08-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852765",
           "timeZone": "UTC"
         },
         {
@@ -48779,22 +48779,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852754",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Pittsburgh Pirates",
-          "away": "Milwaukee Brewers",
-          "homeLogo": "assets/team-logos/mlb-134.png",
-          "awayLogo": "assets/team-logos/mlb-158.png",
-          "start": "2027-09-05T16:35:00.000Z",
-          "sourceDate": "2027-09-05",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852754",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852839",
           "sport": "baseball",
           "league": "MLB",
@@ -48840,6 +48824,22 @@
           "sourceDate": "2027-09-05",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852917",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852754",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Pittsburgh Pirates",
+          "away": "Milwaukee Brewers",
+          "homeLogo": "assets/team-logos/mlb-134.png",
+          "awayLogo": "assets/team-logos/mlb-158.png",
+          "start": "2027-09-05T17:35:00.000Z",
+          "sourceDate": "2027-09-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852754",
           "timeZone": "UTC"
         },
         {
@@ -51780,7 +51780,7 @@
           "away": "Cleveland Guardians",
           "homeLogo": "assets/team-logos/mlb-134.png",
           "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": "2027-09-19T16:35:00.000Z",
+          "start": "2027-09-19T17:35:00.000Z",
           "sourceDate": "2027-09-19",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852749",
@@ -53451,7 +53451,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-17T13:34:28.945Z",
+      "lastAttemptAt": "2026-11-17T22:28:24.421Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
