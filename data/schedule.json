@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-18T17:19:19.725Z",
+      "updatedAt": "2026-11-19T00:28:23.134Z",
       "matches": [
         {
           "id": "openfootball:312456f4dd2bdaa7f07b5775",
@@ -4489,7 +4489,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-18T17:19:19.725Z",
+      "lastAttemptAt": "2026-11-19T00:28:23.134Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4498,11 +4498,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-18T17:19:19.725Z",
+      "updatedAt": "2026-11-19T00:28:23.134Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-18T17:19:19.725Z",
+      "lastAttemptAt": "2026-11-19T00:28:23.134Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-18T07:07:56.887Z",
@@ -5750,7 +5750,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-18T17:19:19.725Z",
+      "lastAttemptAt": "2026-11-19T00:28:23.134Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7053,7 +7053,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-18T17:19:19.725Z",
+      "lastAttemptAt": "2026-11-19T00:28:23.134Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -7064,7 +7064,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-18T17:19:19.725Z",
+      "updatedAt": "2026-11-19T00:28:23.134Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -12347,6 +12347,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868190",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Arizona Diamondbacks",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-109.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-03-13T20:10:00.000Z",
+          "sourceDate": "2027-03-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868190",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868191",
           "sport": "baseball",
           "league": "MLB",
@@ -12392,22 +12408,6 @@
           "sourceDate": "2027-03-13",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868179",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868190",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Arizona Diamondbacks",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-109.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": "2027-03-13T21:10:00.000Z",
-          "sourceDate": "2027-03-13",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/868190",
           "timeZone": "UTC"
         },
         {
@@ -17739,6 +17739,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852584",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Seattle Mariners",
+          "away": "Colorado Rockies",
+          "homeLogo": "assets/team-logos/mlb-136.png",
+          "awayLogo": "assets/team-logos/mlb-115.png",
+          "start": "2027-04-10T01:40:00.000Z",
+          "sourceDate": "2027-04-09",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852584",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854442",
           "sport": "baseball",
           "league": "MLB",
@@ -17752,22 +17768,6 @@
           "sourceDate": "2027-04-09",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854442",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852584",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Seattle Mariners",
-          "away": "Colorado Rockies",
-          "homeLogo": "assets/team-logos/mlb-136.png",
-          "awayLogo": "assets/team-logos/mlb-115.png",
-          "start": "2027-04-30T01:40:00.000Z",
-          "sourceDate": "2027-04-09",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852584",
           "timeZone": "UTC"
         },
         {
@@ -53451,7 +53451,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-18T17:19:19.725Z",
+      "lastAttemptAt": "2026-11-19T00:28:23.134Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
