@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-22T12:40:32.301Z",
+      "updatedAt": "2026-11-22T20:45:07.267Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-22T12:40:32.301Z",
+      "lastAttemptAt": "2026-11-22T20:45:07.267Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-22T12:40:32.301Z",
+      "updatedAt": "2026-11-22T20:45:07.267Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-22T12:40:32.301Z",
+      "lastAttemptAt": "2026-11-22T20:45:07.267Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-22T06:29:33.761Z",
@@ -5590,7 +5590,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-22T12:40:32.301Z",
+      "lastAttemptAt": "2026-11-22T20:45:07.267Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -5601,22 +5601,8 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-22T12:40:32.301Z",
+      "updatedAt": "2026-11-22T20:45:07.267Z",
       "matches": [
-        {
-          "id": "valorant:pandascore-match-1792354@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "Stage TBD",
-          "home": "TFG",
-          "away": "Backed by Nobody",
-          "homeLogo": "assets/team-logos/valorant-twoface-gaming.png",
-          "awayLogo": "assets/team-logos/valorant-backed-by-nobody.png",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/backed-by-nobody.ics",
-          "timeZone": "UTC"
-        },
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
           "sport": "valorant",
@@ -5629,20 +5615,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/backed-by-nobody.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792385@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "BERG",
-          "away": "GG",
-          "homeLogo": "assets/team-logos/valorant-berg.png",
-          "awayLogo": "assets/team-logos/valorant-glacial-guardians.png",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/berg.ics",
           "timeZone": "UTC"
         },
         {
@@ -5660,20 +5632,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1792355@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "Stage TBD",
-          "home": "Brest Esport",
-          "away": "SGE Vision",
-          "homeLogo": "assets/team-logos/valorant-brest-esport.png",
-          "awayLogo": "assets/team-logos/valorant-eintracht-frankfurt-team-vision.png",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/brest-esport.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792359@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
@@ -5688,20 +5646,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1792387@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "CGN",
-          "away": "REH Gaming",
-          "homeLogo": "assets/team-logos/cgn.png",
-          "awayLogo": "assets/team-logos/reh-gaming.webp",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/cgn-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792391@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
@@ -5713,20 +5657,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/cgn-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792360@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "Stage TBD",
-          "home": "Lootlake City",
-          "away": "Enisorail",
-          "homeLogo": null,
-          "awayLogo": "assets/team-logos/valorant-enisorail.png",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/enisorail.ics",
           "timeZone": "UTC"
         },
         {
@@ -5758,20 +5688,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "valorant:pandascore-match-1792384@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "HK",
-          "away": "Frankfurt Bahnhofsviertel",
-          "homeLogo": "assets/team-logos/hook.webp",
-          "awayLogo": "assets/team-logos/frankfurt-bahnhofsviertel.webp",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/frankfurt-bahnhofsviertel.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "valorant:pandascore-match-1792388@esport-ics",
           "sport": "valorant",
           "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
@@ -5783,34 +5699,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/frankfurt-bahnhofsviertel.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792386@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group A",
-          "stage": "Stage TBD",
-          "home": "FRG",
-          "away": "Team International",
-          "homeLogo": "assets/team-logos/frg.webp",
-          "awayLogo": "assets/team-logos/team-international.webp",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/frg.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792353@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "Stage TBD",
-          "home": "GSH",
-          "away": "regnum4games",
-          "homeLogo": "assets/team-logos/valorant-gesichtenhausen.png",
-          "awayLogo": "assets/team-logos/valorant-regnum4games.png",
-          "start": "2026-11-22T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/gesichtenhausen.ics",
           "timeZone": "UTC"
         },
         {
@@ -5843,7 +5731,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-22T12:40:32.301Z",
+      "lastAttemptAt": "2026-11-22T20:45:07.267Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -5854,7 +5742,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-22T12:40:32.301Z",
+      "updatedAt": "2026-11-22T20:45:07.267Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -52241,7 +52129,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-22T12:40:32.301Z",
+      "lastAttemptAt": "2026-11-22T20:45:07.267Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
