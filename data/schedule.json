@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-23T14:50:10.612Z",
+      "updatedAt": "2026-11-24T02:57:00.849Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-23T14:50:10.612Z",
+      "lastAttemptAt": "2026-11-24T02:57:00.849Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-23T14:50:10.612Z",
+      "updatedAt": "2026-11-24T02:57:00.849Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-23T14:50:10.612Z",
+      "lastAttemptAt": "2026-11-24T02:57:00.849Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-23T07:19:54.737Z",
@@ -5590,7 +5590,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-23T14:50:10.612Z",
+      "lastAttemptAt": "2026-11-24T02:57:00.849Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": "structure",
@@ -5601,7 +5601,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-23T14:50:10.612Z",
+      "updatedAt": "2026-11-24T02:57:00.849Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
@@ -5731,7 +5731,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-23T14:50:10.612Z",
+      "lastAttemptAt": "2026-11-24T02:57:00.849Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -5742,7 +5742,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-23T14:50:10.612Z",
+      "updatedAt": "2026-11-24T02:57:00.849Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -5758,6 +5758,22 @@
           "sourceDate": "2027-02-19",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868573",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868569",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-02-19T18:05:00.000Z",
+          "sourceDate": "2027-02-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868569",
           "timeZone": "UTC"
         },
         {
@@ -5982,22 +5998,6 @@
           "sourceDate": "2027-02-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868344",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868569",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-02-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868569",
           "timeZone": "UTC"
         },
         {
@@ -6289,6 +6289,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868564",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-02-21T18:05:00.000Z",
+          "sourceDate": "2027-02-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868564",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868561",
           "sport": "baseball",
           "league": "MLB",
@@ -6446,22 +6462,6 @@
           "sourceDate": "2027-02-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868554",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868564",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-02-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868564",
           "timeZone": "UTC"
         },
         {
@@ -6769,6 +6769,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868548",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-02-23T18:05:00.000Z",
+          "sourceDate": "2027-02-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868548",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868529",
           "sport": "baseball",
           "league": "MLB",
@@ -6926,22 +6942,6 @@
           "sourceDate": "2027-02-23",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868304",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868548",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-02-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868548",
           "timeZone": "UTC"
         },
         {
@@ -7281,6 +7281,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868516",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-02-25T18:05:00.000Z",
+          "sourceDate": "2027-02-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868516",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868526",
           "sport": "baseball",
           "league": "MLB",
@@ -7441,22 +7457,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868516",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-02-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868516",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868299",
           "sport": "baseball",
           "league": "MLB",
@@ -7550,6 +7550,22 @@
           "sourceDate": "2027-02-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868522",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868521",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Miami Marlins",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-146.png",
+          "start": "2027-02-26T18:05:00.000Z",
+          "sourceDate": "2027-02-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868521",
           "timeZone": "UTC"
         },
         {
@@ -7726,22 +7742,6 @@
           "sourceDate": "2027-02-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868517",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868521",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Miami Marlins",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-146.png",
-          "start": null,
-          "sourceDate": "2027-02-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868521",
           "timeZone": "UTC"
         },
         {
@@ -8017,6 +8017,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868512",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-02-28T18:05:00.000Z",
+          "sourceDate": "2027-02-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868512",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868511",
           "sport": "baseball",
           "league": "MLB",
@@ -8206,22 +8222,6 @@
           "sourceDate": "2027-02-28",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868275",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868512",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-02-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868512",
           "timeZone": "UTC"
         },
         {
@@ -8817,6 +8817,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868484",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-03-04T18:05:00.000Z",
+          "sourceDate": "2027-03-04",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868484",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868482",
           "sport": "baseball",
           "league": "MLB",
@@ -8990,22 +9006,6 @@
           "sourceDate": "2027-03-04",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868463",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868484",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-03-04",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868484",
           "timeZone": "UTC"
         },
         {
@@ -9313,6 +9313,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868466",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Pittsburgh Pirates",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-134.png",
+          "start": "2027-03-06T18:05:00.000Z",
+          "sourceDate": "2027-03-06",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868466",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868467",
           "sport": "baseball",
           "league": "MLB",
@@ -9473,22 +9489,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868466",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Pittsburgh Pirates",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-134.png",
-          "start": null,
-          "sourceDate": "2027-03-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868466",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868461",
           "sport": "baseball",
           "league": "MLB",
@@ -9550,6 +9550,22 @@
           "sourceDate": "2027-03-06",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868225",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868452",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-03-07T18:05:00.000Z",
+          "sourceDate": "2027-03-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868452",
           "timeZone": "UTC"
         },
         {
@@ -9758,22 +9774,6 @@
           "sourceDate": "2027-03-07",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868232",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868452",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-03-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868452",
           "timeZone": "UTC"
         },
         {
@@ -10241,6 +10241,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868428",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-03-10T18:05:00.000Z",
+          "sourceDate": "2027-03-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868428",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868437",
           "sport": "baseball",
           "league": "MLB",
@@ -10401,22 +10417,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868428",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-03-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868428",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868447",
           "sport": "baseball",
           "league": "MLB",
@@ -10446,6 +10446,22 @@
           "sourceDate": "2027-03-11",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868422",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868429",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-03-11T18:05:00.000Z",
+          "sourceDate": "2027-03-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868429",
           "timeZone": "UTC"
         },
         {
@@ -10574,22 +10590,6 @@
           "sourceDate": "2027-03-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868424",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868429",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-03-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868429",
           "timeZone": "UTC"
         },
         {
@@ -10913,6 +10913,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868412",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Toronto Blue Jays",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-141.png",
+          "start": "2027-03-13T18:05:00.000Z",
+          "sourceDate": "2027-03-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868412",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868411",
           "sport": "baseball",
           "league": "MLB",
@@ -11134,22 +11150,6 @@
           "sourceDate": "2027-03-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868418",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868412",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Toronto Blue Jays",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-141.png",
-          "start": null,
-          "sourceDate": "2027-03-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868412",
           "timeZone": "UTC"
         },
         {
@@ -11617,6 +11617,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868392",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-03-16T17:05:00.000Z",
+          "sourceDate": "2027-03-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868392",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868393",
           "sport": "baseball",
           "league": "MLB",
@@ -11742,22 +11758,6 @@
           "sourceDate": "2027-03-16",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868159",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868392",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-03-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868392",
           "timeZone": "UTC"
         },
         {
@@ -12257,6 +12257,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:868380",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-03-19T17:05:00.000Z",
+          "sourceDate": "2027-03-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868380",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:868376",
           "sport": "baseball",
           "league": "MLB",
@@ -12449,22 +12465,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:868380",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-03-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868380",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:868144",
           "sport": "baseball",
           "league": "MLB",
@@ -12574,6 +12574,22 @@
           "sourceDate": "2027-03-20",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/868365",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:868355",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Spring Training",
+          "season": "2027",
+          "home": "Detroit Tigers",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-116.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-03-20T17:05:00.000Z",
+          "sourceDate": "2027-03-20",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/868355",
           "timeZone": "UTC"
         },
         {
@@ -12718,22 +12734,6 @@
           "sourceDate": "2027-03-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/868363",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:868355",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Spring Training",
-          "season": "2027",
-          "home": "Detroit Tigers",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-116.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-03-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/868355",
           "timeZone": "UTC"
         },
         {
@@ -13249,6 +13249,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852583",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Seattle Mariners",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-136.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-03-25T00:10:00.000Z",
+          "sourceDate": "2027-03-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852583",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853719",
           "sport": "baseball",
           "league": "MLB",
@@ -13425,22 +13441,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852583",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Seattle Mariners",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-136.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": "2027-03-26T02:10:00.000Z",
-          "sourceDate": "2027-03-25",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852583",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854131",
           "sport": "baseball",
           "league": "MLB",
@@ -13566,6 +13566,22 @@
           "sourceDate": "2027-03-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852589",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853387",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Los Angeles Dodgers",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-119.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": null,
+          "sourceDate": "2027-03-26",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/853387",
           "timeZone": "UTC"
         },
         {
@@ -13982,22 +13998,6 @@
           "sourceDate": "2027-03-28",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852669",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853387",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Los Angeles Dodgers",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-119.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-03-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853387",
           "timeZone": "UTC"
         },
         {
@@ -15969,6 +15969,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853067",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "New York Mets",
+          "away": "Cincinnati Reds",
+          "homeLogo": "assets/team-logos/mlb-121.png",
+          "awayLogo": "assets/team-logos/mlb-113.png",
+          "start": "2027-04-07T17:10:00.000Z",
+          "sourceDate": "2027-04-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853067",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852506",
           "sport": "baseball",
           "league": "MLB",
@@ -16129,22 +16145,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853067",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "New York Mets",
-          "away": "Cincinnati Reds",
-          "homeLogo": "assets/team-logos/mlb-121.png",
-          "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
-          "sourceDate": "2027-04-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853067",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853878",
           "sport": "baseball",
           "league": "MLB",
@@ -16266,9 +16266,9 @@
           "away": "Cincinnati Reds",
           "homeLogo": "assets/team-logos/mlb-121.png",
           "awayLogo": "assets/team-logos/mlb-113.png",
-          "start": null,
+          "start": "2027-04-08T20:10:00.000Z",
           "sourceDate": "2027-04-08",
-          "status": "Time TBD",
+          "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853062",
           "timeZone": "UTC"
         },
@@ -19057,6 +19057,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853467",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Los Angeles Angels",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-108.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-04-22T01:38:00.000Z",
+          "sourceDate": "2027-04-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853467",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854205",
           "sport": "baseball",
           "league": "MLB",
@@ -19102,22 +19118,6 @@
           "sourceDate": "2027-04-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854036",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853467",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Los Angeles Angels",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-108.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-04-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853467",
           "timeZone": "UTC"
         },
         {
@@ -22689,6 +22689,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:854517",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Arizona Diamondbacks",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-109.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-05-08T23:15:00.000Z",
+          "sourceDate": "2027-05-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/854517",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852890",
           "sport": "baseball",
           "league": "MLB",
@@ -22702,22 +22718,6 @@
           "sourceDate": "2027-05-08",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852890",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:854517",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Arizona Diamondbacks",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-109.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": "2027-05-09T00:10:00.000Z",
-          "sourceDate": "2027-05-08",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/854517",
           "timeZone": "UTC"
         },
         {
@@ -28545,22 +28545,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:854499",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Arizona Diamondbacks",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-109.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": "2027-06-05T20:10:00.000Z",
-          "sourceDate": "2027-06-05",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/854499",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852392",
           "sport": "baseball",
           "league": "MLB",
@@ -28606,6 +28590,22 @@
           "sourceDate": "2027-06-05",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853047",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:854499",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Arizona Diamondbacks",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-109.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-06-05T23:35:00.000Z",
+          "sourceDate": "2027-06-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/854499",
           "timeZone": "UTC"
         },
         {
@@ -36497,6 +36497,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:854160",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Boston Red Sox",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-111.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": null,
+          "sourceDate": "2027-07-15",
+          "status": "Time TBD",
+          "sourceUrl": "https://www.mlb.com/gameday/854160",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852870",
           "sport": "baseball",
           "league": "MLB",
@@ -36670,22 +36686,6 @@
           "sourceDate": "2027-07-16",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852208",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:854160",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Boston Red Sox",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-111.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-07-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/854160",
           "timeZone": "UTC"
         },
         {
@@ -52129,7 +52129,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-23T14:50:10.612Z",
+      "lastAttemptAt": "2026-11-24T02:57:00.849Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
