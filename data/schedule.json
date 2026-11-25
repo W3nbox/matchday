@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-25T11:25:47.403Z",
+      "updatedAt": "2026-11-25T21:47:47.413Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T11:25:47.403Z",
+      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-25T11:25:47.403Z",
+      "updatedAt": "2026-11-25T21:47:47.413Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-25T11:25:47.403Z",
+      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-25T08:14:06.998Z",
@@ -4354,7 +4354,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-25T11:25:47.403Z",
+      "updatedAt": "2026-11-25T21:47:47.413Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1661661@esport-ics",
@@ -4386,7 +4386,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T11:25:47.403Z",
+      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4397,7 +4397,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-25T11:25:47.403Z",
+      "updatedAt": "2026-11-25T21:47:47.413Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
@@ -4527,7 +4527,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T11:25:47.403Z",
+      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4538,7 +4538,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-25T11:25:47.403Z",
+      "updatedAt": "2026-11-25T21:47:47.413Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -13709,6 +13709,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852260",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-04-02T23:07:00.000Z",
+          "sourceDate": "2027-04-02",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852260",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854365",
           "sport": "baseball",
           "league": "MLB",
@@ -13789,22 +13805,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852260",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-04-02",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852260",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853882",
           "sport": "baseball",
           "league": "MLB",
@@ -13850,6 +13850,22 @@
           "sourceDate": "2027-04-03",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852507",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852266",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-04-03T19:07:00.000Z",
+          "sourceDate": "2027-04-03",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852266",
           "timeZone": "UTC"
         },
         {
@@ -14013,22 +14029,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852266",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-04-03",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852266",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853881",
           "sport": "baseball",
           "league": "MLB",
@@ -14122,6 +14122,22 @@
           "sourceDate": "2027-04-04",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854375",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852265",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Seattle Mariners",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-136.png",
+          "start": "2027-04-04T17:37:00.000Z",
+          "sourceDate": "2027-04-04",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852265",
           "timeZone": "UTC"
         },
         {
@@ -14253,22 +14269,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852265",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Seattle Mariners",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-136.png",
-          "start": null,
-          "sourceDate": "2027-04-04",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852265",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853887",
           "sport": "baseball",
           "league": "MLB",
@@ -14330,6 +14330,22 @@
           "sourceDate": "2027-04-05",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852823",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852269",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Milwaukee Brewers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-158.png",
+          "start": "2027-04-05T23:07:00.000Z",
+          "sourceDate": "2027-04-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852269",
           "timeZone": "UTC"
         },
         {
@@ -14477,22 +14493,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852269",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Milwaukee Brewers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-158.png",
-          "start": null,
-          "sourceDate": "2027-04-05",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852269",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854032",
           "sport": "baseball",
           "league": "MLB",
@@ -14554,6 +14554,22 @@
           "sourceDate": "2027-04-06",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852826",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852257",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Milwaukee Brewers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-158.png",
+          "start": "2027-04-06T23:07:00.000Z",
+          "sourceDate": "2027-04-06",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852257",
           "timeZone": "UTC"
         },
         {
@@ -14717,22 +14733,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852257",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Milwaukee Brewers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-158.png",
-          "start": null,
-          "sourceDate": "2027-04-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852257",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854038",
           "sport": "baseball",
           "league": "MLB",
@@ -14810,6 +14810,22 @@
           "sourceDate": "2027-04-07",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853142",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852256",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Milwaukee Brewers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-158.png",
+          "start": "2027-04-07T19:07:00.000Z",
+          "sourceDate": "2027-04-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852256",
           "timeZone": "UTC"
         },
         {
@@ -14954,22 +14970,6 @@
           "sourceDate": "2027-04-07",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853878",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852256",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Milwaukee Brewers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-158.png",
-          "start": null,
-          "sourceDate": "2027-04-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852256",
           "timeZone": "UTC"
         },
         {
@@ -16621,6 +16621,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852246",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-16T23:07:00.000Z",
+          "sourceDate": "2027-04-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852246",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854364",
           "sport": "baseball",
           "league": "MLB",
@@ -16765,22 +16781,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852246",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852246",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854033",
           "sport": "baseball",
           "league": "MLB",
@@ -16858,6 +16858,22 @@
           "sourceDate": "2027-04-17",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853151",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852247",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-17T19:07:00.000Z",
+          "sourceDate": "2027-04-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852247",
           "timeZone": "UTC"
         },
         {
@@ -17005,22 +17021,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852247",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852247",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854041",
           "sport": "baseball",
           "league": "MLB",
@@ -17114,6 +17114,22 @@
           "sourceDate": "2027-04-18",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852894",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852251",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Athletics",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-133.png",
+          "start": "2027-04-18T17:37:00.000Z",
+          "sourceDate": "2027-04-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852251",
           "timeZone": "UTC"
         },
         {
@@ -17242,22 +17258,6 @@
           "sourceDate": "2027-04-18",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854197",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852251",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Athletics",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-133.png",
-          "start": null,
-          "sourceDate": "2027-04-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852251",
           "timeZone": "UTC"
         },
         {
@@ -17517,6 +17517,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852253",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-20T23:07:00.000Z",
+          "sourceDate": "2027-04-20",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852253",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854359",
           "sport": "baseball",
           "league": "MLB",
@@ -17642,22 +17658,6 @@
           "sourceDate": "2027-04-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854200",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852253",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852253",
           "timeZone": "UTC"
         },
         {
@@ -17821,6 +17821,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852250",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-21T23:07:00.000Z",
+          "sourceDate": "2027-04-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852250",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854357",
           "sport": "baseball",
           "league": "MLB",
@@ -17885,22 +17901,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852250",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852250",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854036",
           "sport": "baseball",
           "league": "MLB",
@@ -17946,6 +17946,22 @@
           "sourceDate": "2027-04-22",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852808",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852254",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Cleveland Guardians",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-114.png",
+          "start": "2027-04-22T17:07:00.000Z",
+          "sourceDate": "2027-04-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852254",
           "timeZone": "UTC"
         },
         {
@@ -18026,22 +18042,6 @@
           "sourceDate": "2027-04-22",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854206",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852254",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Cleveland Guardians",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-114.png",
-          "start": null,
-          "sourceDate": "2027-04-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852254",
           "timeZone": "UTC"
         },
         {
@@ -19565,6 +19565,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852252",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-04-30T23:07:00.000Z",
+          "sourceDate": "2027-04-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852252",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853299",
           "sport": "baseball",
           "league": "MLB",
@@ -19709,22 +19725,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852252",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-04-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852252",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854024",
           "sport": "baseball",
           "league": "MLB",
@@ -19786,6 +19786,22 @@
           "sourceDate": "2027-05-01",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852984",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852249",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-05-01T19:07:00.000Z",
+          "sourceDate": "2027-05-01",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852249",
           "timeZone": "UTC"
         },
         {
@@ -19949,22 +19965,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852249",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-05-01",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852249",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854029",
           "sport": "baseball",
           "league": "MLB",
@@ -20058,6 +20058,22 @@
           "sourceDate": "2027-05-02",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852977",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852248",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-05-02T17:37:00.000Z",
+          "sourceDate": "2027-05-02",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852248",
           "timeZone": "UTC"
         },
         {
@@ -20186,22 +20202,6 @@
           "sourceDate": "2027-05-02",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854181",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852248",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-05-02",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852248",
           "timeZone": "UTC"
         },
         {
@@ -21837,6 +21837,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852255",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-05-10T23:07:00.000Z",
+          "sourceDate": "2027-05-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852255",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853135",
           "sport": "baseball",
           "league": "MLB",
@@ -21882,22 +21898,6 @@
           "sourceDate": "2027-05-10",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852718",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852255",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-05-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852255",
           "timeZone": "UTC"
         },
         {
@@ -21997,6 +21997,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852239",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-05-11T23:07:00.000Z",
+          "sourceDate": "2027-05-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852239",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853045",
           "sport": "baseball",
           "league": "MLB",
@@ -22090,22 +22106,6 @@
           "sourceDate": "2027-05-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853862",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852239",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-05-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852239",
           "timeZone": "UTC"
         },
         {
@@ -22269,6 +22269,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852240",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-05-12T23:07:00.000Z",
+          "sourceDate": "2027-05-12",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852240",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853040",
           "sport": "baseball",
           "league": "MLB",
@@ -22330,22 +22346,6 @@
           "sourceDate": "2027-05-12",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853864",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852240",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-05-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852240",
           "timeZone": "UTC"
         },
         {
@@ -22509,6 +22509,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852237",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-05-13T23:07:00.000Z",
+          "sourceDate": "2027-05-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852237",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853859",
           "sport": "baseball",
           "league": "MLB",
@@ -22522,22 +22538,6 @@
           "sourceDate": "2027-05-13",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853859",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852237",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-05-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852237",
           "timeZone": "UTC"
         },
         {
@@ -22618,6 +22618,22 @@
           "sourceDate": "2027-05-14",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852969",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852243",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-05-14T23:07:00.000Z",
+          "sourceDate": "2027-05-14",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852243",
           "timeZone": "UTC"
         },
         {
@@ -22765,22 +22781,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852243",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-05-14",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852243",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854021",
           "sport": "baseball",
           "league": "MLB",
@@ -22826,6 +22826,22 @@
           "sourceDate": "2027-05-15",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852966",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852232",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-05-15T19:07:00.000Z",
+          "sourceDate": "2027-05-15",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852232",
           "timeZone": "UTC"
         },
         {
@@ -23005,22 +23021,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852232",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-05-15",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852232",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854022",
           "sport": "baseball",
           "league": "MLB",
@@ -23098,6 +23098,22 @@
           "sourceDate": "2027-05-16",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852970",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852233",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-05-16T17:37:00.000Z",
+          "sourceDate": "2027-05-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852233",
           "timeZone": "UTC"
         },
         {
@@ -23245,22 +23261,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852233",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-05-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852233",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854028",
           "sport": "baseball",
           "league": "MLB",
@@ -23290,6 +23290,22 @@
           "sourceDate": "2027-05-16",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852635",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852244",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-05-17T17:07:00.000Z",
+          "sourceDate": "2027-05-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852244",
           "timeZone": "UTC"
         },
         {
@@ -23402,22 +23418,6 @@
           "sourceDate": "2027-05-17",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854438",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852244",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-05-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852244",
           "timeZone": "UTC"
         },
         {
@@ -25021,6 +25021,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852234",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-05-25T23:07:00.000Z",
+          "sourceDate": "2027-05-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852234",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853044",
           "sport": "baseball",
           "league": "MLB",
@@ -25114,22 +25130,6 @@
           "sourceDate": "2027-05-25",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854173",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852234",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-05-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852234",
           "timeZone": "UTC"
         },
         {
@@ -25309,6 +25309,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852235",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-05-26T23:07:00.000Z",
+          "sourceDate": "2027-05-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852235",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853775",
           "sport": "baseball",
           "league": "MLB",
@@ -25354,22 +25370,6 @@
           "sourceDate": "2027-05-26",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854180",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852235",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-05-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852235",
           "timeZone": "UTC"
         },
         {
@@ -25510,9 +25510,9 @@
           "away": "New York Yankees",
           "homeLogo": "assets/team-logos/mlb-141.png",
           "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
+          "start": "2027-05-27T23:07:00.000Z",
           "sourceDate": "2027-05-27",
-          "status": "Time TBD",
+          "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852245",
           "timeZone": "UTC"
         },
@@ -25610,6 +25610,22 @@
           "sourceDate": "2027-05-28",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852152",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852241",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-05-28T23:07:00.000Z",
+          "sourceDate": "2027-05-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852241",
           "timeZone": "UTC"
         },
         {
@@ -25741,22 +25757,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852241",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-05-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852241",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854012",
           "sport": "baseball",
           "league": "MLB",
@@ -25802,6 +25802,22 @@
           "sourceDate": "2027-05-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853691",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852242",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-05-29T19:07:00.000Z",
+          "sourceDate": "2027-05-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852242",
           "timeZone": "UTC"
         },
         {
@@ -25965,22 +25981,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852242",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-05-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852242",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852474",
           "sport": "baseball",
           "league": "MLB",
@@ -26058,6 +26058,22 @@
           "sourceDate": "2027-05-30",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852144",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852236",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Minnesota Twins",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-142.png",
+          "start": "2027-05-30T17:37:00.000Z",
+          "sourceDate": "2027-05-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852236",
           "timeZone": "UTC"
         },
         {
@@ -26218,22 +26234,6 @@
           "sourceDate": "2027-05-30",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854339",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852236",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Minnesota Twins",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-142.png",
-          "start": null,
-          "sourceDate": "2027-05-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852236",
           "timeZone": "UTC"
         },
         {
@@ -27981,6 +27981,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852238",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Arizona Diamondbacks",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-109.png",
+          "start": "2027-06-08T23:07:00.000Z",
+          "sourceDate": "2027-06-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852238",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853935",
           "sport": "baseball",
           "league": "MLB",
@@ -28106,22 +28122,6 @@
           "sourceDate": "2027-06-08",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853846",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852238",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Arizona Diamondbacks",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-109.png",
-          "start": null,
-          "sourceDate": "2027-06-08",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852238",
           "timeZone": "UTC"
         },
         {
@@ -28333,6 +28333,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852223",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Arizona Diamondbacks",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-109.png",
+          "start": "2027-06-09T23:07:00.000Z",
+          "sourceDate": "2027-06-09",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852223",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853847",
           "sport": "baseball",
           "league": "MLB",
@@ -28346,22 +28362,6 @@
           "sourceDate": "2027-06-09",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853847",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852223",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Arizona Diamondbacks",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-109.png",
-          "start": null,
-          "sourceDate": "2027-06-09",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852223",
           "timeZone": "UTC"
         },
         {
@@ -28461,6 +28461,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852221",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Arizona Diamondbacks",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-109.png",
+          "start": "2027-06-10T23:07:00.000Z",
+          "sourceDate": "2027-06-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852221",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853122",
           "sport": "baseball",
           "league": "MLB",
@@ -28490,22 +28506,6 @@
           "sourceDate": "2027-06-10",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853849",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852221",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Arizona Diamondbacks",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-109.png",
-          "start": null,
-          "sourceDate": "2027-06-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852221",
           "timeZone": "UTC"
         },
         {
@@ -28586,6 +28586,22 @@
           "sourceDate": "2027-06-11",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852954",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852228",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-06-11T23:07:00.000Z",
+          "sourceDate": "2027-06-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852228",
           "timeZone": "UTC"
         },
         {
@@ -28701,22 +28717,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852228",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-06-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852228",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854086",
           "sport": "baseball",
           "league": "MLB",
@@ -28794,6 +28794,22 @@
           "sourceDate": "2027-06-12",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853119",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852229",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-06-12T19:07:00.000Z",
+          "sourceDate": "2027-06-12",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852229",
           "timeZone": "UTC"
         },
         {
@@ -28941,22 +28957,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852229",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-06-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852229",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854083",
           "sport": "baseball",
           "league": "MLB",
@@ -29050,6 +29050,22 @@
           "sourceDate": "2027-06-13",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852952",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852220",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Philadelphia Phillies",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-143.png",
+          "start": "2027-06-13T17:37:00.000Z",
+          "sourceDate": "2027-06-13",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852220",
           "timeZone": "UTC"
         },
         {
@@ -29178,22 +29194,6 @@
           "sourceDate": "2027-06-13",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854414",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852220",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Philadelphia Phillies",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-143.png",
-          "start": null,
-          "sourceDate": "2027-06-13",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852220",
           "timeZone": "UTC"
         },
         {
@@ -30733,6 +30733,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852231",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-06-21T23:07:00.000Z",
+          "sourceDate": "2027-06-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852231",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853039",
           "sport": "baseball",
           "league": "MLB",
@@ -30893,22 +30909,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852231",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-06-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852231",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853999",
           "sport": "baseball",
           "league": "MLB",
@@ -31002,6 +31002,22 @@
           "sourceDate": "2027-06-22",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852149",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852225",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-06-22T23:07:00.000Z",
+          "sourceDate": "2027-06-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852225",
           "timeZone": "UTC"
         },
         {
@@ -31149,22 +31165,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852225",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-06-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852225",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854006",
           "sport": "baseball",
           "league": "MLB",
@@ -31210,6 +31210,22 @@
           "sourceDate": "2027-06-23",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853517",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852226",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Francisco Giants",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-137.png",
+          "start": "2027-06-23T19:07:00.000Z",
+          "sourceDate": "2027-06-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852226",
           "timeZone": "UTC"
         },
         {
@@ -31370,22 +31386,6 @@
           "sourceDate": "2027-06-23",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853841",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852226",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Francisco Giants",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-137.png",
-          "start": null,
-          "sourceDate": "2027-06-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852226",
           "timeZone": "UTC"
         },
         {
@@ -31565,6 +31565,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852227",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-06-25T23:07:00.000Z",
+          "sourceDate": "2027-06-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852227",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853923",
           "sport": "baseball",
           "league": "MLB",
@@ -31709,22 +31725,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852227",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-06-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852227",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853997",
           "sport": "baseball",
           "league": "MLB",
@@ -31786,6 +31786,22 @@
           "sourceDate": "2027-06-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853123",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852230",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-06-26T19:07:00.000Z",
+          "sourceDate": "2027-06-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852230",
           "timeZone": "UTC"
         },
         {
@@ -31949,22 +31965,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852230",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-06-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852230",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854000",
           "sport": "baseball",
           "league": "MLB",
@@ -32042,6 +32042,22 @@
           "sourceDate": "2027-06-27",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852951",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852218",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "San Diego Padres",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-135.png",
+          "start": "2027-06-27T17:37:00.000Z",
+          "sourceDate": "2027-06-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852218",
           "timeZone": "UTC"
         },
         {
@@ -32186,22 +32202,6 @@
           "sourceDate": "2027-06-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854156",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852218",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "San Diego Padres",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-135.png",
-          "start": null,
-          "sourceDate": "2027-06-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852218",
           "timeZone": "UTC"
         },
         {
@@ -32461,6 +32461,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852222",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-06-29T23:07:00.000Z",
+          "sourceDate": "2027-06-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852222",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853921",
           "sport": "baseball",
           "league": "MLB",
@@ -32538,22 +32554,6 @@
           "sourceDate": "2027-06-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854494",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852222",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-06-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852222",
           "timeZone": "UTC"
         },
         {
@@ -32733,6 +32733,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852219",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-06-30T23:07:00.000Z",
+          "sourceDate": "2027-06-30",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852219",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853927",
           "sport": "baseball",
           "league": "MLB",
@@ -32778,22 +32794,6 @@
           "sourceDate": "2027-06-30",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852296",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852219",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-06-30",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852219",
           "timeZone": "UTC"
         },
         {
@@ -32909,6 +32909,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852224",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Los Angeles Angels",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-108.png",
+          "start": "2027-07-01T19:07:00.000Z",
+          "sourceDate": "2027-07-01",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852224",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853925",
           "sport": "baseball",
           "league": "MLB",
@@ -32986,22 +33002,6 @@
           "sourceDate": "2027-07-01",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854496",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852224",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Los Angeles Angels",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-108.png",
-          "start": null,
-          "sourceDate": "2027-07-01",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852224",
           "timeZone": "UTC"
         },
         {
@@ -35357,6 +35357,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852208",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-16T23:07:00.000Z",
+          "sourceDate": "2027-07-16",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852208",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853926",
           "sport": "baseball",
           "league": "MLB",
@@ -35469,22 +35485,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852208",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-16",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852208",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854068",
           "sport": "baseball",
           "league": "MLB",
@@ -35530,6 +35530,22 @@
           "sourceDate": "2027-07-16",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852625",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852205",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-17T19:07:00.000Z",
+          "sourceDate": "2027-07-17",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852205",
           "timeZone": "UTC"
         },
         {
@@ -35693,22 +35709,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852205",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-17",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852205",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854166",
           "sport": "baseball",
           "league": "MLB",
@@ -35821,6 +35821,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852214",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Detroit Tigers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-116.png",
+          "start": "2027-07-18T17:37:00.000Z",
+          "sourceDate": "2027-07-18",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852214",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853909",
           "sport": "baseball",
           "league": "MLB",
@@ -35930,22 +35946,6 @@
           "sourceDate": "2027-07-18",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852700",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852214",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Detroit Tigers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-116.png",
-          "start": null,
-          "sourceDate": "2027-07-18",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852214",
           "timeZone": "UTC"
         },
         {
@@ -36077,6 +36077,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852210",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-07-19T23:07:00.000Z",
+          "sourceDate": "2027-07-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852210",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854307",
           "sport": "baseball",
           "league": "MLB",
@@ -36189,22 +36205,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852210",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-07-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852210",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854070",
           "sport": "baseball",
           "league": "MLB",
@@ -36298,6 +36298,22 @@
           "sourceDate": "2027-07-20",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852940",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852209",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-07-20T23:07:00.000Z",
+          "sourceDate": "2027-07-20",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852209",
           "timeZone": "UTC"
         },
         {
@@ -36426,22 +36442,6 @@
           "sourceDate": "2027-07-20",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854150",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852209",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-07-20",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852209",
           "timeZone": "UTC"
         },
         {
@@ -36653,6 +36653,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852215",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-07-21T23:07:00.000Z",
+          "sourceDate": "2027-07-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852215",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854155",
           "sport": "baseball",
           "league": "MLB",
@@ -36666,22 +36682,6 @@
           "sourceDate": "2027-07-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854155",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852215",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-07-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852215",
           "timeZone": "UTC"
         },
         {
@@ -36730,6 +36730,22 @@
           "sourceDate": "2027-07-21",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852611",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852216",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago White Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-145.png",
+          "start": "2027-07-22T19:07:00.000Z",
+          "sourceDate": "2027-07-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852216",
           "timeZone": "UTC"
         },
         {
@@ -36810,22 +36826,6 @@
           "sourceDate": "2027-07-22",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853435",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852216",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago White Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-145.png",
-          "start": null,
-          "sourceDate": "2027-07-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852216",
           "timeZone": "UTC"
         },
         {
@@ -36922,6 +36922,22 @@
           "sourceDate": "2027-07-23",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852128",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852204",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-07-23T23:07:00.000Z",
+          "sourceDate": "2027-07-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852204",
           "timeZone": "UTC"
         },
         {
@@ -37037,22 +37053,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852204",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-07-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852204",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853991",
           "sport": "baseball",
           "league": "MLB",
@@ -37082,6 +37082,22 @@
           "sourceDate": "2027-07-23",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852607",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852213",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-07-24T19:07:00.000Z",
+          "sourceDate": "2027-07-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852213",
           "timeZone": "UTC"
         },
         {
@@ -37277,22 +37293,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852213",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-07-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852213",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852610",
           "sport": "baseball",
           "league": "MLB",
@@ -37370,6 +37370,22 @@
           "sourceDate": "2027-07-25",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852138",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852217",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Texas Rangers",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-140.png",
+          "start": "2027-07-25T17:37:00.000Z",
+          "sourceDate": "2027-07-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852217",
           "timeZone": "UTC"
         },
         {
@@ -37514,22 +37530,6 @@
           "sourceDate": "2027-07-25",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853424",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852217",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Texas Rangers",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-140.png",
-          "start": null,
-          "sourceDate": "2027-07-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852217",
           "timeZone": "UTC"
         },
         {
@@ -39901,6 +39901,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852206",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-08-06T23:07:00.000Z",
+          "sourceDate": "2027-08-06",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852206",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853020",
           "sport": "baseball",
           "league": "MLB",
@@ -40029,22 +40045,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852206",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-08-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852206",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854153",
           "sport": "baseball",
           "league": "MLB",
@@ -40090,6 +40090,22 @@
           "sourceDate": "2027-08-06",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852613",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852211",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-08-07T19:07:00.000Z",
+          "sourceDate": "2027-08-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852211",
           "timeZone": "UTC"
         },
         {
@@ -40269,22 +40285,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852211",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-08-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852211",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853988",
           "sport": "baseball",
           "league": "MLB",
@@ -40362,6 +40362,22 @@
           "sourceDate": "2027-08-08",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852854",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852207",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-08-08T17:37:00.000Z",
+          "sourceDate": "2027-08-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852207",
           "timeZone": "UTC"
         },
         {
@@ -40506,22 +40522,6 @@
           "sourceDate": "2027-08-08",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852682",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852207",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": null,
-          "sourceDate": "2027-08-08",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852207",
           "timeZone": "UTC"
         },
         {
@@ -40797,6 +40797,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852212",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-08-10T23:07:00.000Z",
+          "sourceDate": "2027-08-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852212",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853022",
           "sport": "baseball",
           "league": "MLB",
@@ -40954,22 +40970,6 @@
           "sourceDate": "2027-08-10",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852521",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852212",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-08-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852212",
           "timeZone": "UTC"
         },
         {
@@ -41133,6 +41133,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852202",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-08-11T23:07:00.000Z",
+          "sourceDate": "2027-08-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852202",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853586",
           "sport": "baseball",
           "league": "MLB",
@@ -41197,22 +41213,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852202",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-08-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852202",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853992",
           "sport": "baseball",
           "league": "MLB",
@@ -41242,6 +41242,22 @@
           "sourceDate": "2027-08-11",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852597",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852199",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Washington Nationals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-120.png",
+          "start": "2027-08-12T19:07:00.000Z",
+          "sourceDate": "2027-08-12",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852199",
           "timeZone": "UTC"
         },
         {
@@ -41322,22 +41338,6 @@
           "sourceDate": "2027-08-12",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854472",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852199",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Washington Nationals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-120.png",
-          "start": null,
-          "sourceDate": "2027-08-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852199",
           "timeZone": "UTC"
         },
         {
@@ -43085,6 +43085,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852196",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-08-21T19:07:00.000Z",
+          "sourceDate": "2027-08-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852196",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852851",
           "sport": "baseball",
           "league": "MLB",
@@ -43245,22 +43261,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852196",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-08-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852196",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853978",
           "sport": "baseball",
           "league": "MLB",
@@ -43373,6 +43373,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852203",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-08-22T17:37:00.000Z",
+          "sourceDate": "2027-08-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852203",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853092",
           "sport": "baseball",
           "league": "MLB",
@@ -43482,22 +43498,6 @@
           "sourceDate": "2027-08-22",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853815",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852203",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-08-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852203",
           "timeZone": "UTC"
         },
         {
@@ -43757,6 +43757,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852193",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-08-24T23:07:00.000Z",
+          "sourceDate": "2027-08-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852193",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853000",
           "sport": "baseball",
           "league": "MLB",
@@ -43882,22 +43898,6 @@
           "sourceDate": "2027-08-24",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854388",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852193",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-08-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852193",
           "timeZone": "UTC"
         },
         {
@@ -44045,6 +44045,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852191",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-08-25T23:07:00.000Z",
+          "sourceDate": "2027-08-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852191",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853010",
           "sport": "baseball",
           "league": "MLB",
@@ -44125,22 +44141,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852191",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-08-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852191",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853973",
           "sport": "baseball",
           "league": "MLB",
@@ -44205,6 +44205,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852194",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Kansas City Royals",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-118.png",
+          "start": "2027-08-26T23:07:00.000Z",
+          "sourceDate": "2027-08-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852194",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853004",
           "sport": "baseball",
           "league": "MLB",
@@ -44234,22 +44250,6 @@
           "sourceDate": "2027-08-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853413",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852194",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Kansas City Royals",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-118.png",
-          "start": null,
-          "sourceDate": "2027-08-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852194",
           "timeZone": "UTC"
         },
         {
@@ -44346,6 +44346,22 @@
           "sourceDate": "2027-08-27",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852118",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852197",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-27T23:07:00.000Z",
+          "sourceDate": "2027-08-27",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852197",
           "timeZone": "UTC"
         },
         {
@@ -44477,22 +44493,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852197",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-27",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852197",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854062",
           "sport": "baseball",
           "league": "MLB",
@@ -44522,6 +44522,22 @@
           "sourceDate": "2027-08-27",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853338",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852192",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-28T19:07:00.000Z",
+          "sourceDate": "2027-08-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852192",
           "timeZone": "UTC"
         },
         {
@@ -44717,22 +44733,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852192",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-28",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852192",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854065",
           "sport": "baseball",
           "league": "MLB",
@@ -44794,6 +44794,22 @@
           "sourceDate": "2027-08-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852765",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852195",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Baltimore Orioles",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-110.png",
+          "start": "2027-08-29T17:37:00.000Z",
+          "sourceDate": "2027-08-29",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852195",
           "timeZone": "UTC"
         },
         {
@@ -44954,22 +44970,6 @@
           "sourceDate": "2027-08-29",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854462",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852195",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Baltimore Orioles",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-110.png",
-          "start": null,
-          "sourceDate": "2027-08-29",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852195",
           "timeZone": "UTC"
         },
         {
@@ -46525,6 +46525,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852198",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-09-06T19:07:00.000Z",
+          "sourceDate": "2027-09-06",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852198",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853737",
           "sport": "baseball",
           "league": "MLB",
@@ -46669,22 +46685,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852198",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-09-06",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852198",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852840",
           "sport": "baseball",
           "league": "MLB",
@@ -46746,6 +46746,22 @@
           "sourceDate": "2027-09-07",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852842",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852201",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-09-07T23:07:00.000Z",
+          "sourceDate": "2027-09-07",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852201",
           "timeZone": "UTC"
         },
         {
@@ -46925,22 +46941,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852201",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-09-07",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852201",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853976",
           "sport": "baseball",
           "league": "MLB",
@@ -47085,6 +47085,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852184",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Boston Red Sox",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-111.png",
+          "start": "2027-09-08T23:07:00.000Z",
+          "sourceDate": "2027-09-08",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852184",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853002",
           "sport": "baseball",
           "league": "MLB",
@@ -47165,22 +47181,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852184",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Boston Red Sox",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-111.png",
-          "start": null,
-          "sourceDate": "2027-09-08",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852184",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853977",
           "sport": "baseball",
           "league": "MLB",
@@ -47258,6 +47258,22 @@
           "sourceDate": "2027-09-10",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854209",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852189",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-09-10T23:07:00.000Z",
+          "sourceDate": "2027-09-10",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852189",
           "timeZone": "UTC"
         },
         {
@@ -47405,22 +47421,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852189",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-09-10",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852189",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854051",
           "sport": "baseball",
           "league": "MLB",
@@ -47466,6 +47466,22 @@
           "sourceDate": "2027-09-10",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/852596",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852180",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-09-11T19:07:00.000Z",
+          "sourceDate": "2027-09-11",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852180",
           "timeZone": "UTC"
         },
         {
@@ -47645,22 +47661,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852180",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-09-11",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852180",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:854044",
           "sport": "baseball",
           "league": "MLB",
@@ -47738,6 +47738,22 @@
           "sourceDate": "2027-09-12",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854302",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852179",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-09-12T17:37:00.000Z",
+          "sourceDate": "2027-09-12",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852179",
           "timeZone": "UTC"
         },
         {
@@ -47882,22 +47898,6 @@
           "sourceDate": "2027-09-12",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854135",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852179",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": null,
-          "sourceDate": "2027-09-12",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852179",
           "timeZone": "UTC"
         },
         {
@@ -49549,6 +49549,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852181",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-09-21T23:07:00.000Z",
+          "sourceDate": "2027-09-21",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852181",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852992",
           "sport": "baseball",
           "league": "MLB",
@@ -49725,22 +49741,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852181",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-09-21",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852181",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853959",
           "sport": "baseball",
           "league": "MLB",
@@ -49802,6 +49802,22 @@
           "sourceDate": "2027-09-22",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852838",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852185",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-09-22T23:07:00.000Z",
+          "sourceDate": "2027-09-22",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852185",
           "timeZone": "UTC"
         },
         {
@@ -49965,22 +49981,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852185",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-09-22",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852185",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853957",
           "sport": "baseball",
           "league": "MLB",
@@ -50058,6 +50058,22 @@
           "sourceDate": "2027-09-23",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852843",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852190",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "New York Yankees",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-147.png",
+          "start": "2027-09-23T23:07:00.000Z",
+          "sourceDate": "2027-09-23",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852190",
           "timeZone": "UTC"
         },
         {
@@ -50189,22 +50205,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852190",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "New York Yankees",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-147.png",
-          "start": null,
-          "sourceDate": "2027-09-23",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852190",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:852834",
           "sport": "baseball",
           "league": "MLB",
@@ -50234,6 +50234,22 @@
           "sourceDate": "2027-09-24",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854214",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852182",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-09-24T23:07:00.000Z",
+          "sourceDate": "2027-09-24",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852182",
           "timeZone": "UTC"
         },
         {
@@ -50413,22 +50429,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852182",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-09-24",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852182",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853956",
           "sport": "baseball",
           "league": "MLB",
@@ -50442,6 +50442,22 @@
           "sourceDate": "2027-09-24",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/853956",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852183",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-09-25T19:07:00.000Z",
+          "sourceDate": "2027-09-25",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852183",
           "timeZone": "UTC"
         },
         {
@@ -50653,22 +50669,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852183",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-09-25",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852183",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853961",
           "sport": "baseball",
           "league": "MLB",
@@ -50746,6 +50746,22 @@
           "sourceDate": "2027-09-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/854218",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:852186",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Toronto Blue Jays",
+          "away": "Tampa Bay Rays",
+          "homeLogo": "assets/team-logos/mlb-141.png",
+          "awayLogo": "assets/team-logos/mlb-139.png",
+          "start": "2027-09-26T19:07:00.000Z",
+          "sourceDate": "2027-09-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852186",
           "timeZone": "UTC"
         },
         {
@@ -50893,22 +50909,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:852186",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Toronto Blue Jays",
-          "away": "Tampa Bay Rays",
-          "homeLogo": "assets/team-logos/mlb-141.png",
-          "awayLogo": "assets/team-logos/mlb-139.png",
-          "start": null,
-          "sourceDate": "2027-09-26",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/852186",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853958",
           "sport": "baseball",
           "league": "MLB",
@@ -50925,7 +50925,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-25T11:25:47.403Z",
+      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
