@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-24T14:56:51.814Z",
+      "updatedAt": "2026-11-25T00:50:21.732Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-24T14:56:51.814Z",
+      "lastAttemptAt": "2026-11-25T00:50:21.732Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-24T14:56:51.814Z",
+      "updatedAt": "2026-11-25T00:50:21.732Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-24T14:56:51.814Z",
+      "lastAttemptAt": "2026-11-25T00:50:21.732Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-24T09:41:22.344Z",
@@ -4354,7 +4354,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-24T14:56:51.814Z",
+      "updatedAt": "2026-11-25T00:50:21.732Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1661661@esport-ics",
@@ -4371,20 +4371,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "cs2:pandascore-match-1777606@esport-ics",
-          "sport": "cs2",
-          "league": "Elisa Open Suomi - Season 14 2026 - Group Stage",
-          "stage": "Stage TBD",
-          "home": "BOYB",
-          "away": "BJNG",
-          "homeLogo": "assets/team-logos/cs2-boyband.png",
-          "awayLogo": "assets/team-logos/cs2-bojong.png",
-          "start": "2026-11-24T15:30:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/bojong.ics",
-          "timeZone": "UTC"
-        },
-        {
           "id": "cs2:pandascore-match-1661662@esport-ics",
           "sport": "cs2",
           "league": "DACH CS Masters - Season 6 2026 - Playoffs",
@@ -4397,24 +4383,10 @@
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/entropy.ics",
           "timeZone": "UTC"
-        },
-        {
-          "id": "cs2:pandascore-match-1777607@esport-ics",
-          "sport": "cs2",
-          "league": "Elisa Open Suomi - Season 14 2026 - Group Stage",
-          "stage": "Stage TBD",
-          "home": "HAVU",
-          "away": "KSM",
-          "homeLogo": "assets/team-logos/cs2-havu.png",
-          "awayLogo": "assets/team-logos/cs2-kuusamo-gg.png",
-          "start": "2026-11-24T18:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/counter_strike/havu.ics",
-          "timeZone": "UTC"
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-24T14:56:51.814Z",
+      "lastAttemptAt": "2026-11-25T00:50:21.732Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4425,7 +4397,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-24T14:56:51.814Z",
+      "updatedAt": "2026-11-25T00:50:21.732Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
@@ -4555,7 +4527,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-24T14:56:51.814Z",
+      "lastAttemptAt": "2026-11-25T00:50:21.732Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4566,7 +4538,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-24T14:56:51.814Z",
+      "updatedAt": "2026-11-25T00:50:21.732Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -27465,6 +27437,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853770",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Colorado Rockies",
+          "away": "St. Louis Cardinals",
+          "homeLogo": "assets/team-logos/mlb-115.png",
+          "awayLogo": "assets/team-logos/mlb-138.png",
+          "start": "2027-06-06T01:10:00.000Z",
+          "sourceDate": "2027-06-05",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853770",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:853446",
           "sport": "baseball",
           "league": "MLB",
@@ -27542,22 +27530,6 @@
           "sourceDate": "2027-06-05",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854098",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853770",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Colorado Rockies",
-          "away": "St. Louis Cardinals",
-          "homeLogo": "assets/team-logos/mlb-115.png",
-          "awayLogo": "assets/team-logos/mlb-138.png",
-          "start": null,
-          "sourceDate": "2027-06-05",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853770",
           "timeZone": "UTC"
         },
         {
@@ -30409,6 +30381,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:853765",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Colorado Rockies",
+          "away": "Chicago Cubs",
+          "homeLogo": "assets/team-logos/mlb-115.png",
+          "awayLogo": "assets/team-logos/mlb-112.png",
+          "start": "2027-06-20T01:10:00.000Z",
+          "sourceDate": "2027-06-19",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853765",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:852709",
           "sport": "baseball",
           "league": "MLB",
@@ -30486,22 +30474,6 @@
           "sourceDate": "2027-06-19",
           "status": "Time TBD",
           "sourceUrl": "https://www.mlb.com/gameday/854004",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:853765",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Colorado Rockies",
-          "away": "Chicago Cubs",
-          "homeLogo": "assets/team-logos/mlb-115.png",
-          "awayLogo": "assets/team-logos/mlb-112.png",
-          "start": null,
-          "sourceDate": "2027-06-19",
-          "status": "Time TBD",
-          "sourceUrl": "https://www.mlb.com/gameday/853765",
           "timeZone": "UTC"
         },
         {
@@ -31865,22 +31837,6 @@
           "timeZone": "UTC"
         },
         {
-          "id": "mlb:853917",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Cincinnati Reds",
-          "away": "Atlanta Braves",
-          "homeLogo": "assets/team-logos/mlb-113.png",
-          "awayLogo": "assets/team-logos/mlb-144.png",
-          "start": "2027-06-26T20:10:00.000Z",
-          "sourceDate": "2027-06-26",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/853917",
-          "timeZone": "UTC"
-        },
-        {
           "id": "mlb:853279",
           "sport": "baseball",
           "league": "MLB",
@@ -31926,6 +31882,22 @@
           "sourceDate": "2027-06-26",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/852460",
+          "timeZone": "UTC"
+        },
+        {
+          "id": "mlb:853917",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Cincinnati Reds",
+          "away": "Atlanta Braves",
+          "homeLogo": "assets/team-logos/mlb-113.png",
+          "awayLogo": "assets/team-logos/mlb-144.png",
+          "start": "2027-06-26T23:15:00.000Z",
+          "sourceDate": "2027-06-26",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/853917",
           "timeZone": "UTC"
         },
         {
@@ -44681,6 +44653,22 @@
           "timeZone": "UTC"
         },
         {
+          "id": "mlb:852509",
+          "sport": "baseball",
+          "league": "MLB",
+          "stage": "2027 Season · Regular Season",
+          "season": "2027",
+          "home": "Seattle Mariners",
+          "away": "Houston Astros",
+          "homeLogo": "assets/team-logos/mlb-136.png",
+          "awayLogo": "assets/team-logos/mlb-117.png",
+          "start": "2027-08-28T23:15:00.000Z",
+          "sourceDate": "2027-08-28",
+          "status": "Scheduled",
+          "sourceUrl": "https://www.mlb.com/gameday/852509",
+          "timeZone": "UTC"
+        },
+        {
           "id": "mlb:854379",
           "sport": "baseball",
           "league": "MLB",
@@ -44710,22 +44698,6 @@
           "sourceDate": "2027-08-28",
           "status": "Scheduled",
           "sourceUrl": "https://www.mlb.com/gameday/853410",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "mlb:852509",
-          "sport": "baseball",
-          "league": "MLB",
-          "stage": "2027 Season · Regular Season",
-          "season": "2027",
-          "home": "Seattle Mariners",
-          "away": "Houston Astros",
-          "homeLogo": "assets/team-logos/mlb-136.png",
-          "awayLogo": "assets/team-logos/mlb-117.png",
-          "start": "2027-08-29T02:10:00.000Z",
-          "sourceDate": "2027-08-28",
-          "status": "Scheduled",
-          "sourceUrl": "https://www.mlb.com/gameday/852509",
           "timeZone": "UTC"
         },
         {
@@ -50953,7 +50925,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-24T14:56:51.814Z",
+      "lastAttemptAt": "2026-11-25T00:50:21.732Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
