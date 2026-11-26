@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-26T13:58:59.460Z",
+      "updatedAt": "2026-11-26T23:03:18.854Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-26T13:58:59.460Z",
+      "lastAttemptAt": "2026-11-26T23:03:18.854Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-26T13:58:59.460Z",
+      "updatedAt": "2026-11-26T23:03:18.854Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-26T13:58:59.460Z",
+      "lastAttemptAt": "2026-11-26T23:03:18.854Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-26T08:00:36.412Z",
@@ -4354,7 +4354,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-26T13:58:59.460Z",
+      "updatedAt": "2026-11-26T23:03:18.854Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1661661@esport-ics",
@@ -4386,7 +4386,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-26T13:58:59.460Z",
+      "lastAttemptAt": "2026-11-26T23:03:18.854Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4397,7 +4397,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-26T13:58:59.460Z",
+      "updatedAt": "2026-11-26T23:03:18.854Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
@@ -4453,20 +4453,6 @@
           "start": "2026-11-29T17:00:00Z",
           "status": "Scheduled",
           "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/cgn-esports.ics",
-          "timeZone": "UTC"
-        },
-        {
-          "id": "valorant:pandascore-match-1792347@esport-ics",
-          "sport": "valorant",
-          "league": "Spike Series - Convergence EMEA - DACH 2026 - Group B",
-          "stage": "Stage TBD",
-          "home": "Enisorail",
-          "away": "GSH",
-          "homeLogo": "assets/team-logos/valorant-enisorail.png",
-          "awayLogo": "assets/team-logos/valorant-gesichtenhausen.png",
-          "start": "2026-11-26T17:00:00Z",
-          "status": "Scheduled",
-          "sourceUrl": "https://github.com/snutij/esport_ics/blob/main/ics/valorant/enisorail.ics",
           "timeZone": "UTC"
         },
         {
@@ -4527,7 +4513,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-26T13:58:59.460Z",
+      "lastAttemptAt": "2026-11-26T23:03:18.854Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4538,7 +4524,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-26T13:58:59.460Z",
+      "updatedAt": "2026-11-26T23:03:18.854Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -50925,7 +50911,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-26T13:58:59.460Z",
+      "lastAttemptAt": "2026-11-26T23:03:18.854Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
