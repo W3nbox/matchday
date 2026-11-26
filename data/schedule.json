@@ -3,7 +3,7 @@
     "football": {
       "name": "openfootball · Premier League (community data)",
       "status": "ok",
-      "updatedAt": "2026-11-25T21:47:47.413Z",
+      "updatedAt": "2026-11-26T04:12:06.922Z",
       "matches": [
         {
           "id": "openfootball:e96b80a837cd7ad8c80d7b56",
@@ -4329,7 +4329,7 @@
       "sport": "football",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
+      "lastAttemptAt": "2026-11-26T04:12:06.922Z",
       "upstreamLastModified": null,
       "error": null,
       "upstreamGeneratedAt": null,
@@ -4338,11 +4338,11 @@
     "lol": {
       "name": "zlypher/lol-events · LPL / Worlds",
       "status": "ok",
-      "updatedAt": "2026-11-25T21:47:47.413Z",
+      "updatedAt": "2026-11-26T04:12:06.922Z",
       "matches": [],
       "sport": "lol",
       "sourceUrl": "https://raw.githubusercontent.com/zlypher/lol-events/main/data/matches.json",
-      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
+      "lastAttemptAt": "2026-11-26T04:12:06.922Z",
       "error": null,
       "availability": "empty",
       "upstreamLastModified": "2026-11-25T08:14:06.998Z",
@@ -4354,7 +4354,7 @@
       "sport": "cs2",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-25T21:47:47.413Z",
+      "updatedAt": "2026-11-26T04:12:06.922Z",
       "matches": [
         {
           "id": "cs2:pandascore-match-1661661@esport-ics",
@@ -4386,7 +4386,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
+      "lastAttemptAt": "2026-11-26T04:12:06.922Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4397,7 +4397,7 @@
       "sport": "valorant",
       "sourceUrl": "https://github.com/snutij/esport_ics",
       "status": "ok",
-      "updatedAt": "2026-11-25T21:47:47.413Z",
+      "updatedAt": "2026-11-26T04:12:06.922Z",
       "matches": [
         {
           "id": "valorant:pandascore-match-1792356@esport-ics",
@@ -4527,7 +4527,7 @@
         }
       ],
       "availability": "scheduled",
-      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
+      "lastAttemptAt": "2026-11-26T04:12:06.922Z",
       "upstreamLastModified": null,
       "upstreamGeneratedAt": null,
       "error": null,
@@ -4538,7 +4538,7 @@
       "sport": "baseball",
       "sourceUrl": "https://www.mlb.com/schedule",
       "status": "ok",
-      "updatedAt": "2026-11-25T21:47:47.413Z",
+      "updatedAt": "2026-11-26T04:12:06.922Z",
       "matches": [
         {
           "id": "mlb:868573",
@@ -50925,7 +50925,7 @@
           "timeZone": "UTC"
         }
       ],
-      "lastAttemptAt": "2026-11-25T21:47:47.413Z",
+      "lastAttemptAt": "2026-11-26T04:12:06.922Z",
       "error": null,
       "availability": "scheduled",
       "upstreamLastModified": null,
